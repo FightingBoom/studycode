@@ -4,8 +4,6 @@
 
 using namespace std;
 
-char * getname(void);
-
 int main()
 {
     char cTemp[20];
