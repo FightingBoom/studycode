@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstring>
+#include <cstring>      // C 风格 string 头文件
 
 int main()
 {
