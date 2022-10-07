@@ -10,5 +10,5 @@
 
 
 
-2、[《The C Programming Language》](https://github.com/FightingBoom/studycode/tree/main/theCProgrammingLanguage)
+2、[《The C Programming Language》](https://github.com/FightingBoom/studycode/tree/main/theCProgrammingLanguage)，C程序设计语言，第2版新版
 
