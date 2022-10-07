@@ -1,15 +1,14 @@
 # 1 studycode
 
-练习代码记录
+书中练习代码记录。
 
 
 
-# 2 使用环境
+# 2 书籍目录
 
-1、在线编译网址如下
-
-- https://ideone.com/
-- https://coliru.stacked-crooked.com/
+1、[《C++ Primer Plus》](https://github.com/FightingBoom/studycode/tree/main/c%2B%2BPrimerPlus)
 
 
+
+2、[《The C Programming Language》](https://github.com/FightingBoom/studycode/tree/main/theCProgrammingLanguage)
 
