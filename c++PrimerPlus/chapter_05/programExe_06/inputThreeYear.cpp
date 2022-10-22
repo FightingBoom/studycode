@@ -104,6 +104,7 @@ the book total sales volume in Second year is 12
 the book total sales volume in The third year is 12
 the book total sales volume in three year is 36
 
+-----------------------------
 
 Please enter the book sales volume in First year January: 12
 Please enter the book sales volume in First year February: 312
