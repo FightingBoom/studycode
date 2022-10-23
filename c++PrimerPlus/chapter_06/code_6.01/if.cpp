@@ -13,7 +13,7 @@ int main()
     {
         if (' ' == ch)
             ++spaces;
-        ++total;
+        ++total;        // 包括回车键产生的换行符
         cin.get(ch);
     }
 
