@@ -6,7 +6,7 @@
 
 # 2 书籍目录
 
-1、[《C++ Primer Plus》](https://github.com/FightingBoom/studycode/tree/main/c%2B%2BPrimerPlus)
+1、[《C++ Primer Plus Sixth Edition》](https://github.com/FightingBoom/studycode/tree/main/c%2B%2BPrimerPlusSixthEdition)
 
 
 
