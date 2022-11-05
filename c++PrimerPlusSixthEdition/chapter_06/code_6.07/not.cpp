@@ -31,6 +31,10 @@ bool is_int(double x)
 }
 
 /*
+包含#include <iso646.h>，可使用 and / or / not 名字代替 && / || / !
+*/
+
+/*
 Yo, dude! Enter an integer value: 1234567890
 You've entered the integer 1234567890
 Bye
