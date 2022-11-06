@@ -14,10 +14,10 @@ int main()
     for (i = 0; i < Max; i++)
     {
         cout << "round #" << i + 1 << ": ";
-        while (!(cin >> golf[i]))
+        while (!(cin >> golf[i]))   // 如果输入成功，则进入下一个 for 循环，否则必须输入正确的整形
         {
             cin.clear();
-            while (cin.get() != '\n')
+            while (cin.get() != '\n')   // 依次读取当前行所有的非法输入，并丢弃。
                 continue;
             cout << "Please enter a number: ";
         }
