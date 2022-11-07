@@ -23,9 +23,9 @@ int main()
     cin >> a_price;
     d_price = 0.913 * a_price;
 
-    cout << fixed;
-    cout.precision(2);
-    cout.setf(ios_base::showpoint);
+    cout << fixed;      // 不晓得含义
+    cout.precision(2);  // 不晓得含义
+    cout.setf(ios_base::showpoint);     // 保留小数点字符
     cout << "Make and model: " << automobile << endl;
     cout << "Year: " << year << endl;
     cout << "Was asking $" << a_price << endl;
