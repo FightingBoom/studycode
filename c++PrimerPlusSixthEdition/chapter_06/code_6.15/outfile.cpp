@@ -11,7 +11,10 @@ int main()
     double d_price;
 
     ofstream outFile;
-    outFile.open("carinfo.txt");    // 打开 carinfo.txt ，使用结束必须关闭
+
+    // 打开 carinfo.txt ，使用结束必须关闭
+    // 如果已存在同名文件，会将原文件长度截断为0，丢弃原有的内容，再重新开始写。
+    outFile.open("carinfo.txt");
 
     cout << "Enter the make and model of automobile: ";
     cin.getline(automobile, 50);
@@ -24,7 +27,7 @@ int main()
     d_price = 0.913 * a_price;
 
     cout << fixed;      // 不晓得含义
-    cout.precision(2);  // 不晓得含义
+    cout.precision(4);  // 精确到小数点后的位数
     cout.setf(ios_base::showpoint);     // 保留小数点字符
     cout << "Make and model: " << automobile << endl;
     cout << "Year: " << year << endl;
