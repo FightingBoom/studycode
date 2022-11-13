@@ -30,15 +30,14 @@ int main()
         exit(EXIT_FAILURE);
     }
 
-    patronsInfo * allPatronsInfo = new patronsInfo[patronsCount];
-
     inFile >> patronsCount;
     cout << patronsCount << endl;
-
     char str[PATRONS_NAME_SIZE];
     inFile.getline(str, 1);
 
-    for (int i = 0; i < patronsCount; i++)
+    patronsInfo * allPatronsInfo = new patronsInfo[patronsCount];
+
+    for (int i = 0; i < patronsCount; i++)  // 从文件获取输入
     {
         inFile.getline(allPatronsInfo[i].strPatronsName, PATRONS_NAME_SIZE);
         cout << allPatronsInfo[i].strPatronsName << endl;
