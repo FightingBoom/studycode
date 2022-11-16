@@ -5,7 +5,7 @@ using namespace std;
 
 
 // 函数原型声明
-void cheers(int n);
+void cheers(int);       // 函数原型可以不需要变量名
 double cube(double x);
 
 
