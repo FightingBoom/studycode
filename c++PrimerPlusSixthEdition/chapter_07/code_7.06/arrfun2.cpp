@@ -32,7 +32,7 @@ int sum_arr(int arr[], int n)
     int total = 0;
 
     std::cout << arr << " = arr, ";
-    std::cout << sizeof arr << " = sizeof arr\n";
+    std::cout << sizeof arr << " = sizeof arr\n"; // 仅仅是指针的长度，64位系统则是8字节，因此地址与长度必须分开传递；
 
     for (int i = 0; i < n; i++)
         total = total + arr[i];
