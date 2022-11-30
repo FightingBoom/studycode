@@ -18,10 +18,10 @@ int main()
     {
         cout << "Enter revaluation factor: ";
         double factor;
-        while (!(cin >> factor)) // 输入错误
+        while (!(cin >> factor)) // 输入错误，非数字输入
         {
-            cin.clear();
-            while (cin.get() != '\n')
+            cin.clear(); // 清空输入缓冲区
+            while (cin.get() != '\n') // 循环读取，并丢弃无效的字符串
                 continue;
             cout << "Bad input; Please enter a number: ";
         }
@@ -45,10 +45,10 @@ int fill_array(double ar[], int limit)
     {
         cout << "Enter value #" << (i + 1) << ": ";
         cin >> temp;
-        if (!cin)
+        if (!cin) // 输入错误，非数字输入
         {
-            cin.clear();
-            while (cin.get() != '\n')
+            cin.clear(); // 清空输入缓冲区
+            while (cin.get() != '\n') // 循环读取，并丢弃无效的字符串
                 continue;
             cout << "Bad input; input process terminated.\n";
             break;
