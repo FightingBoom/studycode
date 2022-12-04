@@ -2,7 +2,6 @@
 
 
 
-
 ## 1.1 开发环境组合1
 
 1、使用 Windows 10 专业版
@@ -34,3 +33,8 @@ language:C (gcc 8.3)
 
 
 
+# 2 参考资料
+
+1、编程练习参考资料
+
+（1）[https://blog.csdn.net/leowinbow/article/details/86484484](https://blog.csdn.net/leowinbow/article/details/86484484)
