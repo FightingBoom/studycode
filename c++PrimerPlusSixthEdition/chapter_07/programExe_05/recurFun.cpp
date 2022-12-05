@@ -41,6 +41,7 @@ long long funRecur(int n)
 Please Enter a number: 4
 4! = 24
 Please Enter next a number: 5
+5! = 120
 Please Enter next a number: 6
 6! = 720
 Please Enter next a number: 7
