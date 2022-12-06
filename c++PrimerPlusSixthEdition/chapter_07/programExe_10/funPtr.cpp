@@ -11,10 +11,15 @@ double calculate(double x, double y, pFun pFuntion);
 
 int main()
 {
-    pFun pFunArray[3];
-    pFunArray[0] = add;
-    pFunArray[1] = subtract;
-    pFunArray[2] = multiply;
+    pFun pFunArray[3] =
+    {
+        add,
+        subtract,
+        multiply
+    }; // 两种初始化方式均可
+    // pFunArray[0] = add;
+    // pFunArray[1] = subtract;
+    // pFunArray[2] = multiply;
 
     int x;
     int y;
@@ -83,4 +88,21 @@ add num = 6
 subtract num = -2
 multiply num = 8
 Enter next x and y: q
+*/
+
+/*
+# 函数指针，第二种初始化方法，执行结果
+Enter x and y: 2 3
+add num = 5
+subtract num = -1
+multiply num = 6
+Enter next x and y: 3 4
+add num = 7
+subtract num = -1
+multiply num = 12
+Enter next x and y: 25 30
+add num = 55
+subtract num = -5
+multiply num = 750
+Enter next x and y:
 */
