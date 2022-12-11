@@ -84,3 +84,22 @@ free_throws & accumulate(free_throws & target, const free_throws & source)
 }
 
 
+/*
+Name: Ifelsa Branch
+ Made: 13       Attempts: 14    Percent: 92.8571
+Name: Throwgoods
+ Made: 13       Attempts: 14    Percent: 92.8571
+Name: Throwgoods
+ Made: 23       Attempts: 30    Percent: 76.6667
+Name: Throwgoods
+ Made: 35       Attempts: 48    Percent: 72.9167
+Displaying team:
+Name: Throwgoods
+ Made: 41       Attempts: 62    Percent: 66.129
+Displaying dup after assignment:
+Name: Throwgoods
+ Made: 41       Attempts: 62    Percent: 66.129
+Displaying dup after ill-advised assignment:
+Name: Whily Looper
+ Made: 5        Attempts: 9     Percent: 55.5556
+*/
