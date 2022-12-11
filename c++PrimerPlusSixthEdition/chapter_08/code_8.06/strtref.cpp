@@ -17,6 +17,7 @@ free_throws & accumulate(free_throws & target, const free_throws & source);
 
 int main()
 {
+    // 未明确初始化的结构体变量，默认为0
     free_throws one = {"Ifelsa Branch", 13, 14};
     free_throws two = {"Andor Knott", 10, 16};
     free_throws three = {"Minnie Max", 7, 9};
@@ -42,7 +43,11 @@ int main()
     cout << "Displaying dup after assignment:\n";
     display(dup);
     set_pc(four);
-    accumulate(dup, five) = four; // 这是啥操作？
+    accumulate(dup, five) = four;
+    /* 等同于如下代码
+    accumulate(dup, five);
+    dup = four;
+    */
     cout << "Displaying dup after ill-advised assignment:\n";
     display(dup);
 
@@ -66,7 +71,10 @@ void set_pc(free_throws & ft)
         ft.percent = 0;
 }
 
-
+/**
+ * @brief 1、返回值也为引用，说明返回值、target都是第一个入参的别名
+ *        2、返回值为引用类型，因此可以赋值给函数
+ */
 free_throws & accumulate(free_throws & target, const free_throws & source)
 {
     target.attempts += source.attempts;
