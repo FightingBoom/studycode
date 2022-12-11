@@ -33,7 +33,7 @@ int main()
 
     // 使用返回值
     display(accumulate(team, two));
-    accumulate(accumulate(team, three), four);
+    accumulate(accumulate(team, three), four); // 返回值仍为引用，因此修改的还是team的值
     display(team);
 
     dup = accumulate(team, five);
