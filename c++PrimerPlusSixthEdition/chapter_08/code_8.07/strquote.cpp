@@ -27,7 +27,7 @@ int main()
 
     cout << "Resetting original string.\n";
     input = copy;
-    result = version3(input, "@@@");
+    result = version3(input, "@@@"); // 程序试图引用已经释放的局部变量内存，导致崩溃
     cout << "Your string enhanced: " << result << endl;
     cout << "Your original string: " << input << endl;
 
