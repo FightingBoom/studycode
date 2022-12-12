@@ -81,3 +81,6 @@ f.1. eyepiece  magnification
 Done
 */
 
+/*
+文件内容参考：ep-data.txt
+*/
