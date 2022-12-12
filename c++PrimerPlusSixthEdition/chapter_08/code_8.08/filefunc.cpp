@@ -40,14 +40,15 @@ int main()
 
 void file_it(ostream & os, double fo, const double fe[], int n)
 {
+    // initial获取setf返回的，调用它之前有效的所有格式化设置；
     ios_base::fmtflags initial;
-    initial = os.setf(ios_base::fixed);
+    initial = os.setf(ios_base::fixed); // 置为使用定点表示法的模式
 
-    os.precision(0);
+    os.precision(0); // 指定显示多少位小数
     os << "Focal length of objective: " << fo << " mm\n";
-    os.setf(ios::showpoint);
+    os.setf(ios::showpoint); // 置为显示小数点的模式
     os.precision(1);
-    os.width(12);
+    os.width(12); // 设置下一次输出操作使用的字段宽度，只在显示下一个值时有效，然后将恢复到默认设置0；
     os << "f.1. eyepiece";
     os.width(15);
     os << "magnification" << endl;
