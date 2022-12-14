@@ -7,7 +7,7 @@ char * left(const char * str, int n = 1);
 
 int main()
 {
-    char * trip = "Hawaii!!";
+    char * trip = (char *)"Hawaii!!"; // 增加强制转换，解决 -Wwrite-strings 编译警告
     unsigned long n = 12345678;
     int i;
     char * temp;
@@ -69,6 +69,27 @@ leftover.cpp: In function 'int main()':
 leftover.cpp:10:19: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
      char * trip = "Hawaii!!";
                    ^~~~~~~~~~
+1
+H
+12
+Ha
+123
+Haw
+1234
+Hawa
+12345
+Hawai
+123456
+Hawaii
+1234567
+Hawaii!
+12345678
+Hawaii!!
+12345678
+Hawaii!!
+*/
+
+/*
 1
 H
 12
