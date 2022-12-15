@@ -15,7 +15,7 @@ int main()
     for (i = 1; i < 10; i ++)
     {
         cout << left(n, i) << endl;
-        temp = left(trip, i);
+        temp = left(trip, i); // 重载，调用的不同函数
         cout << temp << endl;
         delete [] temp;
     }
