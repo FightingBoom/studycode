@@ -25,7 +25,7 @@ int main()
 }
 
 template <typename T>
-void Swap(T &a, T &b)
+void Swap(T &a, T &b) // 函数模板
 {
     T temp;
     temp = a;
