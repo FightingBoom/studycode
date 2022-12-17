@@ -33,7 +33,7 @@ int main()
     ShowArray(things, 6);
 
     cout << "Listing Mr. E's debts:\n";
-    ShowArray(pd, 3);
+    ShowArray(pd, 3); // 匹配到 template B，因为模板B更具体，做了特定的假设，数组内容是指针；
 
     return 0;
 }
