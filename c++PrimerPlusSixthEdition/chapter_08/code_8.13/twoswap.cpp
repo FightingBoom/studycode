@@ -48,7 +48,7 @@ void Swap(T &a, T &b)
     b = temp;
 }
 
-// 显式具体化函数模板
+// 显式实例化函数模板，在定义模板时，直接明确类型
 template <> void Swap<job>(job &j1, job &j2)
 {
     double t1;
