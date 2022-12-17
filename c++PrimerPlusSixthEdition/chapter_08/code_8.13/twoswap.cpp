@@ -48,6 +48,7 @@ void Swap(T &a, T &b)
     b = temp;
 }
 
+// 显式具体化函数模板
 template <> void Swap<job>(job &j1, job &j2)
 {
     double t1;
