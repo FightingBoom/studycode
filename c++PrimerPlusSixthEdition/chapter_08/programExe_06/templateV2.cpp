@@ -19,7 +19,7 @@ int main()
     char * strBuffer[5] = 
     {
         (char *)"hello",
-        (char *)"hello world!!",
+        (char *)"hello world!!!", // 两次不同测试结果在下方
         (char *)"hello world!!!",
         (char *)"hello china!",
         (char *)"hello, love"
@@ -33,6 +33,8 @@ int main()
 
     showAddress(strBuffer, 5);
     char * cResult = maxn(strBuffer, 5);
+
+    // cout打印地址需要强制转换，参考教程此处使用的&，获取的是临时变量的地址
     cout << (void *)cResult << endl;
 
     cout << "Done!\n";
@@ -70,7 +72,7 @@ template <> char * maxn(char * buffer[], int n)
 
     cout << &buffer[Number] << endl;
     return (char *)&buffer[Number];
-    // char * address = buffer[Number];
+    // char * address = buffer[Number]; // 参考博客教程方法，获取的为外层字符串地址
     // return address;
 }
 
@@ -92,6 +94,19 @@ buffer[3] = hello china!, address = 0x61fdb8
 buffer[4] = hello, love, address = 0x61fdc0
 0x61fda8
 0x61fda8
+*/
+
+/*
+11
+9.9
+buffer[0] = hello, address = 0x61fda0
+buffer[1] = hello world!!!, address = 0x61fda8
+buffer[2] = hello world!!!, address = 0x61fdb0
+buffer[3] = hello china!, address = 0x61fdb8
+buffer[4] = hello, love, address = 0x61fdc0
+0x61fda8
+0x61fda8
+Done!
 */
 
 /*
