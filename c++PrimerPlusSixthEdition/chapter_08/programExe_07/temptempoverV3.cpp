@@ -21,6 +21,7 @@ T SumArray(T arr[], int n);
 template <typename T>
 T SumArray(T * arr[], int n);
 
+
 int main()
 {
     int things[6] = {13, 31, 103, 301, 310, 130};
@@ -33,7 +34,7 @@ int main()
     double * pd[3];
 
     for (int i = 0; i < 3; i++)
-        pd[i] = &mr_E[i].amount;
+        pd[i] = &mr_E[i].amount; // 获取mr_E中的double数据
 
     cout << "Listing Mr. E's counts off things:\n";
     ShowArray(things, 6);
@@ -93,7 +94,6 @@ T SumArray(T * arr[], int n)
     cout << endl;
     return sum;
 }
-
 
 
 /*
