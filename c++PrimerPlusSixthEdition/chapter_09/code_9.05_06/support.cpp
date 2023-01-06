@@ -20,6 +20,6 @@ void local()
     double warming = 0.8;
 
     cout << "Local warming = " << warming << " degrees.\n";
-    cout << "But global warming = " << ::warming; // 暂时没太理解这个用法
+    cout << "But global warming = " << ::warming; // 作用域解析运算符，放在变量名之前，表示使用变量的全局版本
     cout << " degrees.\n";
 }
