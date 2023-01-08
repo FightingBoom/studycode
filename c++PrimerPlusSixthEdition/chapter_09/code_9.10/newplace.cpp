@@ -12,7 +12,7 @@ int main()
     int i;
     cout << "Calling new and placement new:\n";
     pd1 = new double[N];            // 使用堆内存(heap)
-    pd2 = new (buffer) double[N];   // 从buffer中给pd2分配内存地址
+    pd2 = new (buffer) double[N];   // 从buffer中给pd2分配内存地址，定位new运算符
     for (i = 0; i < N; i++)
         pd2[i] = pd1[i] = 1000 + 20.0 * i;
     cout << "Memory addresses:\n" << "  heap: " << pd1
