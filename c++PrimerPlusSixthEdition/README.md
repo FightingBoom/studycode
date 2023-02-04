@@ -38,3 +38,16 @@ language:C (gcc 8.3)
 1、编程练习参考资料
 
 （1）[https://blog.csdn.net/leowinbow/article/details/86484484](https://blog.csdn.net/leowinbow/article/details/86484484)
+
+# 3 操作命令
+
+多文件编译命令，后续再思考如何使用 CMake / Makefile 管理，2023年2月4日10:44:10
+
+```shell
+# 使用g++编译多个源文件
+g++ .\twofile1.cpp .\twofile2.cpp
+
+# 执行
+.\a.exe
+```
+
