@@ -41,7 +41,7 @@ language:C (gcc 8.3)
 
 # 3 操作命令
 
-多文件编译命令，后续再思考如何使用 CMake / Makefile 管理，2023年2月4日10:44:10
+方案一：多文件编译命令，后续再思考如何使用 CMake / Makefile 管理，2023年2月4日10:44:10
 
 ```shell
 # 使用g++编译多个源文件
@@ -49,5 +49,14 @@ g++ .\twofile1.cpp .\twofile2.cpp
 
 # 执行
 .\a.exe
+```
+
+
+
+方案二：修改 VSCode 插件，默认编译所有的 .cpp 文件
+
+```json
+        "c": "cd $dir && gcc *.c -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ *.cpp -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
 ```
 
