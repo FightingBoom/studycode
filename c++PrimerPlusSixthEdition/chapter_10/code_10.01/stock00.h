@@ -17,7 +17,7 @@ public:
     void buy(long num, double price);
     void sell(long num, double price);
     void update(double price);
-    void show();
+    void show(void); // 原文没有void
 };
 
 #endif // !STOCK00_H_
