@@ -10,7 +10,7 @@ private:
     long shares;
     double share_val;
     double total_val;
-    void set_tot() { total_val = shares * share_val; }
+    void set_tot() { total_val = shares * share_val; } // C++默认将短小的成员函数作为内联函数
 
 public:
     void acquire(const std::string & co, long n, double pr);
