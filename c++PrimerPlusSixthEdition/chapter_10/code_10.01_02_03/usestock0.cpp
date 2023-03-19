@@ -36,3 +36,17 @@ Company: NanoSmart  Shares: 35
   Share Price: $0.125  Total Worth: $4.375
 */
 
+/* 优化cout输出格式
+Company: NanoSmart Shares: 20
+  Share Price: $12.500  Total Worth: $250.00
+Company: NanoSmart Shares: 35
+  Share Price: $18.125  Total Worth: $634.38
+You can't sell more than you have! Transaction is aborted.
+Company: NanoSmart Shares: 35
+  Share Price: $18.125  Total Worth: $634.38
+Company: NanoSmart Shares: 300035
+  Share Price: $40.125  Total Worth: $12038904.38
+Company: NanoSmart Shares: 35
+  Share Price: $0.125  Total Worth: $4.38
+*/
+
