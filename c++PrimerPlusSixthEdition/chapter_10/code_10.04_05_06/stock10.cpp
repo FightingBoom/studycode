@@ -1,5 +1,5 @@
 #include <iostream>
-#include "stock00.h"
+#include "stock10.h"
 
 Stock::Stock()
 {
@@ -28,6 +28,12 @@ Stock::Stock(const std::string & co, long n, double pr)
 
     share_val = pr;
     set_tot();
+}
+
+
+Stock::~Stock()
+{
+    std::cout << "Bye, " << company << "!\n";
 }
 
 
