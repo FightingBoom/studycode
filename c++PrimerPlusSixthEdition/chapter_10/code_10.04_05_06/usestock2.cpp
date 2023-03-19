@@ -23,7 +23,7 @@ int main()
         cout << "Revised stock1:\n";
         stock1.show();
         cout << "Done\n";
-    }
+    } // 为了方便我们看到析构函数执行过程，否则需要等main退出才析构，就看不到了。
 
     return 0;
 }
