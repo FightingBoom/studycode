@@ -5,6 +5,7 @@ const int STKS = 4;
 
 int main()
 {
+    // 对象数组，列表初始化
     Stock stocks[STKS] = {
         Stock("NanoSmart", 12, 20.0),
         Stock("Boffo Objects", 200, 2.0),
