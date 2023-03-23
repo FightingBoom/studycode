@@ -27,7 +27,7 @@ int main()
         switch (ch)
         {
             case 'A':
-            case 'a':
+            case 'a': // a/A不区分大小写
             {
                 cout << "Enter a PO number to add: ";
                 cin >> po;
@@ -38,7 +38,7 @@ int main()
                 break;
             }
             case 'P':
-            case 'p':
+            case 'p': // p/P不区分大小写
             {
                 if (st.isempty())
                 {
