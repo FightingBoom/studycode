@@ -13,7 +13,7 @@ int main()
     cout << "Please enter A to add a purchase order,\n"
         << "P to process a PO, or Q to quit.\n";
 
-    while (cin >> ch && toupper(ch) != 'Q')
+    while ((cin >> ch) && (toupper(ch) != 'Q'))
     {
         while (cin.get() != '\n')
             continue;
@@ -97,5 +97,40 @@ Please enter A to add a purchase order,
 P to process a PO, or Q to quit.
 Q
 Bye 
+*/
+
+/*
+Please enter A to add a purchase order,
+P to process a PO, or Q to quit.
+A
+Enter a PO number to add: 17885
+Please enter A to add a purchase order,
+P to process a PO, or Q to quit.
+P
+PO #17885 popped
+Please enter A to add a purchase order,
+P to process a PO, or Q to quit.
+A
+Enter a PO number to add: 17965
+Please enter A to add a purchase order,
+P to process a PO, or Q to quit.
+A
+Enter a PO number to add: 18002
+Please enter A to add a purchase order,
+P to process a PO, or Q to quit.
+P
+PO #18002 popped
+Please enter A to add a purchase order,
+P to process a PO, or Q to quit.
+p
+PO #17965 popped
+Please enter A to add a purchase order,
+P to process a PO, or Q to quit.
+p
+stack already empty
+Please enter A to add a purchase order,
+P to process a PO, or Q to quit.
+q
+Bye
 */
 
