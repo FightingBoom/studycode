@@ -21,7 +21,7 @@ public:
     void sell(long num, double price);
     void update(double price);
     void show(void) const; // 原文没有void
-    const Stock & topval(const Stock & s) const;
+    const Stock & topval(const Stock & s) const; // 将const关键字放在函数的括号后边，保证函数不会修改调用对象；
 };
 
 #endif // !STOCK00_H_
