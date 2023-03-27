@@ -25,10 +25,13 @@ int main()
     total.Show();
     cout << endl;
 
-    // diff = weeding - waxing;  // 使用重载运算符-
+#if 0
+    diff = weeding - waxing;  // 使用重载运算符-
+    cout << "weeding time - waxing time = ";
+#else
     diff = waxing - weeding;  // 使用重载运算符-，交换位置测试
-    // cout << "weeding time - waxing time = ";
     cout << "waxing time - weeding time = ";
+#endif
     diff.Show();
     cout << endl;
 
