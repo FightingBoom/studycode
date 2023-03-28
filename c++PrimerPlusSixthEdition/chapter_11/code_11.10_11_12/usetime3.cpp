@@ -11,12 +11,12 @@ int main()
     Time temp;
 
     cout << "Aida and Tosca:\n";
-    cout << aida << "; " << tosca << endl;
+    cout << aida << "; " << tosca << endl; // friend operator<<
     temp = aida + tosca; // operator+()
-    cout << "Aida + Tosca: " << temp << endl;
+    cout << "Aida + Tosca: " << temp << endl; // friend operator<<
     temp = aida * 1.17;  // operator*()
-    cout << "Aida * 1.17: " << temp << endl;
-    cout << "10.0 * Tosca: " << 10.0 * tosca << endl;
+    cout << "Aida * 1.17: " << temp << endl; // friend operator<<
+    cout << "10.0 * Tosca: " << 10.0 * tosca << endl; // friend operator<<
 
     return 0;
 }
