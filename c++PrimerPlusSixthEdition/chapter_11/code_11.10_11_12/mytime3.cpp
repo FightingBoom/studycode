@@ -59,6 +59,7 @@ Time Time::operator*(double mult) const
     return result;
 }
 
+// 友元函数，并不在Time类的作用范围内
 std::ostream & operator<<(std::ostream & os, const Time & t)
 {
     os << t.hours << " hours, " << t.minutes << " minutes";
