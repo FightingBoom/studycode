@@ -36,12 +36,12 @@ namespace VECTOR
         void rect_mode();
 
         Vector operator+(const Vector & b) const;
-        Vector operator-(const Vector & b) const;
+        Vector operator-(const Vector & b) const; // 重载
         Vector operator-() const;
         Vector operator*(double n) const;
 
-        friend Vector operator*(double n, const Vector & a);
-        friend std::ostream & operator<<(std::ostream & os, const Vector & v);
+        friend Vector operator*(double n, const Vector & a); // 友元函数
+        friend std::ostream & operator<<(std::ostream & os, const Vector & v); // 友元
     };
 }
 
