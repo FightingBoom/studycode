@@ -33,9 +33,8 @@ int main()
 
         cout << "After " << steps << " steps, the subject "
             "has the following location:\n";
-        cout << result << endl;
-
-        result.polar_mode();
+        cout << result << endl; // 默认用RECT，直角坐标系显示
+        result.polar_mode();    // 显式设置为POL，向量方式
         cout << " or\n" << result << endl;
         cout << "Average outward distance per step = "
             << result.magval() / steps << endl;
