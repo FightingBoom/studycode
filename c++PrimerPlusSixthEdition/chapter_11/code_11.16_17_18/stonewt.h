@@ -4,7 +4,7 @@
 class Stonewt
 {
 private:
-    enum {Lab_per_stn = 14};
+    enum {Lbs_per_stn = 14};
     int stone;
     double pds_left;
     double pounds;
