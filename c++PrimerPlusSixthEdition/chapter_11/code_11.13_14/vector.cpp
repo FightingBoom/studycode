@@ -130,6 +130,7 @@ namespace VECTOR
         return a * n;
     }
 
+    // 友元函数，需要显式使用类名Vector，但在名称空间VECTOR内，因此不用加名称空间
     std::ostream & operator<<(std::ostream & os, const Vector & v)
     {
         if (v.mode == Vector::RECT)
