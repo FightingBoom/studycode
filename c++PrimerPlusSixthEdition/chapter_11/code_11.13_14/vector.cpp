@@ -114,6 +114,11 @@ namespace VECTOR
         return Vector(x + b.x, y + b.y);
     }
 
+    Vector Vector::operator-(const Vector & b) const
+    {
+        return Vector(x - b.x, y - b.y);
+    }
+
     Vector Vector::operator-() const
     {
         return Vector(-x, -y);
