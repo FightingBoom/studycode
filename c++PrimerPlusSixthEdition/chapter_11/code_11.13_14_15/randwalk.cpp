@@ -2,11 +2,14 @@
 #include <cstdlib>  // rand() srand() prototypes
 #include <ctime>    // time() prototype
 #include "vector.h"
+#include <fstream>
 
 int main()
 {
     using namespace std;
     using VECTOR::Vector;
+    ofstream fout;
+    fout.open("thewalk.txt");
 
     srand(time(0)); // 使用系统时间初始化随机数
     double direction;
@@ -30,7 +33,7 @@ int main()
             result = result + step;
             steps++;
         }
-
+#if 0
         cout << "After " << steps << " steps, the subject "
             "has the following location:\n";
         cout << result << endl; // 默认用RECT，直角坐标系显示
@@ -41,6 +44,20 @@ int main()
         steps = 0;
         result.reset(0.0, 0.0);
         cout << "Enter target distance (q to quit): ";
+#else
+        cout << "After " << steps << " steps, the subject "
+            "has the following location:\n";
+        cout << result << endl; // 默认用RECT，直角坐标系显示
+        fout << result << endl; // 输出到thewalk.txt
+        result.polar_mode();    // 显式设置为POL，向量方式
+        cout << " or\n" << result << endl;
+        fout << " or\n" << result << endl; // 输出到thewalk.txt
+        cout << "Average outward distance per step = "
+            << result.magval() / steps << endl;
+        steps = 0;
+        result.reset(0.0, 0.0);
+        cout << "Enter target distance (q to quit): ";
+#endif
     }
 
     cout << "Bye!\n";
