@@ -12,7 +12,7 @@ int main()
     cout << "Poppins: " << p_wt << " pounds.\n";
 
     cout << "Convert to int => ";
-    cout << "Poppins: " << int (poppins) << " pounds.\n";
+    cout << "Poppins: " << int (poppins) << " pounds.\n"; // 强制类型转换
 
     return 0;
 }
