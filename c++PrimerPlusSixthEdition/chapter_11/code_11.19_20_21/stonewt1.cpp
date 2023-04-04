@@ -44,5 +44,5 @@ Stonewt::operator int() const
 
 Stonewt::operator double() const
 {
-    return pounds;
+    return pounds; // 将类类型，转换（赋值）给一个 double 类型变量
 }
