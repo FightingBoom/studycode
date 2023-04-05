@@ -3,7 +3,7 @@
 
 using std::cout;
 
-int StringBad::num_strings = 0;
+int StringBad::num_strings = 0; // 静态成员初始化
 
 StringBad::StringBad(const char * s)
 {
