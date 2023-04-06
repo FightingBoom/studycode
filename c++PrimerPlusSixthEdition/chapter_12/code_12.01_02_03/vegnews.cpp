@@ -22,7 +22,7 @@ int main()
         callme1(headline1);
         cout << "headline1: " << headline1 << endl;
 
-        callme2(headline2);
+        callme2(headline2); // 按值（非引用）传递，会隐形调用析构函数
         cout << "headline2: " << headline2 << endl;
 
         cout << "Initialize one object to another:\n";
