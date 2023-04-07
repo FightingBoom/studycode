@@ -34,7 +34,7 @@ int main()
         knot = headline1;
         cout << "knot: " << knot << endl;
         cout << "Exiting the block.\n";
-    }
+    } // 使析构过程可视化
 
     cout << "End of main()\n";
 
