@@ -34,6 +34,6 @@ StringBad::~StringBad()
 std::ostream & operator<<(std::ostream & os, const StringBad & st)
 {
     os << st.str;
-    return os; // 返回引用对象地址
+    return os; // 返回引用对象地址，兼容原cout打印方式
 }
 
