@@ -87,3 +87,12 @@ First alphabetically:
 a fool and his money are soon parted
 This program used 11 String objects. Bye.
 */
+
+/* 谚语
+1：傻瓜和他的钱很快就分开了
+2：因小失大
+3：对金钱的热爱是许多邪恶的根源
+4：眼不见，心不烦
+5：缺席让心变得更亲密
+6：苦艾酒使哈特变得更可爱
+*/
