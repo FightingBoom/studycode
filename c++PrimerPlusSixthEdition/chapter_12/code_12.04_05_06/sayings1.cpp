@@ -27,7 +27,7 @@ int main()
         cin.get(temp, MaxLen);
         while (cin && cin.get() != '\n')
             continue;
-        if (!cin || temp[0] == '\0')
+        if (!cin || temp[0] == '\0') // 较早的get版本读取空行后，不会返回false，但第一个字符为空
             break;
         else
             sayings[i] = temp;
@@ -62,3 +62,28 @@ int main()
 
     return 0;
 }
+
+/*
+Hi, what's your name?
+>> Misty Gutz
+Misty Gutz, please enter up to 10 short sayings <empty line to quit>:
+1: a fool and his money are soon parted
+2: penny wise, pound foolish
+3: the love of money is the root of much evil
+4: out of sight, out of mind
+5: absence makes the heart grow fonder
+6: absinthe makes the hart grow fonder
+7: 
+Here are your sayings:
+a: a fool and his money are soon parted      
+p: penny wise, pound foolish
+t: the love of money is the root of much evil
+o: out of sight, out of mind
+a: absence makes the heart grow fonder       
+a: absinthe makes the hart grow fonder
+Shortest saying:
+penny wise, pound foolish
+First alphabetically:
+a fool and his money are soon parted
+This program used 11 String objects. Bye.
+*/
