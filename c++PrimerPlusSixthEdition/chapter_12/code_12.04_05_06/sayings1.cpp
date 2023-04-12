@@ -35,7 +35,7 @@ int main()
 
     int total = i;
 
-    if (total > 0)
+    if (total > 0) // 存在有效输入
     {
         cout << "Here are your sayings:\n";
         for (i = 0; i < total; i++)
