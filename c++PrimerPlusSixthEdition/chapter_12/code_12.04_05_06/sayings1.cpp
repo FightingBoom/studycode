@@ -25,7 +25,7 @@ int main()
     {
         cout << i + 1 << ": ";
         cin.get(temp, MaxLen);
-        while (cin && cin.get() != '\n')
+        while (cin && cin.get() != '\n') // 得到有效输入
             continue;
         if (!cin || temp[0] == '\0') // 较早的get版本读取空行后，不会返回false，但第一个字符为空
             break;
