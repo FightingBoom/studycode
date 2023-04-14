@@ -8,6 +8,7 @@ int String::num_strings = 0;
 
 int String::HowMany()
 {
+    // 类的静态成员函数只能访问静态成员变量
     return num_strings;
 }
 
