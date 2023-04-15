@@ -39,7 +39,7 @@ String::String(const String & st)
 String::~String()
 {
     --num_strings;
-    delete [] str;
+    delete [] str; // 析构函数必须释放申请的内存
 }
 
 String & String::operator=(const String & st)
