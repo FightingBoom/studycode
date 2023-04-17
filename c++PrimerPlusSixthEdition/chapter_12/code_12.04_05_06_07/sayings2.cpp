@@ -40,7 +40,7 @@ int main()
             cout << sayings[i] << "\n";
 
         String * shortest = &sayings[0];
-        String * first = &sayings[0];
+        String * first = &sayings[0]; // 指针指向sayings第一个元素的位置
         for (i = 1; i < total; i++)
         {
             if (sayings[i].length() < shortest->length())
