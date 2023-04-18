@@ -66,7 +66,7 @@ int main()
     return 0;
 }
 
-/* 注意与sayings1.cpp分开编译，例如：g++ .\sayings2.cpp .\string1.cpp -o sayings2
+/* 注意与sayings1.cpp分开编译，例如这样：g++ .\sayings2.cpp .\string1.cpp -o sayings2
 Hi, what's your name?
 >> Kirt Rood
 Kirt Rood, please enter up to 10 short sayings <empty line to quit>:
