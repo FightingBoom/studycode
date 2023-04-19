@@ -43,7 +43,7 @@ int main()
         String * first = &sayings[0]; // 指针指向sayings第一个元素的位置
         for (i = 1; i < total; i++)
         {
-            if (sayings[i].length() < shortest->length())
+            if (sayings[i].length() < shortest->length()) // 指针取值与类对象不同
                 shortest = &sayings[i];
             if (sayings[i] < *first)
                 first = &sayings[i];
