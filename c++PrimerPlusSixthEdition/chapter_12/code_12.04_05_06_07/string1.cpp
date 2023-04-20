@@ -57,7 +57,7 @@ String & String::operator=(const char * s)
 {
     delete [] str;
     len = std::strlen(s);
-    str = new char[len + 1];
+    str = new char[len + 1]; // 必须分配合适的内存
     std::strcpy(str, s);
     return *this;
 }
