@@ -65,3 +65,20 @@ int main()
     return 0;
 }
 
+/*
+Just Testing constructed
+Heap1 constructed
+Memory block addresses:
+buffer: 0x6c1b20    heap: 0x6c17b0
+Memory contents:
+0x6c1b20: Just Testing, 0
+0x6c17b0: Heap1, 20
+Bad Idea constructed
+Heap2 constructed
+Memory contents:
+0x6c1b20: Bad Idea, 6
+0x6c1d30: Heap2, 10
+Heap1, 20
+Heap2, 10
+Done
+*/
