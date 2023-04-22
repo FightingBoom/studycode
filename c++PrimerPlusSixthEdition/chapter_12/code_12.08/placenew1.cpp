@@ -61,7 +61,7 @@ int main()
 
     delete pc2;
     delete pc4;
-    delete [] buffer; // 该程序清单不会释放 pc1 pc3
+    delete [] buffer; // 释放buffer并不会释放 pc1 pc3
     cout << "Done\n";
     return 0;
 }
