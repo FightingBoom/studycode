@@ -49,6 +49,7 @@ int main()
     pc2->Show();
 
     JustTesting *pc3, *pc4;
+    // 如果想要内存不重叠，则可调整为：pc3 = new (buffer + sizeof(JustTesting)) JustTesting("Bad Idea", 6);
     pc3 = new (buffer) JustTesting("Bad Idea", 6);
     pc4 = new JustTesting("Heap2", 10);
 
@@ -60,7 +61,7 @@ int main()
 
     delete pc2;
     delete pc4;
-    delete [] buffer;
+    delete [] buffer; // 该程序清单不会释放 pc1 pc3
     cout << "Done\n";
     return 0;
 }
