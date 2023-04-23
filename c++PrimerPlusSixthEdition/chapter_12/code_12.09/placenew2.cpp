@@ -61,8 +61,8 @@ int main()
     delete pc2;
     delete pc4;
     pc3->~JustTesting();
-    pc1->~JustTesting(); // 显式调用析构函数，释放pc1/pc3
-    delete [] buffer;
+    pc1->~JustTesting();    // 显式调用析构函数，释放pc1/pc3
+    delete [] buffer;       // 先释放内存中已被使用的地址，再释放整个内存块
     cout << "Done\n";
     return 0;
 }
