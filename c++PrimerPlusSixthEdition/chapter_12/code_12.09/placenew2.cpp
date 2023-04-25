@@ -49,7 +49,7 @@ int main()
     pc2->Show();
 
     JustTesting *pc3, *pc4;
-    pc3 = new (buffer + sizeof(JustTesting)) JustTesting("Bad Idea", 6);
+    pc3 = new (buffer + sizeof(JustTesting)) JustTesting("Bad Idea", 6); // 避免与pc1踩到同一块内存
     pc4 = new JustTesting("Heap2", 10);
 
     cout << "Memory contents:\n";
