@@ -53,7 +53,7 @@ g++ .\twofile1.cpp .\twofile2.cpp
 
 
 
-方案二：修改 VSCode 插件，默认编译所有的 .cpp 文件
+方案二：修改 VSCode **Code Runner** 插件，默认编译所有的 .cpp 文件
 
 ```json
         "c": "cd $dir && gcc *.c -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
