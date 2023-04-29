@@ -37,7 +37,7 @@ int main()
 
     JustTesting *pc1, *pc2;
 
-    pc1 = new (buffer) JustTesting;
+    pc1 = new (buffer) JustTesting; // pc1从buffer的首地址开始
     pc2 = new JustTesting("Heap1", 20);
 
     cout << "Memory block addresses:\n" << "buffer: "
