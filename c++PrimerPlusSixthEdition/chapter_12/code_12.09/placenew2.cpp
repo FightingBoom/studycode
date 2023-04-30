@@ -33,7 +33,7 @@ public:
 
 int main()
 {
-    char * buffer = new char[BUF]; // 申请一块内存区域
+    char * buffer = new char[BUF]; // 申请一块内存区域，相当于内存池
 
     JustTesting *pc1, *pc2;
 
