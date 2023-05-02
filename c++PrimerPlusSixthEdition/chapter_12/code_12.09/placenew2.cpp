@@ -58,7 +58,7 @@ int main()
     cout << pc4 << ": ";
     pc4->Show();
 
-    delete pc2;
+    delete pc2; // 未指定内存地址的，直接delete即可
     delete pc4;
     pc3->~JustTesting();
     pc1->~JustTesting();    // 显式调用析构函数，释放pc1/pc3
