@@ -47,7 +47,7 @@ int main()
         {
             if (sayings[i].length() < sayings[shortest].length())
                 shortest = i;
-            if (sayings[i] < sayings[first])
+            if (sayings[i] < sayings[first]) // 取长度最短的
                 first = i;
         }
 
