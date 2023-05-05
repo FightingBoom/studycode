@@ -47,7 +47,7 @@ int main()
         {
             if (sayings[i].length() < sayings[shortest].length())
                 shortest = i;
-            if (sayings[i] < sayings[first]) // 取长度最短的
+            if (sayings[i] < sayings[first]) // 取长度最短的地址
                 first = i;
         }
 
