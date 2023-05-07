@@ -34,7 +34,6 @@ int main()
     }
 
     int total = i;
-
     if (total > 0) // 存在有效输入，此时i大于0
     {
         cout << "Here are your sayings:\n";
