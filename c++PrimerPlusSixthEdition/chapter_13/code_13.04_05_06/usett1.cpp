@@ -24,6 +24,7 @@ int main()
     cout << "Name: ";
     rplayer1.Name();
     cout << "; Rating: " << rplayer1.Rating() << endl;
+
     RatedPlayer rplayer2(1212, player1);
     cout << "Name: ";
     rplayer2.Name();
