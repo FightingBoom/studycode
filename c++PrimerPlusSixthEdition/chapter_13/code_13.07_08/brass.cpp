@@ -81,12 +81,12 @@ BrassPlus::BrassPlus(const Brass & ba, double ml, double r)
 void BrassPlus::ViewAcct() const
 {
     format initialState = setFormat();
-    precis prec = cout.precision(2);
+    precis prec = cout.precision(2);    // 浮点值的输出模式固定为2位小数
 
     Brass::ViewAcct();
     cout << "Maximum loan: $" << maxLoan << endl;
     cout << "Owed to bank: $" << owesBank << endl;
-    cout.precision(3);
+    cout.precision(3);  // 浮点值的输出模式固定为3位小数
     cout << "Loan Rate: " << 100 * rate << "%\n";
     restore(initialState, prec);
 }
@@ -94,7 +94,7 @@ void BrassPlus::ViewAcct() const
 void BrassPlus::Withdraw(double amt)
 {
     format initialState = setFormat();
-    precis prec = cout.precision(2);
+    precis prec = cout.precision(2);    // 浮点值的输出模式固定为2位小数
 
     double bal = Balance();
     if (amt <= bal)
