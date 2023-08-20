@@ -98,7 +98,7 @@ void BrassPlus::Withdraw(double amt)
 
     double bal = Balance();
     if (amt <= bal)
-        Brass:Withdraw(amt);
+        Brass::Withdraw(amt);   // 调用基类函数
     else if (amt <= bal + maxLoan - owesBank)
     {
         double advance = amt - bal;
@@ -106,7 +106,7 @@ void BrassPlus::Withdraw(double amt)
         cout << "Bank advance: $" << advance << endl;
         cout << "Finance charge: $" << advance * rate << endl;
         Deposit(advance);
-        Brass::Withdraw(amt);
+        Brass::Withdraw(amt);   // 调用基类函数
     }
     else
         cout << "Credit limit exceeded. Transaction cancelled.\n";
