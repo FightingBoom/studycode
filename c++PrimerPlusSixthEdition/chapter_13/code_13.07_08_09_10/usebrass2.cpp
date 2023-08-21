@@ -50,7 +50,7 @@ int main()
     cout << endl;
     for (int i = 0; i < CLIENTS; i++)
     {
-        p_clients[i]->ViewAcct();
+        p_clients[i]->ViewAcct(); // 多态性，调用Brass基类的接口，再转换为指针实际指向的对象类型
         cout << endl;
     }
 
