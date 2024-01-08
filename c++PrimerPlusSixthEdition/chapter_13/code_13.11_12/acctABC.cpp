@@ -100,7 +100,40 @@ void BrassPlus::ViewAcct() const
 {
     Formatting f = SetFormat();
 
-    // cout << 
+    cout << "BrassPlus Client: " << FullName() << endl;
+    cout << "Account Number: " << AcctNum() << endl;
+    cout << "Balance: $" << Balance() << endl;
+    cout << "Maximum loan: $" << maxLoan << endl;
+    cout << "Owed to bank: $" << owesBank << endl;
+    cout.precision(3);
+    cout << "Loan Rate: " << 100 * rate << "%\n";
+    Restore(f);
+}
+
+void BrassPlus::Withdraw(double amt)
+{
+    Formatting f = SetFormat();
+
+    double bal = Balance();
+    if (amt <= bal)
+    {
+        AcctABC::Withdraw(amt);
+    }
+    else if (amt <= bal + maxLoan - owesBank)
+    {
+        double advance = amt - bal;
+        owesBank += advance * (1.0 + rate);
+        cout << "Bank advance: $" << advance << endl;
+        cout << "Finance charge: $" << advance * rate << endl;
+        Deposit(advance);
+        AcctABC::Withdraw(amt);
+    }
+    else
+    {
+        cout << "Credit limit exceeded. Transaction cancelled.\n";
+    }
+
+    Restore(f);
 }
 
 /* BrassPlus类 */
