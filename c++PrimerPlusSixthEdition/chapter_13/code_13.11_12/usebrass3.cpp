@@ -76,7 +76,7 @@ Enter the overdraft limit: $350
 Enter the interest rate as a decimal fraction: 0.12
 Enter client's name: Brenda Birdherd
 Enter client's account number: 212118
-Enter opening balance: $5200 
+Enter opening balance: $5200
 Enter 1 for Brass Account or 2 for BrassPlus Account: 2
 Enter the overdraft limit: $800
 Enter the interest rate as a decimal fraction: 0.10
@@ -85,25 +85,25 @@ Enter client's account number: 233255
 Enter opening balance: $688
 Enter 1 for Brass Account or 2 for BrassPlus Account: 1
 
-Client: Harry Fishsong
+Brass Client: Harry Fishsong
 Account Number: 112233
 Balance: $1500.00
 
-Client: Dinah Otternoe
+BrassPlus Client: Dinah Otternoe
 Account Number: 121213
 Balance: $1800.00
 Maximum loan: $350.00
 Owed to bank: $0.00
 Loan Rate: 12.000%
 
-Client: Brenda Birdherd
+BrassPlus Client: Brenda Birdherd
 Account Number: 212118
 Balance: $5200.00
 Maximum loan: $800.00
 Owed to bank: $0.00
 Loan Rate: 10.000%
 
-Client: Tim Turtletop
+Brass Client: Tim Turtletop
 Account Number: 233255
 Balance: $688.00
 
