@@ -31,6 +31,9 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 language:C (gcc 8.3)
 ```
 
+## 1.3 开发环境组合3
+1、macOS 系统，可以使用自带的 clang 编译器
+
 
 
 # 2 参考资料
