@@ -81,7 +81,7 @@ hasDMA::hasDMA(const char * s, const baseDMA & rs)
     std::strcpy(style, s);
 }
 
-hasDMA::hasDMA(const hasDMA &  hs)
+hasDMA::hasDMA(const hasDMA & hs)
     : baseDMA(hs)
 {
     style = new char[std::strlen(hs.style) + 1];
