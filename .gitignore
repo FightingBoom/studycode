@@ -1,6 +1,7 @@
 
 # 可执行文件
 *.exe
+a.out
 
 # 文件夹
 .vscode
