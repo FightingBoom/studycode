@@ -1,11 +1,12 @@
+# 单个可执行文件
+test
 
-# 可执行文件
+# 带后缀可执行文件
 *.exe
-a.out
+*.out
 
-# 文件夹
-.vscode
+# 需忽略的文件夹
+.vscode/
 
 # macOS
 .DS_Store
-
