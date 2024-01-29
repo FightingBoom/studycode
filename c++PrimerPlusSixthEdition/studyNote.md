@@ -301,5 +301,62 @@ C++类函数有很多不同的变体，其中有些可以继承，有些不可�
 
 
 
+# 14 C++ 中的代码重用
+
+## 14.1 包含对象成员的类
+
+### 14.1.1 valarray 类简介
+
+valarray 类，包含在头文件 <valarray> 中，参考链接：[valarray](https://zh.cppreference.com/w/cpp/numeric/valarray)
+
+支持将数组中所有元素的值相加以及在数组中找出最大和最小的值等操作。
+
+valarray 是一个模板类，便于处理不同的数据类型。在声明对象时，必须指定具体的数据类型。
+
+```c++
+// int数组
+valarray<int> q_values;
+
+// double数组
+valarray<double> weights;
+```
+
+构造函数使用方法举例
+
+```c++
+double gpa[5] = {3.1, 3.5, 3.8, 2.9, 3.3};
+
+// 一个空的double类型数组
+valarray<double> v1;
+
+// 拥有8个元素的int类型数组
+valarray<int> v2(8);
+
+// 拥有8个元素的int类型数组，均被初始化为10
+valarray<int> v3(10, 8);
+
+// 拥有4个元素的double类型数组，被初始化为gpa数组前四个元素值
+valarray<double> v4(gpa, 4);
+
+// C++11可以使用初始化列表
+valarray<int> v5 = {20, 32, 17, 9};
+```
+
+类方法举例
+
+- `operator[]()`：可以直接访问各个元素；
+- `size()`：返回包含的元素数；
+- `sum()`：返回所有元素的总和；
+- `max()`：返回最大的元素；
+- `min()`：返回最小的元素；
+
+
+
+
+
+
+
+
+
 
 
