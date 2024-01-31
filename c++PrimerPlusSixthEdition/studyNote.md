@@ -14,6 +14,85 @@
 
 
 
+5. 重新定义将隐藏方法
+
+基类有一个虚函数，派生类重新实现，但参数不同，此时会隐藏基类的同名函数
+
+```c++
+class Dwelling
+{
+public:
+    virtual void showperks(int a) const;
+...
+};
+
+
+class Hovel : public Dwelling
+{
+public:
+    virtual void showperks() const;
+...
+}
+```
+
+重新定义不会生成函数的两个重载版本，而是隐藏了接受一个 int 参数的基类版本。
+
+总之，重新定义继承的方法并不是重载。如果重新定义派生类中的函数，将不只是使用相同的函数参数列表覆盖基类声明，无论参数列表是否相同，该操作将隐藏所有的同名基类方法。
+
+
+
+此引出来两条规则
+
+第一，如果重新定义继承的方法，应确保与原来的原型完全相同，但如果返回类型是基类引用或指针，则可以修改为指向派生类的引用或指针。这种特性被称为返回类型协变，因为允许返回类型随类类型的变化而变化。
+
+需要注意，这种例外只适用于返回值，而不适用于参数。
+
+```c++
+class Dwelling
+{
+public:
+    virtual Dwelling & build(int n);
+...
+};
+
+
+class Hovel : public Dwelling
+{
+public:
+    virtual Hovel & build(int n); // 同名虚函数，只是返回值类型不同
+...
+}
+```
+
+第二，如果基类声明被重载了，则应在派生类中重新定义所有的基类版本。
+
+```c++
+class Dwelling
+{
+public:
+    virtual void showperks(int a) const;
+    virtual void showperks(double x) const;
+    virtual void showperks() const;
+...
+};
+
+
+class Hovel : public Dwelling
+{
+public:
+    virtual void showperks(int a) const;
+    virtual void showperks(double x) const;
+    virtual void showperks() const;
+...
+}
+```
+
+如果只重新定义一个版本，则另外两个版本将被隐藏，派生类对象将无法使用它们。如果不需要修改，新定义可以只调用基类版本。
+
+```c++
+void Hovel::showperks() const {Dwelling::showperks();}
+```
+
 
 
 
