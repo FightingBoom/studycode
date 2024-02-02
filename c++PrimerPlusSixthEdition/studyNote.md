@@ -1,3 +1,31 @@
+## 13.4 静态联编和动态联编
+
+### 13.4.1 指针和引用类型的兼容性
+
+对于使用基类引用或指针作为参数的函数调用，将进行向上转换。如下代码，假定每个函数都调用虚方法 ViewAcct() ；
+
+```c++
+// 引用、指针，可以隐式向上转换
+void fr(Brass & rb);   // uses rb.ViewAcct()
+void fp(Brass * pb);   // uses pb->ViewAcct()
+void fv(Brass b);      // uses b.ViewAcct()
+
+int main()
+{
+    Brass b("Billy Bee", 123432, 10000.0);
+    BrassPlus bp("Betty Beep", 232313, 12345.0);
+
+    fr(b);    // uses Brass::ViewAcct()
+    fr(bp);   // uses BrassPlus::ViewAcct()
+    fp(b);    // uses Brass::ViewAcct()
+    fp(bp);   // uses BrassPlus::ViewAcct()
+    fv(b);    // uses Brass::ViewAcct()
+    fv(bp);   // uses Brass::ViewAcct()
+}
+```
+
+
+
 ### 13.4.2 虚成员函数和动态联编
 
 编译器对非虚方法，使用静态联编。
