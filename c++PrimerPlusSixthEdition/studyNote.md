@@ -9,6 +9,42 @@
 
 
 
+如果方法是通过引用或指针而不是对象调用的，它将确定使用哪一种方法。
+
+如果没有使用关键字 virtual ，程序将根据引用类型或指针类型选择方法；
+
+如果使用了 virtual ，程序将根据引用或指针指向的对象的类型来选择方法；
+
+```c++
+// ViewAcct 不是虚函数
+Brass dom("Dominic Banker", 11224, 4183.45);
+BrassPlus dot("Dorothy Banker", 12118, 2592.00);
+Brass & b1_ref = dom;
+Brass & b2_ref = dot;
+b1_ref.ViewAcct();    // use Brass::ViewAcct()
+b2_ref.ViewAcct();    // use Brass::ViewAcct()
+```
+
+
+
+```c++
+// ViewAcct 是虚函数
+Brass dom("Dominic Banker", 11224, 4183.45);
+BrassPlus dot("Dorothy Banker", 12118, 2592.00);
+Brass & b1_ref = dom;
+Brass & b2_ref = dot;
+b1_ref.ViewAcct();    // use Brass::ViewAcct()
+b2_ref.ViewAcct();    // use BrassPlus::ViewAcct()
+```
+
+方法在基类中被声明为虚的后，它在派生类中将自动成为虚方法。然而，在派生类中使用 virtual 指出哪些是虚函数也挺好。
+
+如果要在派生类中重新定义基类的方法，通常应将基类方法声明为虚的。这样，程序将根据对象类型而不是引用或指针的类型来选择方法版本。为基类声明一个虚析构函数也是一种惯例。
+
+关键字 virtual 只用于类声明的方法原型中，没有用于方法定义中。
+
+在派生类方法中，标准技术是使用作用域解析运算符来调用基类方法。
+
 
 
 ## 13.4 静态联编和动态联编
