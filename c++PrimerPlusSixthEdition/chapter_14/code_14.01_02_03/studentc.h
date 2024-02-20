@@ -8,9 +8,13 @@
 class Student
 {
 private:
+    // 私有类型定义，仅能在类内使用
     typedef std::valarray<double> ArrayDb;
+
     std::string name;
     ArrayDb scores;
+
+    // 私有接口，格式化打印valarray数据
     std::ostream & arr_out(std::ostream & os) const;
 
 public:
