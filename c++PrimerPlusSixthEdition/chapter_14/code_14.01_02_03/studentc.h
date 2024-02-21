@@ -47,7 +47,7 @@ public:
     // 友元函数 输入字符
     friend std::istream & operator>>(std::istream & is, Student & stu);
     // 输入一行
-    friend std::istream & getling(std::istream & is, Student & stu);
+    friend std::istream & getline(std::istream & is, Student & stu);
     // 输出
     friend std::ostream & operator<<(std::ostream & os, const Student & stu);
 };
