@@ -681,6 +681,118 @@ public:
 
 
 
+### 14.3.1 有多少 Worker
+
+此时如果从 Singer 和 Waiter 公有派生出 SingingWaiter ，如下
+
+```c++
+class SiingingWaiter : public Singer, public Waiter
+{
+    
+};
+```
+
+因为 Singer 和 Waiter 都继承自 Worker ，因此 SingingWaiter 将包含两个 Worker 组件。
+
+如果将派生类对象的地址赋给基类指针，将出现二义性：
+
+```C++
+SingingWaiter ed;
+Worker * pw = &ed; // 不知道是Singer还是Waiter的指针
+```
+
+此时应该使用类型转换来指定对象：
+
+```c++
+Worker * pw1 = (Waiter *) &ed;
+Worker * pw2 = (Singer *) &ed;
+```
+
+
+
+1. 虚基类
+
+虚基类使得从多个类（它们的基类相同）派生出的对象只继承一个基类对象。例如，通过在类声明中使用关键字 virtual ，可以使 Worker 被用作 Singer 和 Waiter 的虚基类（ virtual 和 public 的次序无关紧要）：
+
+```c++
+// 虚基类
+class Singer : virtual public Worker
+{
+    
+};
+
+// 虚基类，与顺序无关
+class Waiter : public virtual Worker
+{
+    
+};
+
+class SiingingWaiter : public Singer, public Waiter
+{
+    
+};
+```
+
+SingingWaiter 对象将只包含 Worker 对象的一个副本。从本质上说，继承的 Singer 和 Waiter 对象共享一个 Worker 对象，而不是各自引入自己的 Worker 对象副本。因为 SingingWaiter 现在只包含了一个 Worker 子对象，所以可以使用多态。
+
+
+
+为什么使用术语虚？
+
+毕竟，在虚函数和虚基类之间并不存在明显的联系。C++ 用户强烈反对引入新的关键字，因为这将给他们带来很大的压力。例如，如果新关键字与重要程序中的重要函数或变量的名称相同，这将非常麻烦。因此，C++ 对这种新特性也使用关键字 virtual ——有点像关键字重载。
+
+
+
+为什么不抛弃将基类声明为虚的这种方式，而使虚行为成为 MI 的准则呢？
+
+第一，在一些情况下，可能需要基类的多个拷贝；
+
+第二，将基类作为虚的要求程序完成额外的计算，为不需要的工具付出代价是不应当的；
+
+第三，这样做有其缺点；
+
+
+
+是否存在麻烦？
+
+是的。为使虚基类能够工作，需要对 C++ 规则进行调整，必须以不同的方式编写一些代码。另外，使用虚基类还可能需要修改已有的代码。例如，将 SingingWaiter 类添加到 Worker 集成层次中时，需要在 Singer 和 Waiter 类中添加关键字 virtual 。
+
+
+
+2. 新的构造函数规则
+
+如果 Worker 是虚基类，构造函数默认的信息传递是无效的，如下
+
+```c++
+SingingWaiter(const Worker & wk, int p = 0, int v = Singer::other)
+    : Waiter(wk, p), Singer(wk, v)
+{
+        
+}
+```
+
+此时，如果需要自动传递信息给基类，将通过两条不同的途径（Waiter / Singer）将 wk 传递给 Worker 对象。
+
+因此为了避免冲突，C++ 在基类是虚的时，禁止信息通过中间类自动传递给基类。
+
+但编译器必须在构造派生对象之前构造基类对象组件，此时编译器将使用 Worker 的默认构造函数。
+
+如果不想用默认的，则需要显式地调用所需的基类构造函数
+
+```c++
+SingingWaiter(const Worker & wk, int p = 0, int v = Singer::other)
+    : Worker(wk), Waiter(wk, p), Singer(wk, v)
+{
+        
+}
+```
+
+如上代码将显式的调用构造函数 worker (const Worker &)。此时这种用法是合法的，对于虚基类，必须这样做；但对于非虚基类，则是非法的。
+
+
+
+
+
 
 
 
