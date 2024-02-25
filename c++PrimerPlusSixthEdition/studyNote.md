@@ -656,3 +656,34 @@ Student(const char * str, const double * pd, int n)
 
 
 
+### 14.2.4 使用**using**重新定义访问权限
+
+设要让基类的方法在派生类外面可用，方法之一是定义一个使用该基类方法的派生类方法。
+
+PS：基本像是把基类方法（STL标准库/其他自定义基类私有/保护方法），重新封装对外接口；
+
+
+
+第二种方法，使用 using ，但 using 声明只适用于继承，并不适用于包含。
+
+```c++
+class Student : private std::string, private std::valarray<double>
+{
+public:
+    using std::valarray<double>::min;
+    using std::valarray<double>::max;
+}
+```
+
+
+
+## 14.3 多重继承
+
+
+
+
+
+
+
+
+
