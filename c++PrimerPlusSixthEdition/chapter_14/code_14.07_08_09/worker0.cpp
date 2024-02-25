@@ -1,4 +1,4 @@
-#include "Worker0.h"
+#include "worker0.h"
 #include <iostream>
 
 using std::cout;
@@ -48,13 +48,13 @@ void Waiter::Show() const
 // Singer
 char * Singer::pv[] = 
 {
-    "other",
-    "alto",
-    "contralto",
-    "soprano",
-    "bass",
-    "baritone",
-    "tenor"
+    (char *)"other",
+    (char *)"alto",
+    (char *)"contralto",
+    (char *)"soprano",
+    (char *)"bass",
+    (char *)"baritone",
+    (char *)"tenor"
 };
 
 void Singer::Set()
