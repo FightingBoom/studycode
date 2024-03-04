@@ -1033,3 +1033,27 @@ SingingWaiter(const Worker & wk, int p = 0, int v = Singer::other)
 
 
 
+## 14.4 类模板
+
+简单模板类声明如下
+
+```c++
+template <typename Type>
+
+// 头文件声明类型，应该替换为 Type
+Type items[MAX];
+
+// 成员函数实现，要增加模板类变量；内联函数则可以省略模板前缀及类限定符
+template <typename Type>
+bool Stack<Type>::push(const Type & item)
+{
+
+}
+```
+
+
+
+
+
+
+
