@@ -16,6 +16,7 @@ int main()
     cout << "Please enter A to add a purchase order,\n"
         << "P to process a PO, or Q to quit.\n";
 
+    // 获取输入，并判断字符，q转换为大写Q再做比较
     while (cin >> ch && std::toupper(ch) != 'Q')
     {
         while (cin.get() != '\n')
@@ -68,6 +69,58 @@ int main()
 }
 
 /*
+zhaochen@zhaochendeMacBook-Air code_14.13_14 % ./a.out
+Please enter A to add a purchase order,
+P to process a PO, or Q to quit.
+A
+Enter a PO number to add: red911porsche
+Please enter A to add a purchase order,
+P to process a PO, or Q to quit.
+A
+Enter a PO number to add: blueR8audi
+Please enter A to add a purchase order,
+P to process a PO, or Q to quit.
+A
+Enter a PO number to add: silver747boeing
+Please enter A to add a purchase order,
+P to process a PO, or Q to quit.
+P
+PO #silver747boeing popped
+Please enter A to add a purchase order,
+P to process a PO, or Q to quit.
+P
+PO #blueR8audi popped
+Please enter A to add a purchase order,
+P to process a PO, or Q to quit.
+P
+PO #red911porsche popped
+Please enter A to add a purchase order,
+P to process a PO, or Q to quit.
+P
+stack already empty
+Please enter A to add a purchase order,
+P to process a PO, or Q to quit.
+Q
+Bye
+*/
 
+/*
+zhaochen@zhaochendeMacBook-Air code_14.13_14 % ./a.out
+Please enter A to add a purchase order,
+P to process a PO, or Q to quit.
+a
+Enter a PO number to add: werw
+Please enter A to add a purchase order,
+P to process a PO, or Q to quit.
+p
+PO #werw popped
+Please enter A to add a purchase order,
+P to process a PO, or Q to quit.
+p
+stack already empty
+Please enter A to add a purchase order,
+P to process a PO, or Q to quit.
+q
+Bye
 */
 
