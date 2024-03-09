@@ -43,24 +43,10 @@ Stack<Type>::Stack(const Stack & st)
     }
 }
 
-//TODO 
-
-template <class Type>
-bool Stack<Type>::isempty()
-{
-    return top == 0;
-}
-
-template <class Type>
-bool Stack<Type>::isfull()
-{
-    return top == MAX;
-}
-
 template <class Type>
 bool Stack<Type>::push(const Type & item)
 {
-    if (top < MAX)
+    if (top < stacksize)
     {
         items[top++] = item;
         return true;
@@ -83,6 +69,27 @@ bool Stack<Type>::pop(Type & item)
     {
         return false;
     }
+}
+
+template <class Type>
+Stack<Type> & Stack<Type>::operator=(const Stack<Type> & st)
+{
+    if (this == &st)
+    {
+        return *this;
+    }
+
+    delete [] items;
+
+    stacksize = st.stacksize;
+    top = st.top;
+    items = new Type[stacksize];
+    for (int i = 0; i < top; i++)
+    {
+        items[i] = st.item[i];
+    }
+
+    return *this;
 }
 
 #endif
