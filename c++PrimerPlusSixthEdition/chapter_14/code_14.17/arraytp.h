@@ -5,21 +5,21 @@
 #include <cstdlib>
 
 template <class T, int n>
-class ArrayTp
+class ArrayTP
 {
 private:
     T ar[n];
 
 public:
-    ArrayTp() {};
-    explicit ArrayTp(const T & v);
+    ArrayTP() {};
+    explicit ArrayTP(const T & v);
     virtual T & operator[](int i);
     virtual T operator[](int i) const;
 };
 
 
 template <class T, int n>
-ArrayTp<T,n>::ArrayTp(const T & v)
+ArrayTP<T,n>::ArrayTP(const T & v)
 {
     for (int i = 0; i < n; i++)
     {
@@ -28,7 +28,7 @@ ArrayTp<T,n>::ArrayTp(const T & v)
 }
 
 template <class T, int n>
-T & ArrayTp<T,n>::operator[](int i)
+T & ArrayTP<T,n>::operator[](int i)
 {
     if (i < 0 || i >= n)
     {
@@ -40,7 +40,7 @@ T & ArrayTp<T,n>::operator[](int i)
 }
 
 template <class T, int n>
-T ArrayTp<T,n>::operator[](int i) const
+T ArrayTP<T,n>::operator[](int i) const
 {
     if (i < 0 || i >= n)
     {
