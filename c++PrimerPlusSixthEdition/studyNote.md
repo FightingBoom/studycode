@@ -1231,6 +1231,30 @@ int twodee[10][5];
 
 
 
+### 14.4.8 将模板用作参数
+
+可以混合使用模板参数和常规参数，代码如下
+
+```c++
+template <template <typename T> class Thing, typename U, typename V>
+class Crab
+{
+private:
+    Thing<U> s1;
+    Thing<V> s2;
+}
+```
+
+如上代码，s1 / s2 可存储的数据类型为泛型，不是固定类型。此时在程序中声明 Crab 类变量时，应如下操作
+
+```c++
+Crab<Stack, int, double> nebula;
+```
+
+模板参数 T 表示一种模板类型，类型参数 U 和 V 表示非模板类型。
+
+
+
 
 
 
