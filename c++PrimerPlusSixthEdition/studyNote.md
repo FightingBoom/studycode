@@ -1271,6 +1271,32 @@ Crab<Stack, int, double> nebula;
 
 
 
+### 14.4.10 模板别名（C++11）
+
+通常，使用 typedef 定义类型别名，但 c++11 提供了另外一种选择
+
+```c++
+typedef std::array<double, 12> arrd;
+
+// c++11
+template <typename T>
+using arrtype = std::array<T, 12>;
+```
+
+c++11 允许将语法 using= 用于非模板，参考如下
+
+```c++
+typedef const char * pc1;
+using pc2 = const char *;
+
+typedef const int *(*pa1)[10];
+using pa2 = const int *(*)[10];
+```
+
+这种新语法可读性更强一些，可以让类型名和类型信息更清晰。
+
+
+
 
 
 
