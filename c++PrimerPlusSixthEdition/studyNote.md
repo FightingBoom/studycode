@@ -1339,6 +1339,33 @@ using pa2 = const int *(*)[10];
 
 
 
+### 15.1.3 其他友元关系
+
+如果两个类需要互相成为友元，则类似步骤如下
+
+```c++
+class Tv
+{
+    friend class Remote;
+public:
+    void buzz(Remote & r); // 之前已声明Remote为友元类，所以可直接使用
+};
+
+class Remote
+{
+    friend class Tv;
+public:
+    void Bool volup(Tv & t) { t.volup(); } // 之前已声明Tv为友元类，所以可直接使用
+};
+
+inline void Tv::buzz(Remote & r)
+{
+    // buzz函数用到了Remote类，因此必须在Remote类声明之后定义
+}
+```
+
+由于Remote的声明位于Tv声明的后面，所以可以在类声明中定义 Remote::volup( )，但Tv::buzz( )方法必须在Tv声明的外部定义，使其位 于Remote声明的后面。如果不希望buzz( )是内联的，则应在一个单独的 方法定义文件中定义它。
+
 
 
 
