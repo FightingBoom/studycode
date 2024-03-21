@@ -1368,6 +1368,65 @@ inline void Tv::buzz(Remote & r)
 
 
 
+### 15.1.4 共同的友元
+
+需要使用友元的另一种情况是，函数需要访问两个类的私有数据。 示例代码如下
+
+```c++
+// 前向声明
+class Analyzer;
+
+class Probe
+{
+    friend void sync(Analyzer & a, const Probe & p);
+    friend void sync(Probe & p, const Analyzer & a);
+};
+
+class Analyzer
+{
+    friend void sync(Analyzer & a, const Probe & p);
+    friend void sync(Probe & p, const Analyzer & a);
+};
+
+inline void sync(Analyzer & a, const Probe & p)
+{
+    
+}
+
+inline void sync(Probe & p, const Analyzer & a)
+{
+    
+}
+```
+
+
+
+## 15.2 嵌套类
+
+struct 结构体内部也可存在构造函数，与 class 类有点相似；
+
+如果要在方法文件中定义构造函数，则需要通过多次作用域解析运算符实现，类似下属代码
+
+```c++
+Queue::Node::Node(const Item & i)
+    : item(i), next(0)
+{
+        
+}
+```
+
+
+
+### 15.2.1 嵌套类和访问权限
+
+
+
+
+
+
+
+
+
 
 
 
