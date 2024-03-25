@@ -53,3 +53,9 @@ Harmonic mean of 1 and 19 is 1.9
 Enter next set of numbers <q to quit>: q
 Bye!
 */
+
+/* 非数字退出测试结果
+zhaochen@zhaochendeAir code_15.08 % ./a.out
+Enter two numbers: a
+Bye!
+*/
