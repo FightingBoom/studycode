@@ -8,7 +8,7 @@ int main()
     double x, y, z;
 
     std::cout << "Enter two numbers: ";
-    while (std::cin >> x >> y)
+    while (std::cin >> x >> y) // 非数字都会退出循环
     {
         z = hmean(x, y);
         std::cout << "Harmonic mean of " << x << " and "
