@@ -31,12 +31,14 @@ int main()
         }
         catch (bad_hmean & bg)
         {
+            // 捕获bad_hmean类型异常
             bg.mesg();
             cout << "Try again.\n";
             continue;
         }
         catch (bad_gmean & hg)
         {
+            // 捕获bad_gmean类型异常
             cout << hg.mesg();
             cout << "Values used: " << hg.v1 << ", "
                 << hg.v2 << endl;
