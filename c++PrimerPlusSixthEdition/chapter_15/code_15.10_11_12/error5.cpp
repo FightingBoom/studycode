@@ -39,6 +39,7 @@ int main()
 
     double x, y, z;
 
+    // 单独一个代码块，测试函数/类析构后的表现
     {
         demo d1("found in block in main()");
         cout << "Enter two numbers: ";
