@@ -355,9 +355,9 @@ C++ 允许类内初始化。
 
 ## 13.1 一个简单的基类
 
-1、如果是 firstname = fn 这种形式，将先为 firstname 调用 string 的默认构造函数，再调用 string 的赋值运算符将 firstname 设置为 fn 。
+1、如果是 firstname = fn 这种形式，将先为 firstname 调用 string 类的默认构造函数，再调用 string 类的赋值运算符将 firstname 设置为 fn 。
 
-但用构造函数这种初始化列表语法，可减少一个步骤，直接使用 string 的复制构造函数将 firstname 初始化为 fn 。
+但用构造函数这种初始化列表语法，可减少一个步骤，直接使用 string 类的复制构造函数将 firstname 初始化为 fn 。
 
 
 
