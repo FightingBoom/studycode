@@ -76,7 +76,7 @@ int main()
 
     cout << "Bye!\n";
     cin.get();
-    cin.get();
+    cin.get();  // 获取输入，避免结果窗口消失
 
     return 0;
 }
