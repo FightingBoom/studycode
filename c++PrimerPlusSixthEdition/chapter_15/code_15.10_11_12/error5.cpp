@@ -48,7 +48,7 @@ int main()
         {
             try
             {
-                z = means(x, y);
+                z = means(x, y); // 内部创建临时对象
                 cout << "The mean mean of " << x <<
                     " and " << y << " is " << z << endl;
                 cout << "Enter next pair: ";
