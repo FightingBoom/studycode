@@ -1561,6 +1561,12 @@ catch (...)
 
 
 
+### 15.3.8 exception类
+
+1. stdexcept异常类
+2. bad_alloc异常和new
+3. 
+
 
 
 
