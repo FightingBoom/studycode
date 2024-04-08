@@ -1491,6 +1491,76 @@ Queue::Node::Node(const Item & i)
 
 ### 15.3.7 其他异常特性
 
+p将指向oops的副本而不是oops本身。这是件好事，因为函数super( )执行完毕后，oops将不复存在。
+
+```c++
+try
+{
+	super();
+}
+catch(problem & p)
+{
+    // 代码块
+}
+```
+
+
+
+既然throw语句将生成副本，为何代码中使用引用 呢？毕竟，将引用作为返回值的通常原因是避免创建副本以提高效率。
+
+答案是，引用还有另一个重要特征：基类引用可以执行派生类对象。假 设有一组通过继承关联起来的异常类型，则在异常规范中只需列出一个 基类引用，它将与任何派生类对象匹配。
+
+
+
+```c++
+class bad_1 {};
+class bad_2 : public bad_1 {};
+class bad_3 : public bad_2 {};
+
+void duper()
+{
+    if (oh_no)
+        throw bad_1();
+    if (rats)
+        throw bad_2();
+    if (drat)
+        throw bad_3();
+}
+
+try
+{
+    duper();
+}
+catch (bad_3 & be)
+{
+    // 代码块
+}
+catch (bad_2 & be)
+{
+    // 代码块
+}
+catch (bad_1 & be)
+{
+    // 代码块
+}
+```
+
+如果将bad_1 &处理程序放在最前面，它将捕获异常bad_1、bad_2 和bad_3；通过按相反的顺序排列，bad_3异常将被bad_3 &处理程序所捕获。
+
+> 如果有一个异常类继承层次结构，应这样排列catch块：将捕获位于层次结构最下面的异常类 的catch语句放在最前面，将捕获基类异常的catch语句放在最后面。
+
+
+
+```c++
+// 捕获所有异常
+catch (...)
+{
+    // 类似于switch的default语句
+}
+```
+
+
+
 
 
 
