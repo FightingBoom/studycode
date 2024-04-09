@@ -1565,7 +1565,23 @@ catch (...)
 
 1. stdexcept异常类
 2. bad_alloc异常和new
-3. 
+3. 空指针和new
+
+```c++
+// 为兼容老代码处理new失败时返回空指针，C++提供了关键字std::nothrow，让用户可以选择自己的行为。
+int * pi = new (std::nothrow) int;
+int * pa = new (std::nothrow) int[500];
+
+// 此时判断语句可以改为
+Big * pb;
+pb = new Big[10000];
+if (NULL == pb)
+{
+    exit(EXIT_FAILURE);
+}
+```
+
+
 
 
 
