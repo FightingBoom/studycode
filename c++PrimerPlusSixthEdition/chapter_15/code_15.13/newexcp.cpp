@@ -15,7 +15,7 @@ int main()
     try
     {
         cout << "Trying to get a big block of memory:\n";
-        pb = new Big[10000];
+        pb = new Big[10000]; // macOS实际测试未超过上限
         cout << "Got past the new request:\n";
     }
     catch (bad_alloc & ba)
