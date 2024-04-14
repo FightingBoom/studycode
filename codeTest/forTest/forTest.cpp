@@ -18,7 +18,7 @@ void forMethod1()
         cout << "for end i = " << i << endl;
     }
 #else
-    int i;
+    int i; // 循环变量声明放for循环之前，便于查看循环结束后的循环变量值
 
     for (i = 0; i < MAX; i++)
     {
@@ -29,6 +29,7 @@ void forMethod1()
         cout << "for end i = " << i << endl;
     }
 
+	// 此时循环变量已是最后一次修改后的，但不满足循环条件的值
     cout << "for exit, i = " << i << endl;
 #endif
 

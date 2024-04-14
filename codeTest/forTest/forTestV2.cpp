@@ -15,6 +15,7 @@ void forMethod3()
 
         cout << "for test, start i++" << endl;
 
+		// 循环体内执行改变循环变量操作，实现不同循环效果
         i++;
 
         cout << "for end i = " << i << endl;
@@ -71,7 +72,7 @@ for end i = 4
 for start i = 4
 for test, start i++
 for end i = 5
-for end, i = 5
+for exit, i = 5
 This is i++ test V2 end
 
 
@@ -91,7 +92,8 @@ for end i = 4
 for start i = 4
 for test, start ++i
 for end i = 5
-for end, i = 5
+for exit, i = 5
 This is ++i test V2 end
+
 
 */
