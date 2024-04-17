@@ -1572,7 +1572,7 @@ catch (...)
 int * pi = new (std::nothrow) int;
 int * pa = new (std::nothrow) int[500];
 
-// 此时判断语句可以改为
+// 此时判断语句可以改为如下形式
 Big * pb;
 pb = new Big[10000];
 if (NULL == pb)
