@@ -36,7 +36,7 @@ int main()
 
         cout << "Year = " << sales2.Year() << endl;
         cout << "Label = " << sales2.Label() << endl;
-        for (i = 0; i <= 12; ++i)
+        for (i = 0; i <= 12; ++i) // 异常点，下标最大11
         {
             cout << sales2[i] << ' ';
             if (i % 6 == 5)
@@ -61,7 +61,7 @@ int main()
     try
     {
         sales2[2] = 37.5;
-        sales1[20] = 23345;
+        sales1[20] = 23345; // 异常点，无下标20的元素
         cout << "End of try block 2.\n";
     }
     catch(LabeledSales::nbad_index & bad)
