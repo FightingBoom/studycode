@@ -73,7 +73,9 @@ int main()
     {
         pg = GetOne();
         pg->Speak();
-        if (ps = dynamic_cast<Superb *>(pg))
+
+        // 赋值结果做判断需要加括号，否则clang++编译有警告
+        if ((ps = dynamic_cast<Superb *>(pg)))
         {
             ps->Say();
         }
