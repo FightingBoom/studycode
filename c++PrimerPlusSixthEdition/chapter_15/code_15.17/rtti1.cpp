@@ -105,3 +105,36 @@ Grand * GetOne()
 
     return p;
 }
+
+/*
+zhaochen@zhaochendeAir code_15.17 % ./a.out
+I am a magnificent class!!!
+I hold the character P and the integer 98!
+I am a magnificent class!!!
+I hold the character S and the integer 19!
+I am a magnificent class!!!
+I hold the character M and the integer 69!
+I am a magnificent class!!!
+I hold the character H and the integer 71!
+I am a grand class!
+zhaochen@zhaochendeAir code_15.17 % ./a.out
+I am a superb class!!
+I hold the superb value of 88!
+I am a grand class!
+I am a superb class!!
+I hold the superb value of 67!
+I am a grand class!
+I am a superb class!!
+I hold the superb value of 66!
+zhaochen@zhaochendeAir code_15.17 % ./a.out
+I am a superb class!!
+I hold the superb value of 76!
+I am a magnificent class!!!
+I hold the character E and the integer 36!
+I am a magnificent class!!!
+I hold the character M and the integer 49!
+I am a magnificent class!!!
+I hold the character T and the integer 15!
+I am a magnificent class!!!
+I hold the character X and the integer 67!
+*/
