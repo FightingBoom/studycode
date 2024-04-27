@@ -101,3 +101,37 @@ Grand * GetOne()
 
     return p;
 }
+
+/*
+zhaochen@zhaochendeAir code_15.18 % clang++ rtti2.cpp
+zhaochen@zhaochendeAir code_15.18 % ./a.out
+Now Processing type 5Grand.
+I am a grand class!
+Now Processing type 11Magnificent.
+I am a magnificent class!!!
+Yes, you're really magnificent.
+Now Processing type 11Magnificent.
+I am a magnificent class!!!
+Yes, you're really magnificent.
+Now Processing type 11Magnificent.
+I am a magnificent class!!!
+Yes, you're really magnificent.
+Now Processing type 11Magnificent.
+I am a magnificent class!!!
+Yes, you're really magnificent.
+
+zhaochen@zhaochendeAir code_15.18 % ./a.out
+Now Processing type 11Magnificent.
+I am a magnificent class!!!
+Yes, you're really magnificent.
+Now Processing type 11Magnificent.
+I am a magnificent class!!!
+Yes, you're really magnificent.
+Now Processing type 5Grand.
+I am a grand class!
+Now Processing type 6Superb.
+I am a superb class!!
+Now Processing type 11Magnificent.
+I am a magnificent class!!!
+Yes, you're really magnificent.
+*/
