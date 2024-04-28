@@ -1660,6 +1660,78 @@ typeid 运算符使得能够确定两个对象是否为同种类型。它与 siz
 
 
 
+## 15.5 类型转换运算符
+
+C++ 提供的类型转换运算符
+
+- dynamic_cast
+- const_cast
+- static_cast
+- reinterpret_cast
+
+
+
+dynamic_cast 用途是，使得能够在类层次结构中进行向上转换（由于 is-a关系，这样的类型转换是安全的），而不允许其他转换。使用方法如下
+
+```c++
+dynamic_cast < type-name > (expression)
+```
+
+
+
+const_cast 运算符用于执行只有一种用途的类型转换，即改变值为 const 或 volatile ，其语法与 dynamic_cast 运算符相同：
+
+```c++
+const_cast < type-name > (expression)
+```
+
+如果类型的其他方面也被修改，则上述类型转换将出错。也就是说，除了 const 或 volatile 特征（有或无）可以不同外，type_name 和 expression 的类型必须相同。
+
+
+
+static_cast 运算符的语法与其他类型转换运算符相同
+
+```c++
+static_cast < type-name > (expression)
+```
+
+仅当 type_name 可被隐式转换为 expression 所属的类型或 expression 可被隐式转换为 type_name 所属的类型时，上述转换才是合法的，否则将出错。
+
+由于无需进行类型转换，枚举值就可以被转换为整型，所以可以用 static_cast 将整型转换为枚举值。同样，可以使用 static_cast 将 double 转换为 int、将 float 转换为 long 以及其他各种数值转换。
+
+
+
+reinterpret_cast 运算符用于天生危险的类型转换。
+
+```c++
+reinterpret_cast < type-name > (expression)
+```
+
+代码示例如下
+
+```c++
+struct dat {short a; short b;};
+long value = 0xA224B118;
+dat * pd = reinterpret_cast<dat *>(&value);
+std::cout << std::hex << pd->a;
+
+/* 代码运行结果
+b118
+*/
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
