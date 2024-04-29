@@ -1722,6 +1722,38 @@ b118
 
 
 
+# 16 string类和标准模板库
+
+STL：标准模板库
+
+
+
+## 16.1 string类
+
+### 16.1.1 构造字符串
+
+<center>
+    表16.1 string类的构造函数
+</center>
+
+| 序号 | 构造函数                                                     | 描述                                                         |
+| :--: | :----------------------------------------------------------- | :----------------------------------------------------------- |
+|  1   | string(const char * s)                                       | 将 string 对象初始化为 s 指向的 NBTS                         |
+|  2   | string(size_type n, char c)                                  | 创建一个包含 n 个元素的 string 对象，其中每个元素都被初始化为字符 c |
+|  3   | string(const string & str)                                   | 将一个 string 对象初始化为 string 对象 str （复制构造函数）  |
+|  4   | string()                                                     | 创建一个默认的 string 对象，长度为 0 （默认构造函数）        |
+|  5   | string(const char * s, size_type n)                          | 将 string 对象初始化为 s 指向的 NBTS 的前 n 个字符，即使超过了 NBTS 结尾 |
+|  6   | template<class Iter><br />string(Iter begin, Iter end)       | 将 string 对象初始化为区间 [begin, end] 内的字符，其中 begin 和 end 的行为就像指针，用于指定位置，范围包括 begin 在内，但不包括 end 。 |
+|  7   | string(const string & str, string size_type pos = 0, size_type n = npos) | 将一个 string 对象初始化为对象 str 中从位置 pos 开始到结尾的字符，或从位置 pos 开始的 n 个字符。（省略后两个参数时，与#3一样） |
+|  8   | string(string && str) noexcept                               | 这是 C++11 新增的，它将一个 string 对象初始化为 string 对象 str ，并可能修改 str （移动构造函数） |
+|  9   | string(initializer_list<char> il)                            | 这是 C++11 新增的，它将一个 string 对象初始化为初始化列表 il 中的字符 |
+
+
+
+
+
+
+
 
 
 
