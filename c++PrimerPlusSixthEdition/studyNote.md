@@ -1760,6 +1760,23 @@ string 版本的 getline( ) 函数从输入中读取字符，并将其存储到�
 
 
 
+### 16.1.3 使用字符串
+
+<center>
+    表16.2 重载的 find() 方法
+</center>
+
+| 方法原型                                                     | 描述                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| size_type find(const string & str, size_type pos = 0) const  | 从字符串的 pos 位置开始，查找子字符串 str 。如果找到，则返回该子字符串首次出现时其首字符的索引；否则，返回 string::npos |
+| size_type find(const char * s, size_type pos = 0) const      | 从字符串的 pos 位置开始，查找子字符串 s 。如果找到，则返回该子字符串首次出现时其首字符的索引；否则，返回 string::npos |
+| size_type find(const char * s, size_type pos = 0, size_type n) | 从字符串的 pos 位置开始，查找 s 的前 n 个字符组成的子字符串。如果找到，则返回该子字符串首次出现时其首字符的索引；否则，返回 string::npos |
+| size_type find(char ch, size_type pos = 0) const             | 从字符串的 pos 位置开始，查找字符 ch 。如果找到，则返回该字符首次出现的位置；否则，返回 string::npos |
+
+
+
+
+
 
 
 
