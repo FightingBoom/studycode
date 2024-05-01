@@ -1781,13 +1781,26 @@ string 版本的 getline( ) 函数从输入中读取字符，并将其存储到�
 
 
 
+### 16.1.5 字符串种类
 
+string 库实际上是基于一个模板类
 
+```c++
+template<class charT, class traits = char _traits<charT>, class Allocator = allocator<charT> >
+basic_string
+{
+    // ...
+};
+```
 
+模板 basic_string 有 4 个具体化
 
-
-
-
+```c++
+typedef basic_string<char> string;
+typedef basic_string<wchar_t> wstring;
+typedef basic_string<char16_t> u16string;	// C++11
+typedef basic_string<char32_t> u32string;	// C++11
+```
 
 
 
