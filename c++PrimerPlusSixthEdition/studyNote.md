@@ -1804,6 +1804,18 @@ typedef basic_string<char32_t> u32string;	// C++11
 
 
 
+## 16.2 智能指针模板类
+
+auto_ptr、unique_ptr 和 shared_ptr
+
+### 16.2.1 使用智能指针
+
+智能指针使用头文件 memory 。
+
+```c++
+#include <memory>
+```
+
 
 
 
