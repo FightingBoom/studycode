@@ -1818,6 +1818,22 @@ auto_ptr、unique_ptr 和 shared_ptr
 
 
 
+### 16.2.2 有关智能指针的注意事项
+
+```c++
+auto_ptr<string> ps (new string("I reigned lonely as a cloud."));
+auto_ptr<string> vocation;
+vocation = ps;
+```
+
+上述代码，如果 ps 和 vocation 是常规指针， 则两个指针将指向同一个 string 对象。这是不能接受的，因为程序将试图删除同一个对象两次——一次是 ps 过期时，另一次是 vocation 过期时。
+
+解决方法
+
+- 定义赋值运算符，使之执行深复制。这样两个指针将指向不同的对象，其中的一个对象是另一个对象的副本。
+- 建立所有权（ownership）概念，对于特定的对象，只能有一个智能指针可拥有它，这样只有拥有对象的智能指针的构造函数会删除该 对象。然后，让赋值操作转让所有权。这就是用于 auto_ptr 和 unique_ptr 的策略，但 unique_ptr 的策略更严格。
+- 创建智能更高的指针，跟踪引用特定对象的智能指针数。这称为引用计数（reference counting）。例如，赋值时，计数将加1，而指针过期时，计数将减1。仅当最后一个指针过期时，才调用 delete 。这 是 shared_ptr 采用的策略。
+
 
 
 
