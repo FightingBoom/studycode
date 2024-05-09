@@ -1836,9 +1836,31 @@ vocation = ps;
 
 
 
+### 16.2.3 unique_ptr 为何优于 auto_ptr
+
+```c++
+auto_ptr<string> p1(new string("auto"));	// #1
+auto_ptr<string> p2;						// #2
+p2 = p1;									// #3
+```
+
+在语句#3中，p2接管string对象的所有权后，p1的所有权将被剥 夺。前面说过，这是件好事，可防止p1和p2的析构函数试图删除同一个 对象；但如果程序随后试图使用p1，这将是件坏事，因为p1不再指向有 效的数据。
 
 
 
+```c++
+unique_ptr<string> p3(new string("auto"));	// #4
+unique_ptr<string> p4;						// #5
+p4 = p3;									// #6
+```
+
+编译器认为语句#6非法，避免了p3不再指向有效数据的问题。因 此，unique_ptr比auto_ptr更安全（编译阶段错误比潜在的程序崩溃更安 全）。
+
+
+
+> 警告： 
+>
+> 使用new分配内存时，才能使用auto_ptr和shared_ptr，使用new [ ]分配内存时，不能使用它 们。不使用new分配内存时，不能使用auto_ptr或shared_ptr；不使用new或new []分配内存时， 不能使用unique_ptr。
 
 
 
