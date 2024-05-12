@@ -1872,7 +1872,7 @@ p4 = p3;									// #6
 
 
 
-
+在满足unique_ptr要求的条件时，也可使用auto_ptr，但unique_ptr是 更好的选择。如果您的编译器没有提供unique_ptr，可考虑使用BOOST 库提供的scoped_ptr，它与unique_ptr类似。
 
 
 
