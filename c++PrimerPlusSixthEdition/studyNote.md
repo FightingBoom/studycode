@@ -2259,7 +2259,23 @@ STL使用模板类pair将这两种值存储到一个 对象中。可以使用fir
 
 
 
+## 16.5 函数对象
 
+
+
+### 16.5.1 函数符的概念
+
+生成器（generator）是不用参数就可以调用的函数符。
+
+一元函数（unary function）是用一个参数可以调用的函数符。
+
+二元函数（binary function）是用两个参数可以调用的函数符。
+
+
+
+返回bool值的一元函数是谓词（predicate）；
+
+返回bool值的二元函数是二元谓词（binary predicate）。
 
 
 
