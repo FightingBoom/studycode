@@ -2329,6 +2329,18 @@ list模板有一个将谓词作为参数的remove_if( )成员，该函数将谓�
 
 
 
+### 16.5.3 自适应函数符和函数适配器
+
+自适应生成器（adaptable generator）、自适应一元函数 （adaptable unary function）、自适应二元函数（adaptable binary function）、自适应谓词（adaptable predicate）和自适应二元谓词 （adaptable binary predicate）
+
+
+
+
+
+
+
+
+
 
 
 
