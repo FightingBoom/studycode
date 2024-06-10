@@ -2396,6 +2396,16 @@ next_permutation( )算法将区间内容转换为下一种排列方式。对于�
 
 
 
+### 16.7.2 模板initializer_llist（C++11）
+
+C++11 新增支持初始化列表语法将容器初始化为一系列值。
+
+
+
+所有 initializer_list 元素的类型都必须相同。
+
+编译器可以进行必要的转换，如vector的元素类型为double，因此列表的类型为 initializer_list，所以19和89被转换为double。但不能进行隐式的 **窄化** 转换。
+
 
 
 
