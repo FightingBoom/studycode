@@ -2476,6 +2476,41 @@ C++将输出看作字节流（根据实现和平台的不 同，可能是8位、
 
 ### 17.2.1 重载的<<运算符
 
+<< 插入运算符被重载，使之能够识别C++中所有的基本类型：
+
+- unsigned char；
+- signed char；
+- char；
+- short；
+- unsigned short；
+- int；
+- unsiged int；
+- long；
+- unsigned long；
+- long long（C++11）；
+- unsigned long long（C++11）；
+- float；
+- double；
+- long double。
+
+
+
+1. 输出和指针
+
+默认 cout << 全部输出内容，比如字符串内容等，如果需要输出对应指针地址，则需要做相应的强制转换。
+
+
+
+2. 拼接输出
+
+当 cout 有多个 << 时，依次输出对应内容，然后返回 cout ，接着再输出下一个类型。
+
+
+
+
+
+
+
 
 
 
