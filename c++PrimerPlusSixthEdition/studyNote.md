@@ -2536,6 +2536,12 @@ flush(cout);
 
 
 
+1. 修改显示时使用的计数系统
+
+ios_base类中的成员和方法以前位于ios类中。现在，ios_base是ios的基类。在新系统中，ios是 包含char和wchar_t具体化的模板，而ios_base包含了非模板特性。
+
+代码参考 code 17.3 。
+
 
 
 
