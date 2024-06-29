@@ -2607,7 +2607,17 @@ showpoint是ios_base类 声明中定义的类级静态常量。类级意味着�
 
 
 
+系统 的工作原理如下：仅当只有定点位被设置时使用定点表示法；仅当只有 科学位被设置时使用科学表示法；对于其他组合，如没有位被设置或两 位都被设置时，将使用默认模式。
 
+```c++
+// go to default mdoe
+cout.setf(0, ios_base::floatfield);
+
+// 使用unsetf
+cout.unsetf(ios_base::floatfield);
+```
+
+如果已知cout处于定点状态，则可以使用参数ios_base::fixed调用函 数unsetf( )来切换到默认模式；然而，无论cout的当前状态如何，使用参 数ios_base::floatfield调用函数unsetf( )都将切换到默认模式，因此这是一 种更好的选择。
 
 
 
