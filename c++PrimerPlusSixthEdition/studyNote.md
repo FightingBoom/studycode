@@ -2632,6 +2632,22 @@ cout << left << fixed;
 
 
 
+8. 头文件iomanip
+
+3个最常用的控制符分别是 setprecision( )、setfill( )和setw( )，它们分别用来设置精度、填充字符和 字段宽度。
+
+有些 C++ 编译器不能自动搜索链接数学库，此时在编译的时候，需要手动链接
+
+```shell
+CC iomanip.c -lm
+```
+
+
+
+
+
+
+
 
 
 
