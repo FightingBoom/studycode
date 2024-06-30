@@ -2654,6 +2654,32 @@ CC iomanip.c -lm
 
 
 
+### 17.3.2 流状态
+
+<center>
+    表17.4 流状态
+</center>
+
+|          成员           |                             描述                             |
+| :---------------------: | :----------------------------------------------------------: |
+|         eofbit          |                  如果到达文件尾，则设置为1                   |
+|         badbit          |         如果流被破坏，则设置为1；例如，文件读取错误          |
+|         failbit         | 如果输入操作未能读取预期的字符或输出操作没有写入预期的字符，则设置为1 |
+|         goodbit         |                     另一种表示 0 的方法                      |
+|         good()          |       如果流可以使用（所有的位都被清除），则返回 true        |
+|          eof()          |               如果 eofbit 被设置，则返回 true                |
+|          bad()          |               如果 badbit 被设置，则返回 true                |
+|         fail()          |          如果 badbit 或 failbit 被设置，则返回 true          |
+|        rdstate()        |                          返回流状态                          |
+|      exceptions()       |          返回一个位掩码，指出哪些标记导致异常被引发          |
+| exceptions(isostate ex) | 设置哪些状态将导致 clear() 引发异常；例如，如果 ex 是 eofbit ，则如果 eofbit 被设置，clear() 将引发异常 |
+|    clear(iostate s)     | 将流状态设置为 s ；s 的默认值为 0 （goodbit）；如果 (restate()&exceptions()) != 0 ，则引发异常 basic_ios::failure |
+|   setstate(iostate s)   | 调用 clear (rdstate() \| s) 。这将设置与 s 中设置的位对应的流状态位，其他流状态位保持不变。 |
+
+
+
+
+
 
 
 
