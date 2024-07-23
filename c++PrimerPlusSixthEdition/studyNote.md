@@ -2908,6 +2908,14 @@ seekg( )和seekp( )，前者将输入指针移到指定的文件位置，后者 
 
 
 
+## 17.5 内核格式化
+
+iostream族（family）支持程序与终端之间的I/O，而fstream族使用 相同的接口提供程序和文件之间的I/O。C++库还提供了sstream族，它们 使用相同的接口提供程序和string对象之间的I/O。也就是说，可以使用 于cout的ostream方法将格式化信息写入到string对象中，并使用istream方 法（如getline( )）来读取string对象中的信息。读取string对象中的格式化 信息或将格式化信息写入string对象中被称为内核格式化（incore formatting）。
+
+
+
+
+
 
 
 
