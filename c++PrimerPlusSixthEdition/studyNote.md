@@ -3082,9 +3082,17 @@ C++引入了关键字explicit，以禁止单参数构造函数导致的 自动�
 
 
 
+### 18.1.8 模板和STL方面的修改
+
+1. 基于范围的 for 循环
 
 
 
+2. 新的STL容器
+
+C++11新增了STL容器forward_list、unordered_map、 unordered_multimap、unordered_set和unordered_multiset（参见第16 章）。容器forward_list是一种单向链表，只能沿一个方向遍历；与双向 链接的list容器相比，它更简单，在占用存储空间方面更经济。其他四 种容器都是使用哈希表实现的。
+
+C++11还新增了模板array。这个模板类没有满足所有的常规模板需求。例如，由于长度固定， 您不能使用任何修改容器大小的方法，如put_back( )。但array确实有方 法begin( )和end( )，这让您能够对array对象使用众多基于范围的STL算 法。
 
 
 
