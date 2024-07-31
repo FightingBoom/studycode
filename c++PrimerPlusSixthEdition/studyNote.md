@@ -3088,11 +3088,27 @@ C++引入了关键字explicit，以禁止单参数构造函数导致的 自动�
 
 
 
-2. 新的STL容器
+2. 新的 STL 容器
 
 C++11新增了STL容器forward_list、unordered_map、 unordered_multimap、unordered_set和unordered_multiset（参见第16 章）。容器forward_list是一种单向链表，只能沿一个方向遍历；与双向 链接的list容器相比，它更简单，在占用存储空间方面更经济。其他四 种容器都是使用哈希表实现的。
 
 C++11还新增了模板array。这个模板类没有满足所有的常规模板需求。例如，由于长度固定， 您不能使用任何修改容器大小的方法，如put_back( )。但array确实有方 法begin( )和end( )，这让您能够对array对象使用众多基于范围的STL算 法。
+
+
+
+3. 新的 STL 方法
+
+C++11新增了STL方法cbegin( )和cend( )。与begin( )和end( )一样， 这些新方法也返回一个迭代器，指向容器的第一个元素和最后一个元素 的后面，因此可用于指定包含全部元素的区间。另外，这些新方法将元 素视为const。与此类似，crbegin( )和crend( )是rbegin( )和rend( )的const 版本。 更重要的是，除传统的复制构造函数和常规赋值运算符外，STL容 器现在还有移动构造函数和移动赋值运算符。
+
+
+
+4. valarray 升级
+
+模板valarray独立于STL开发的，其最初的设计导致无法将基于范围 的STL算法用于valarray对象。C++11添加了两个函数（begin( )和end( )），它们都接受valarray作为参数，并返回迭代器，这些迭代器分别指 向valarray对象的第一个元素和最后一个元素后面。
+
+
+
+
 
 
 
