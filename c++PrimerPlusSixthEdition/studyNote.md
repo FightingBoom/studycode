@@ -3190,6 +3190,30 @@ std::move()
 
 
 
+### 18.3.2 默认的方法和禁用的方法
+
+C++11让您能够更好地控制要使用的方法。假定您要使用某个默认 的函数，而这个函数由于某种原因不会自动创建。例如，您提供了移动 构造函数，因此编译器不会自动创建默认的构造函数、复制构造函数和 复制赋值构造函数。
+
+在这些情况下，您可使用关键字default显式地声明 这些方法的默认版本。
+
+关键字delete可用于禁止编译器使用特定方法。
+
+```c++
+class Someclass
+{
+public:
+    Someclass(Someclass &&);
+    Someclass() = default;
+    Someclass(const Someclass &) = delete;
+    Someclass & operator=(const Someclass &) = default;
+    // ...
+};
+```
+
+
+
+要禁止复制，可将复制构造函数和赋值运算符放在类 定义的private部分，但使用delete也能达到这个目的，且更不容易犯错、 更容易理解。
+
 
 
 
