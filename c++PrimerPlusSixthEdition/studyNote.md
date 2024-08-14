@@ -3253,6 +3253,16 @@ virtual void f(char ch) const final
 
 
 
+## 18.4 Lambda函数
+
+
+
+### 18.4.1 比较函数指针、函数符和Lambda函数
+
+来看看使用lambda的情况。名称lambda来自lambda calculus（λ演算）—一种定义和应用函数的数学系统。这个系统让您能 够使用匿名函数—即无需给函数命名。在C++11中，对于接受函数指针 或函数符的函数，可使用匿名函数定义（lambda）作为其参数。
+
+
+
 
 
 
