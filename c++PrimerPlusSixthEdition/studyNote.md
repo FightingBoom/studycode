@@ -3271,6 +3271,22 @@ virtual void f(char ch) const final
 
 
 
+## 18.5 包装器
+
+C++11提供了其他的 包装器，包括模板bind、men_fn和reference_wrapper以及包装器 function。其中模板bind可替代bind1st和bind2nd，但更灵活；模板 mem_fn让您能够将成员函数作为常规函数进行传递；模板 reference_wrapper让您能够创建行为像引用但可被复制的对象；而包装 器function让您能够以统一的方式处理多种类似于函数的形式。
+
+
+
+### 18.5.1 包装器function及模板的低效性
+
+```c++
+answer = ef(q);
+```
+
+ef是什么呢？它可以是函数名、函数指针、函数对象或有名称的 lambda表达式。所有这些都是可调用的类型（callable type）。鉴于可调 用的类型如此丰富，这可能导致模板的效率极低。
+
+
+
 
 
 
