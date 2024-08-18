@@ -3297,6 +3297,37 @@ ef是什么呢？它可以是函数名、函数指针、函数对象或有名称
 
 
 
+### 18.5.3 其他方式
+
+可以直接使用一个临时 std::function<double(double)> 对象，并作为参数。
+
+
+
+第二种，之前 use_f() 的第二个实参与形参 f 匹配，但可以直接让形参 f 的类型与原始实参匹配。
+
+```c++
+#include <functional>
+
+template <typename T>
+T use_f(T v, std::function<T(T)> f)
+{
+    static int count = 0;
+    count++;
+    std::cout << "	use_f count = " << count
+        	<< ", &count = " << &count << std::endl;
+    return f(v);
+}
+
+// 此时函数调用如下
+cout << "	" << use_f<double>(y, dub) << endl;
+...
+cout << "	" << use_f<double>(y, Fp(5.0)) << endl;
+...
+cout << "	" << use_f<double>(y, [](double u){return u*u;}) << endl;
+```
+
+参数dub、Fp(5.0)等本身的类型并不是function，因 此在use_f后面使用了来指出所需的具体化。这样，T被设置为 double，而std::function变成了std::function。
+
 
 
 
