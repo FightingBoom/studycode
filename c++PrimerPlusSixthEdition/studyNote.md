@@ -3330,6 +3330,34 @@ cout << "	" << use_f<double>(y, [](double u){return u*u;}) << endl;
 
 
 
+## 18.6 可变参数模板
+
+要创建可变参数模板，需要理解几个要点：
+
+- 模板参数包（parameter pack）；
+- 函数参数包；
+- 展开（unpack）参数包；
+- 递归。
+
+
+
+### 18.6.1 模板和函数参数包
+
+C++11提供了一个用省略号表示的元运算符（meta-operator），让 您能够声明表示模板参数包的标识符，模板参数包基本上是一个类型列 表。同样，它还让您能够声明表示函数参数包的标识符，而函数参数包 基本上是一个值列表。
+
+```c++
+template<typename... Args>
+void show_list1(Args... args)
+{
+    // ...
+}
+
+// 示例如下，匹配类型：char、int、const char * 和 double 。
+show_list1('S', 80, "sweet", 4.5);
+```
+
+
+
 
 
 
