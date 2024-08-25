@@ -3440,13 +3440,17 @@ clang++ lexcast.cpp -I/opt/homebrew/opt/boost/include -L/opt/homebrew/opt/boost/
 
 
 
+## 18.9 接下来的任务
+
+OOP 开发，基本活动之一是发明能够表示正在模拟的情形（问题域，problem domain）的类。
 
 
 
+常用的技术：用例分析（use-case analysis）和 CRC 卡（CRC card）。
 
 
 
-
+最新的 工具是统一建模语言（Unified Modeling Language，UML），它不是一 种编程语言，而是一种用于表示编程项目的分析和设计语言，是由 Grady Booch、Jim Rumbaugh和Ivar Jacobson开发的，他们分别是更早的 3种建模语言（Booch Method、OMT（对象建模技术，Object Modeling Technique）和OOSE（面向对象的软件工程，Object-Oriented Software Engineering））的主要开发人员。UML是从这3种语言演化而来的，于 2005年被ISO/IEC批准为标准。
 
 
 
