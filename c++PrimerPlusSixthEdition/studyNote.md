@@ -3412,6 +3412,38 @@ C++提供了调试工具assert。这是一个宏，它在运行阶段对断言�
 
 
 
+## 18.8 语言变化
+
+
+
+### 18.8.1 Boost项目
+
+该计划的基本理念是，创建一个充当开放论坛的网站，让人发 布免费的C++库。
+
+
+
+### 18.8.2 TR1
+
+在TR1中，Boost库占了很大一部分。这包括模板类tuple和array、模 板bind和function、智能指针（对名称和实现做了一定的修改）、 static_assert、regex库和random库。
+
+
+
+### 18.8.3 使用Boost
+
+参考代码 18.11 。测试的 MacBook ，编译指令如下
+
+```shell
+clang++ lexcast.cpp -I/opt/homebrew/opt/boost/include -L/opt/homebrew/opt/boost/lib -std=c++11
+```
+
+
+
+
+
+
+
+
+
 
 
 
