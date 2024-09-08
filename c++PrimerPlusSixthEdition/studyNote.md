@@ -3735,6 +3735,22 @@ wstring theory;
 
 
 
+### F.2.2 使用 C-风格字符串的构造函数
+
+```c++
+basic_string(const charT *s, const Allocator & a = Allocator());
+```
+
+char 类型的 traits::length() 方法将使用空值字符来确定要复制多少个字符。该构造函数被调用后，将存在下面的关系：
+
+- data() 方法返回一个指针，该指针指向数组 s 的一个副本的第一个元素；
+- size() 方法返回的值等于 trains::length() 的值；
+- capacity() 方法返回一个至少等于 size() 的值。
+
+
+
+
+
 
 
 
