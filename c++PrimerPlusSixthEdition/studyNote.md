@@ -3701,6 +3701,46 @@ static const size_type npos = -1;
 
 
 
+## F.2 数据信息、构造函数及其他
+
+根据公用接口中可用的数据来描述这些效果。
+
+
+
+begin() 、rend() 、data() 、c_str() ，斗鱼字符串第一个字符有关。但是 begin() 和 rend() 方法返回一个迭代器。而 data() 和 c_str() 方法返回常规指针。
+
+
+
+### F.2.1 默认构造函数
+
+默认构造函数的原型如下：
+
+```c++
+explicit basic_string(const Allocator& a = Allocator());
+```
+
+通常，接受 allocator 类的默认参数，并使用该构造函数来创建空字符串：
+
+string bean;
+
+wstring theory;
+
+调用该默认构造函数后，将存在下面的关系：
+
+- data() 方法返回一个非空指针，可以将该指针加上 0 ；
+- size() 方法返回 0 ；
+- capacity() 的返回值不确定。
+
+将 data() 返回的值赋给指针 str 后，第一个条件意味着 str + 0 是有效的。
+
+
+
+
+
+
+
+
+
 
 
 
