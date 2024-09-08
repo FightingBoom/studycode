@@ -3669,11 +3669,35 @@ q >>= 2;
 
 
 
+# 附录F 模板类 string
+
+string 基于如下模板定义
+
+```c++
+template<class charT, class traits = char_traits<charT>, class Allocator = allocator<charT> >
+    
+class basic_string {...};
+```
 
 
 
+默认的 `allocator<char>` 模板按标准方式使用 new 和 delete 。
 
 
+
+## F.1 13种类型和一个常量
+
+为了使用标准模板库 STL ，也定义了一些迭代器类型：iterator / const_iterator / reverse_iterator / const_reverse_iterator
+
+
+
+还定义了一个静态常量
+
+```c++
+static const size_type npos = -1;
+```
+
+注意：由于 size_type 是无符号的，因此将 -1 赋给 npos 相当于将最大的无符号值赋给它，这个值比可能的最大数组索引大 1 。
 
 
 
