@@ -3749,6 +3749,18 @@ char 类型的 traits::length() 方法将使用空值字符来确定要复制多
 
 
 
+### F.2.3 使用部分 C-风格字符串的构造函数
+
+```c++
+basic_string(const charT *s, size_type n, const Allocator & a = Allocator());
+```
+
+该构造函数被调用后，将存在下面的关系：
+
+- data() 方法返回一个指针，该指针指向数组 s 的副本的第一个元素；
+- size() 方法返回 n ；
+- capacity() 方法返回一个至少等于 size() 的值。
+
 
 
 
