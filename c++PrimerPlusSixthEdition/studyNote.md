@@ -3763,6 +3763,18 @@ basic_string(const charT *s, size_type n, const Allocator & a = Allocator());
 
 
 
+### F.2.4 使用左值引用的构造函数
+
+复制构造函数
+
+```c++
+basic_string(const basic_string & str);
+```
+
+
+
+
+
 
 
 
