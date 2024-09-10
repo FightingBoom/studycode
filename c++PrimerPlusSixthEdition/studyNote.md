@@ -3773,6 +3773,23 @@ basic_string(const basic_string & str);
 
 
 
+### F.2.5 使用右值引用的构造函数（C++11）
+
+C++11 给 string 类添加了移动语义。
+
+```c++
+basic_string(basic_string && str) noexcept;
+
+// 举例如下
+string one("din");			// C-style string constructor
+string two(one);			// copy constructor - one is an lvalue
+string three(one + two);	// move constructor, sum is an rvalue
+```
+
+three 将会直接获取 operator+() 创建的对象的所有权，而不是复制给 three ，再销毁原始对象。
+
+
+
 
 
 
