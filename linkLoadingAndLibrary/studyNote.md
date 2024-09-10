@@ -127,13 +127,13 @@
 
 
 
+#### 1.5.3 分页（Paging）
+
+“我们把虚拟空间的页就叫虚拟页（VP，Virtual Page），把物理内存中的页叫做物理页（PP，Physical Page），把磁盘中的页叫做磁盘页（DP，Disk Page）。”
 
 
 
-
-
-
-
+“MMU（Memory Management Unit）”
 
 
 
