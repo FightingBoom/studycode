@@ -3802,7 +3802,33 @@ begin 迭代器指向源字符串中要复制的第一个元素，end 指向要�
 
 
 
+### F.2.8 使用初始化列表的构造函数（C++11）
 
+可以接受一个用大括号括起的字符列表作为参数.
+
+测试代码如下：
+
+```c++
+#include <iostream>
+
+int main()
+{
+    std::string slow({'s', 'n', 'a', 'i', 'l'});
+    std::cout << "slow=" << slow << std::endl;
+    return 0;
+}
+```
+
+代码运行结果如下：
+
+```shell
+ASM generation compiler returned: 0
+Execution build compiler returned: 0
+Program returned: 0
+slow=snail
+```
+
+> 测试网站：https://godbolt.org/
 
 
 
