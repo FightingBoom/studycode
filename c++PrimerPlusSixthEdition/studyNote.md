@@ -3832,6 +3832,25 @@ slow=snail
 
 
 
+### F.2.9 内存杂记
+
+有些方法用于处理内存，如清除内存的内容、调整字符串长度或容量。
+
+<center>
+    表 F.2	一些与内存有关的方法
+</center>
+
+|                方法                 |                             作用                             |
+| :---------------------------------: | :----------------------------------------------------------: |
+|      void resize(size_type n)       | 如果 n > npos ，将引发 out_of_range 异常；否则，将字符串的长度改为 n ，如果 n < size() ，则截短字符串，如果 n > size() ，则使用 charT(0) 中的字符填充字符串 |
+|  void resize(size_type n, charT c)  | 如果 n > npos ，将引发 out_of_range 异常；否则，将字符串长度改为 n ，如果 n < size() ，则截短字符串，如果 n > size() ，则使用字符 c 填充字符串 |
+| void reserve(size_type res_arg = 0) | 将 capacity() 设置为大于或等于 res_arg 。由于这将重新分配字符串，因此以前的引用、迭代器和指针将无效 |
+|        void shrink_to_fit()         |   请求让 capacity() 的值与 size() 相同，这是 C++11 新增的    |
+|        void clear() noexcept        |                    删除字符串中所有的字符                    |
+|     bool empty() const noexcept     |                如果 size() == 0 ，则返回 true                |
+
+
+
 
 
 
