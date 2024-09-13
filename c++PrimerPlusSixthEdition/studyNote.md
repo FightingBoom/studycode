@@ -3851,6 +3851,28 @@ slow=snail
 
 
 
+## F.3 字符串存取
+
+有如下四种方法可以访问各个字符
+
+```c++
+// 使用 [] 运算符
+reference operator[](size_type pos);
+const_reference operator[](size_type pos) const;
+
+// 使用 at() 方法，有边界检查
+reference at(size_type n);
+const_reference at(size_type n) const;
+```
+
+
+
+
+
+
+
+
+
 
 
 
