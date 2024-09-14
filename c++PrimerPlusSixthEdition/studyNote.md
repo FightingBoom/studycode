@@ -3867,6 +3867,27 @@ const_reference at(size_type n) const;
 
 
 
+## F.4 基本赋值
+
+C++11 中有 5 个重载的赋值方法
+
+```c++
+// 将一个 string 对象赋给另一个；
+basic_string& operator=(const basic_string& str);
+
+// 将C-风格字符串赋给 string 对象；
+basic_string& operator=(const charT* s);
+
+// 将一个字符赋给 string 对象；
+basic_string& operator=(charT c);
+
+// C++11 使用移动语义，将一个右值 string 对象赋给一个 string 对象；
+basic_string& operator=(basic_string&& str) noexcept;
+
+// C++11 提供使用初始化列表进行赋值的能力
+basic_string& operator=(initializer_list<charT>);
+```
+
 
 
 
