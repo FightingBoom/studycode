@@ -3928,6 +3928,28 @@ size_type rfind (charT c, size_type pos = npos) const noexcept;
 
 
 
+### F.5.3 find_first_of() 系列
+
+搜索子字符串中的字符首次出现的位置。
+
+
+
+### F.5.4 find_last_of() 系列
+
+搜索子字符串中的字符出现的最后位置。
+
+
+
+### F.5.5 find_first_not_of() 系列
+
+搜索第一个不位于子字符串中的字符。
+
+
+
+### F.5.6 find _last_not_of() 系列
+
+搜索最后一个没有在子字符串中出现的字符。
+
 
 
 
