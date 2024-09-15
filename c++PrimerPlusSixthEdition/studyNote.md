@@ -3912,7 +3912,19 @@ size_type find (charT c, size_type pos = 0) const noexcept;
 
 
 
+### F.5.2 rfind() 系列
 
+```c++
+size_type rfind (const basic_string & str, size_type pos = npos) const noexcept;
+
+size_type rfind (const charT* s, size_type pos = npos) const;
+
+size_type rfind (const charT* s, size_type pos, size_type n) const;
+
+size_type rfind (charT c, size_type pos = npos) const noexcept;
+```
+
+搜索字符串最后一次出现的位置，该位置位于 pos 之前（包括 pos ）。如果没有找到，该方法将返回 npos 。
 
 
 
