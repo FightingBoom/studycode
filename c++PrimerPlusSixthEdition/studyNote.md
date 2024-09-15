@@ -3954,6 +3954,22 @@ size_type rfind (charT c, size_type pos = npos) const noexcept;
 
 
 
+## F.6 比较方法和函数
+
+string 类的 compare 函数可以用来比较 2 个字符串。
+
+具体用到的时候看对应方法的实际解析。此处只需要知道有这个功能即可，否则内容太多，也不太可能记得住。
+
+
+
+
+
+
+
+
+
+
+
 
 
 
