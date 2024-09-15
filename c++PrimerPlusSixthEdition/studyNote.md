@@ -3890,6 +3890,32 @@ basic_string& operator=(initializer_list<charT>);
 
 
 
+# F.5 字符串搜索
+
+string 类提供了 6 种搜索函数。
+
+
+
+### F.5.1 find() 系列
+
+C++11 中的原型如下：
+
+```c++
+size_type find (const basic_string & str, size_type pos = 0) const noexcept;
+
+size_type find (const charT* s, size_type pos = 0) const;
+
+size_type find (const charT* s, size_type pos, size_type n) const;
+
+size_type find (charT c, size_type pos = 0) const noexcept;
+```
+
+
+
+
+
+
+
 
 
 
