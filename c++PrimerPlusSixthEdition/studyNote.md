@@ -3890,7 +3890,7 @@ basic_string& operator=(initializer_list<charT>);
 
 
 
-# F.5 字符串搜索
+## F.5 字符串搜索
 
 string 类提供了 6 种搜索函数。
 
@@ -4005,6 +4005,12 @@ copy() 方法将 string 对象或其中的一部分复制到指定的字符串�
 
 
 swap() 方法使用一个时间恒定的算法来交换两个 string 对象的内容。
+
+
+
+## F.8 输出和输入
+
+string 类重载了 << 输出运算符、>> 输入运算符。
 
 
 
