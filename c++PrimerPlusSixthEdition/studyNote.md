@@ -4149,6 +4149,24 @@ C++ 在变量声明使用限定符 const 。
 
 
 
+## I.4 熟悉 C++ 特性
+
+如果使用的是 malloc() 和 free() ，请改用 new 和 delete ；
+
+如果是使用 setjmp() 和 longjmp() 处理错误，请改用 try / throw 和 catch 。
+
+对于表示 true 和 false 的值，应将其类型声明为 bool 。
+
+
+
+
+
+
+
+
+
+
+
 
 
 
