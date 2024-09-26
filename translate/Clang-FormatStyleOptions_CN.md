@@ -48,7 +48,16 @@ clang-format 提供两种方式实现自定义样式选项：直接在命令行�
 
 
 
+`.clang-format` 文件使用 YAML 格式：
 
+> The `.clang-format` file uses YAML format:
+
+```yaml
+key1: value1
+key2: value2
+# A comment.
+...
+```
 
 
 
