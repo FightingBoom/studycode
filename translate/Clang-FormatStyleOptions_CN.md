@@ -67,6 +67,40 @@ key2: value2
 
 
 
+多种语言组合的配置示例参考如下文件：
+
+> An example of a configuration file for multiple languages:
+
+```yaml
+---
+# 我们将使用 LLVM 作为默认格式，但调整为 4 空格缩进
+# We'll use defaults from the LLVM style, but with 4 columns indentation.
+BasedOnStyle: LLVM
+IndentWidth: 4
+---
+Language: Cpp
+# 下列配置指向 C++ 类型
+# Force pointers to the type for C++.
+DerivePointerAlignment: false
+PointerAlignment: Left
+---
+Language: JavaScript
+# JS 使用单行最大 100 字符限制
+# Use 100 columns for JS.
+ColumnLimit: 100
+---
+Language: Proto
+# .proto 文件不需要格式化
+# Don't format .proto files.
+DisableFormat: true
+---
+Language: CSharp
+# C# 使用单行最大 100 字符限制
+# Use 100 columns for C#.
+ColumnLimit: 100
+...
+```
+
 
 
 
