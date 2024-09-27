@@ -61,6 +61,12 @@ key2: value2
 
 
 
+`.clang-format` 配置文件包括几部分组成，每个部分都可以有不同的 `Language:` 参数，来表示不同语言的配置内容。具体支持的语言列表可查看后续 **语言** 章节。第一部分为所有语言共用的基础默认配置，特定语言的配置项最终会覆盖共用的基础默认配置。
+
+> The configuration file can consist of several sections each having different `Language:` parameter denoting the programming language this section of the configuration is targeted at. See the description of the **Language** option below for the list of supported languages. The first section may have no language set, it will set the default style options for all languages. Configuration sections for specific language will override options set in the default section.
+
+
+
 
 
 
