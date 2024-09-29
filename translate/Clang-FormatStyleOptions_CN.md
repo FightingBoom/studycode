@@ -103,11 +103,14 @@ ColumnLimit: 100
 
 
 
+参考如下命令，可以快速获取一份包含预定义样式的格式文件：
 
+> An easy way to get a valid `.clang-format` file containing all configuration options of a certain predefined style is:
 
-
-
-
+```shell
+# 以 llvm 样式为基准，生成对应的 .clang-format 文件
+clang-format -style=llvm -dump-config > .clang-format
+```
 
 
 
