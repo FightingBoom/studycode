@@ -114,3 +114,15 @@ clang-format -style=llvm -dump-config > .clang-format
 
 
 
+当使用 `-style=` 选项指定配置时，相同的配置将应用于所有输入文件，配置格式如下：
+
+> When specifying configuration in the `-style=` option, the same configuration is applied for all input files. The format of the configuration is:
+
+```yaml
+-style='{key1: value1, key2: value2, ...}'
+```
+
+
+
+
+
