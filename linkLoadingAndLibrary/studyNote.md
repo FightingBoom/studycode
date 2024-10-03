@@ -345,6 +345,16 @@ T* GetInstance()
 
 
 
+# 第2部分 静态链接
+
+## 第2章 编译和链接
+
+### 2.1 被隐藏了的过程
+
+一个简单的 hello world 程序，在 gcc 编译的时候，包含：预处理（ Prepressing ）、编译（Compilation）、汇编（Assembly）和链接（Linking）。
+
+![image-20240926225744315](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202409262257508.png)
+
 
 
 
