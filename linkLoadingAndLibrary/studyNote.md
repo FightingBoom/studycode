@@ -395,6 +395,20 @@ as hello.s -o hello.o
 
 
 
+#### 2.1.4 链接
+
+```shell
+$ld -static /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/gcc/i486-linux-gnu/4.1.3/crtbeginT.o -L/usr/lib/gcc/i486-linux-gnu/4.1.3 -L/usr/lib -L/lib hello.o --start-group -lgcc -lgcc_eh -lc --end-group /usr/lib/gcc/i486-linux-gnu/4.1.3/crtend.o /usr/lib/crtn.o
+```
+
+
+
+
+
+
+
+
+
 
 
 
