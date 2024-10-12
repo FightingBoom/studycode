@@ -403,6 +403,18 @@ $ld -static /usr/lib/crt1.o /usr/lib/crti.o /usr/lib/gcc/i486-linux-gnu/4.1.3/cr
 
 
 
+### 2.2 编译器做了什么
+
+编译过程一般可以分为6步：扫描、语法分析、语义分析、源代码优化、代码生成和目标代码优化。
+
+![image-20241009223857347](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202410092238622.png)
+
+
+
+```c
+array[index] = (index + 4) * (2 + 6)
+```
+
 
 
 
