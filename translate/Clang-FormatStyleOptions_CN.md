@@ -152,6 +152,20 @@ void formatted_code_again;
 
 
 
+> 增加禁用格式，并添加注释后的代码如下，注意 off/on 后需要紧跟 `:` ，不能有空格。
+>
+> ```c++
+> int formatted_code;
+> // clang-format off:this is comment
+> 	void		unformatted_code;
+> // clang-format on: this is comment
+> void formatted_code_again;
+> ```
+
+
+
+
+
 
 
 
