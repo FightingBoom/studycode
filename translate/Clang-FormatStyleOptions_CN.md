@@ -164,11 +164,15 @@ void formatted_code_again;
 
 
 
+## 在代码中配置样式
+
+> ## Configuring Style in Code
 
 
 
+使用 `clang::format::reformat(...)` 函数时，用 <font color=#ff0000>`clang::format::FormatStyle`</font> 结构指定格式。
 
-
+> When using `clang::format::reformat(...)` functions, the format is specified by supplying the [clang::format::FormatStyle](https://clang.llvm.org/doxygen/structclang_1_1format_1_1FormatStyle.html) structure.
 
 
 
