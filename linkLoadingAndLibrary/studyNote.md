@@ -449,6 +449,12 @@ yacc （Yet Another Compiler Compiler），是一个现成的语法分析工具�
 
 
 
+#### 2.2.3 语义分析
+
+编译器所能分析的语义是静态语义（Static Semantic），所谓静态语义是指在编译期可以确定的语义，与之对应的动态语义（Dynamic Semantic）就是只有在运行期才能确定的语义。
+
+
+
 
 
 
