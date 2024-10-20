@@ -176,6 +176,22 @@ void formatted_code_again;
 
 
 
+## 可配置样式选项
+
+> ## Configurable Format Style Options
+
+本章列出了支持的样式选项。每个选项都有规定的值类型。对于枚举类型，可能的值即指定为 C++ 枚举成员（带前缀，例如 LS_Auto ），也可作为配置中可用的值（没有前缀：Auto）。
+
+>This section lists the supported style options. Value type is specified for each option. For enumeration types possible values are specified both as a C++ enumeration member (with a prefix, e.g. `LS_Auto`), and as a value usable in the configuration (without a prefix: `Auto`).
+
+
+
+
+
+
+
+
+
 
 
 
