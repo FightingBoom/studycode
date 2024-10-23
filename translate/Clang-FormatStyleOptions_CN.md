@@ -186,6 +186,60 @@ void formatted_code_again;
 
 
 
+### BasedOnStyle (String)
+
+该选项用于配置中未明确设置的所有选项的样式。
+
+> The style used for all options not specifically set in the configuration.
+
+该选项仅支持在 **clang-format** 配置中（在`-style='{...}'` 和 `.clang-format` 格式文件）
+
+> This option is supported only in the **clang-format** configuration (both within `-style='{...}'` and the `.clang-format` file).
+
+可选值：
+
+> Possible values:
+
+- `LLVM` ，符合 [LLVM 编码标准](https://llvm.org/docs/CodingStandards.html) ；
+
+> - `LLVM` A style complying with the [LLVM coding standards](https://llvm.org/docs/CodingStandards.html)
+
+- `Google` ，符合 [Google C++ 风格指南](https://google.github.io/styleguide/cppguide.html) ；
+
+> - `Google` A style complying with [Google’s C++ style guide](https://google.github.io/styleguide/cppguide.html)
+
+- `Chromium` ，符合 [Chromium 风格指南](https://chromium.googlesource.com/chromium/src/+/refs/heads/main/styleguide/styleguide.md) ；
+
+> - `Chromium` A style complying with [Chromium’s style guide](https://chromium.googlesource.com/chromium/src/+/refs/heads/main/styleguide/styleguide.md)
+
+- `Mozilla` ，符合 [Mozilla 风格指南](https://firefox-source-docs.mozilla.org/code-quality/coding-style/index.html) ；
+
+> - `Mozilla` A style complying with [Mozilla’s style guide](https://firefox-source-docs.mozilla.org/code-quality/coding-style/index.html)
+
+- `WebKit` ，符合 [WebKit 风格指南](https://www.webkit.org/coding/coding-style.html) ；
+
+> - `WebKit` A style complying with [WebKit’s style guide](https://www.webkit.org/coding/coding-style.html)
+
+- `Microsoft` ，符合 [Microsoft 风格指南](https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference) ；
+
+> - `Microsoft` A style complying with [Microsoft’s style guide](https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference)
+
+- `GNU` ，符合 [GNU 编码标准](https://www.gnu.org/prep/standards/standards.html) ；
+
+> - `GNU` A style complying with the [GNU coding standards](https://www.gnu.org/prep/standards/standards.html)
+
+- `InheritParentConfig` ，并不是一个有效的样式，但允许使用父目录的 `.clang-format` 文件。如果父目录找不到，将回退到 `fallback` 样式，并应用更改。
+
+    使用该选项，可以覆盖子目录的主样式的某些部分配置。也可以通过命令行实现，例如 `--style={BasedOnStyle: InheritParentConfig, ColumnLimit: 20}`
+
+> `InheritParentConfig` Not a real style, but allows to use the `.clang-format` file from the parent directory (or its parent if there is none). If there is no parent file found it falls back to the `fallback` style, and applies the changes to that.
+>
+> With this option you can overwrite some parts of your main style for your subdirectories. This is also possible through the command line, e.g.: `--style={BasedOnStyle: InheritParentConfig, ColumnLimit: 20}`
+
+
+
+
+
 
 
 
