@@ -555,11 +555,28 @@ Object 称为中间目标文件比较合适，简称为目标文件。很多时�
 
 
 
+## 第3章 目标文件里有什么
+
+### 3.1 目标文件的格式
+
+当前 PC 平台流行的可执行文件格式（Executable）主要是 Windows 的 PE （Portable Executable）和 Linux 的 ELF（Executable Linkable Format）。都是 COFF （Common file format）格式的变种。
+
+从广义上看，目标文件与可执行文件的格式其实几乎是一样的，所以我们可以广义地将目标文件与可执行文件看成是一种类型的文件，在Windows下，我们可以统称它们为PE-COFF文件格式。在Linux下，我们可以将它们统称为ELF文件。其他不太常见的可执行文件格式还有Intel/Microsoft的OMF（Object Module Format）、Unix a.out格式和MS-DOS .COM格式等。
 
 
 
+动态链接库（DLL，Dynamic Linking Library ）
+
+静态链接库（Static Linking Library）
 
 
+
+ELF文件标准里面把系统中采用ELF格式的文件归为如下表所列举的4类。
+![image-20241017230105764](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202410172301414.png)
+
+
+
+COFF的主要贡献是在目标文件里面引入了“段”的机制，不同的目标文件可以拥有不同数量及不同类型的“段”。另外，它还定义了调试数据格式。
 
 
 
