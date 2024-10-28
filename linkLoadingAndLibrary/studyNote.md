@@ -693,6 +693,29 @@ zhaochen@zhaochendeAir code_3.01 %
 
 
 
+#### 3.3.2 数据段和只读数据段
+
+分别对应代码中已初始化的变量 84 / 85 。
+
+```shell
+Contents of section __DATA,__data:
+ 0088 54000000 55000000                    T...U...
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
