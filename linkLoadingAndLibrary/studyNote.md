@@ -722,6 +722,53 @@ static int x2 = 1;
 
 
 
+#### 3.3.4 其他段
+
+ELF 一些常见段参考下表
+
+![image-20241020152936975](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202410201529119.png)
+
+这些段的名字都是由 “.” 做前缀，表示这些表的名字是系统保留的。应用程序也可以自定义短命，但不能用 “.” 做前缀，否则容易与系统保留段名冲突。
+
+
+
+如下示例，可以将一个 image.jpg 图片，作为目标文件中的一个段。
+
+```shell
+$ objcopy -I binary -O elf32-i386 -B i386 image.jpg image.o 
+$ objdump -ht image.o
+
+image.o:     file format elf32-i386
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00081200  00000000  00000000  00000034  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+SYMBOL TABLE:
+00000000 l    d  .data  00000000 .data
+00000000 g       .data  00000000 _binary_image_jpg_start
+00081200 g       .data  00000000 _binary_image_jpg_end
+00081200 g       *ABS*  00000000 _binary_image_jpg_size
+```
+
+_binary_image_jpg_start / _binary_image_jpg_end / _binary_image_jpg_size，代表图片在内存中的起始地址、结束地址和大小。
+
+
+
+**自定义段**
+
+```c
+__attribute__((section("FOO"))) int global = 42;
+
+__attribute__((section("BAR"))) void foo()
+{
+}
+```
+
+在全局变量或函数之前加上 `__attribute__((section("name")))` 属性，就可以把相应的变量或函数放到以 `name` 作为段名的段中。
+
+
+
 
 
 
