@@ -769,6 +769,24 @@ __attribute__((section("BAR"))) void foo()
 
 
 
+### 3.4 ELF文件结构描述
+
+ELF 目标文件的总体结构如下图
+
+![image-20241023230754113](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202410232307252.png)
+
+
+
+ELF文件头（ELF Header），它包含了描述整个文件的基本属性，比如ELF文件版本、目标机器型号、程序入口地址等。
+
+段表（Section Header Table），该表描述了ELF文件包含的所有段的信息，比如每个段的段名、段的长度、在文件中的偏移、读写权限及段的其他属性。
+
+
+
+
+
+
+
 
 
 
