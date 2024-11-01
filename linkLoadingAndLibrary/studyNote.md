@@ -783,9 +783,49 @@ ELF文件头（ELF Header），它包含了描述整个文件的基本属性，�
 
 
 
+#### 3.4.1 文件头
+
+可以使用 readelf -h 命令查看目标文件头。macOS系统用 `otool` 命令代替。
+
+```shell
+zhaochen@zhaochendeAir code_3.01 % otool -h SimpleSection.o 
+SimpleSection.o:
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+ 0xfeedfacf 16777228          0  0x00           1     4        600 0x00002000
+zhaochen@zhaochendeAir code_3.01 % 
+zhaochen@zhaochendeAir code_3.01 % 
+zhaochen@zhaochendeAir code_3.01 % otool -hV SimpleSection.o
+SimpleSection.o:
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64   ARM64        ALL  0x00      OBJECT     4        600 SUBSECTIONS_VIA_SYMBOLS
+zhaochen@zhaochendeAir code_3.01 % 
+```
 
 
 
+
+
+ELF 魔数（幻数）解析如下
+
+![image-20241023232556571](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202410232325686.png)
+
+
+
+**各种魔数的由来**
+
+“a.out格式的魔数为0x01、0x07，为什么会规定这个魔数呢？
+
+  UNIX早年是在PDP小型机上诞生的，当时的系统在加载一个可执行文件后直接从文件的第一个字节开始执行，人们一般在文件的最开始放置一条跳转（jump）指令，这条指令负责跳过接下来的7个机器字的文件头到可执行文件的真正入口。而0x01 0x07这两个字节刚好是当时PDP-11的机器的跳转7个机器字的指令。
+
+
+
+**ELF文件标准历史**
+
+文件类型 `e_type` 成员表示 ELF 文件类型。
+
+![image-20241023233726133](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202410232337264.png)
 
 
 
