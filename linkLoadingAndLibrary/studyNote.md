@@ -829,6 +829,20 @@ ELF 魔数（幻数）解析如下
 
 
 
+ #### 3.4.2 段表
+
+
+
+**数组的存放方式**
+
+`Elf32_Shdr` 定义可以参考 “/usr/include/elf.h”
+
+
+
+![image-20241030231847131](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202410302318297.png)
+
+
+
 
 
 
