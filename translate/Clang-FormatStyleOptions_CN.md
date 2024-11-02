@@ -238,6 +238,29 @@ void formatted_code_again;
 
 
 
+### **AccessModifierOffset**(`Integer`)
+
+> **AccessModifierOffset** (`Integer`) clang-format 3.3
+
+
+
+访问控制修饰符（关键字）的额外缩进；比如：`public:`
+
+> The extra indent or outdent of access modifiers, e.g. `public:`.
+
+
+
+补充说明：
+
+假设IndentWidth配置为4空格的默认缩进，又想要类中的关键字靠最左侧，此时配置如下：
+
+```yaml
+# 默认缩进为 4 个空格
+IndentWidth: 4
+# 访问控制关键字与类声明左对齐，且前面无空格；例：public/protected/private等关键字
+AccessModifierOffset: -4
+```
+
 
 
 
