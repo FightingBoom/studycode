@@ -265,6 +265,89 @@ AccessModifierOffset: -4
 
 
 
+### **AlignAfterOpenBracket** (`BracketAlignmentStyle`)
+
+> **AlignAfterOpenBracket** (`BracketAlignmentStyle`) clang-format 3.8
+
+
+
+该配置为真时，在左括号后水平对齐参数。
+
+> If `true`, horizontally aligns arguments after an open bracket.
+
+
+
+适用于圆括号（圆括号），尖括号<>和方括号[]
+
+> This applies to round brackets (parentheses), angle brackets and square brackets.
+
+
+
+可配值：
+
+> Possible values:
+
+
+
+- `BAS_Align`，配置文件中为：`Align`，以左括号为基准排列参数，例如：
+
+> `BAS_Align` (in configuration: `Align`) Align parameters on the open bracket, e.g.:
+
+```c
+someLongFunction(argument1,
+                 argument2);
+```
+
+
+
+- `BAS_DontAlign`，配置文件中为：`DontAlign`，不对齐，使用 `ContinuationIndentWidth` 字段配置的缩进值，例如：
+
+> `BAS_DontAlign` (in configuration: `DontAlign`) Don’t align, instead use `ContinuationIndentWidth`, e.g.:
+
+```c
+someLongFunction(argument1,
+    argument2);
+```
+
+
+
+- `BAS_AlwaysBreak`，配置文件中为：`AlwaysBreak`，如果单行放不下所有参数，则始终在左括号之后换行，例如：
+
+> `BAS_AlwaysBreak` (in configuration: `AlwaysBreak`) Always break after an open bracket, if the parameters don’t fit on a single line, e.g.:
+
+```c
+someLongFunction(
+    argument1, argument2);
+```
+
+
+
+- `BAS_BlockIndent`，配置文件中为：`BlockIndent`，如果单行放不下所有参数，则始终在左括号之后换行，右括号将放在新行上。例如：
+
+> `BAS_BlockIndent` (in configuration: `BlockIndent`) Always break after an open bracket, if the parameters don’t fit on a single line. Closing brackets will be placed on a new line. E.g.:
+
+```c
+someLongFunction(
+    argument1, argument2
+)
+```
+
+
+
+> ❗**注意**
+>
+> 目前仅适用于带括号的初始化列表（`Cpp11BracedListStyle`需要为真）和括号。
+
+> Note
+>
+> This currently only applies to braced initializer lists (when `Cpp11BracedListStyle` is `true`) and parentheses.
+
+
+
+
+
+
+
 
 
 
