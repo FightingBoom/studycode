@@ -843,6 +843,18 @@ ELF 魔数（幻数）解析如下
 
 
 
+#### 3.4.3 重定位表
+
+`.rel.text`段，类型 `sh_type` 为 `SHT_REL` ，即重定位表（Relocation Table）。
+
+.rel 是不同段，重定位表的前缀。比如 .data 段如果有重定位表，即为：.rel.data ；
+
+
+
+
+
+
+
 
 
 
