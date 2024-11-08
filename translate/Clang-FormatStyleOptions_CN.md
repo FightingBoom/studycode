@@ -344,7 +344,67 @@ someLongFunction(
 
 
 
+### **AlignArrayOfStructures** (`ArrayInitializerAlignmentStyle`) 
 
+> **AlignArrayOfStructures** (`ArrayInitializerAlignmentStyle`) clang-format 13
+
+
+
+如果该选项未配置为 `None` ，当使用结构体数组初始化时，会将字段对齐到列。
+
+> If not `None`, when using initialization for an array of structs aligns the fields into columns.
+
+
+
+> ❗**注意**
+>
+> 从 clang-format 15 开始，该选项仅适用于每行列数相等的数组。
+
+> Note
+>
+> As of clang-format 15 this option only applied to arrays with equal number of columns per row.
+
+
+
+可配值：
+
+> Possible values:
+
+
+
+- `AIAS_Left`，配置文件中为：`Left`，左对齐数组列，例如：
+
+> `AIAS_Left` (in configuration: `Left`) Align array column and left justify the columns e.g.:
+
+```c
+struct test demo[] =
+{
+    {56, 23,    "hello"},
+    {-1, 93463, "world"},
+    {7,  5,     "!!"   }
+};
+```
+
+
+
+- `AIAS_Right`，配置文件中为：`Right`，右对齐数组列，例如：
+
+> `AIAS_Right` (in configuration: `Right`) Align array column and right justify the columns e.g.:
+
+```c
+struct test demo[] =
+{
+    {56,    23, "hello"},
+    {-1, 93463, "world"},
+    { 7,     5,    "!!"}
+};
+```
+
+
+
+- `AIAS_None`，配置文件中为：`None`，不对齐数组初始列元素。
+
+> `AIAS_None` (in configuration: `None`) Don’t align array initializer columns.
 
 
 
