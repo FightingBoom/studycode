@@ -408,6 +408,71 @@ struct test demo[] =
 
 
 
+### **AlignConsecutiveAssignments** (`AlignConsecutiveStyle`) 
+
+> **AlignConsecutiveAssignments** (`AlignConsecutiveStyle`) clang-format 3.8
+
+
+
+对齐连续代码块的样式
+
+> Style of aligning consecutive assignments.
+
+连续将导致格式化：
+
+> `Consecutive` will result in formattings like:
+
+```c
+int a            = 1;
+int somelongname = 2;
+double c         = 3;
+```
+
+
+
+嵌套配置标志：
+
+对齐选项。
+
+为了兼容性，它们也可以作为一个整体来阅读。具体选项如下：
+
+> Nested configuration flags:
+>
+> Alignment options.
+>
+> They can also be read as a whole for compatibility. The choices are:
+
+- `None`
+- `Consecutive`
+- `AcrossEmptyLines`
+- `AcrossComments`
+- `AcrossEmptyLinesAndComments`
+
+
+
+例如，要跨空行而不跨注释对齐，如下两种方法都可以
+
+> For example, to align across empty lines and not across comments, either of these work.
+
+```yaml
+AlignConsecutiveAssignments: AcrossEmptyLines
+
+AlignConsecutiveAssignments:
+  Enabled: true
+  AcrossEmptyLines: true
+  AcrossComments: false
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
 
