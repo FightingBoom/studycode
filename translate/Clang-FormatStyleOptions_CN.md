@@ -465,6 +465,149 @@ AlignConsecutiveAssignments:
 
 
 
+- `bool Enabled` ，是否启用对齐
+
+> `bool Enabled` Whether aligning is enabled.
+
+```c
+#define SHORT_NAME       42
+#define LONGER_NAME      0x007f
+#define EVEN_LONGER_NAME (2)
+#define foo(x)           (x * x)
+#define bar(y, z)        (y + z)
+
+int a            = 1;
+int somelongname = 2;
+double c         = 3;
+
+int aaaa : 1;
+int b    : 12;
+int ccc  : 8;
+
+int         aaaa = 12;
+float       b = 23;
+std::string ccc;
+```
+
+
+
+- `bool AcrossEmptyLines` ，是否跳过空行对齐。
+
+> `bool AcrossEmptyLines` Whether to align across empty lines.
+
+```c
+true:
+int a            = 1;
+int somelongname = 2;
+double c         = 3;
+
+int d            = 3;
+
+false:
+int a            = 1;
+int somelongname = 2;
+double c         = 3;
+
+int d = 3;
+```
+
+
+
+- `bool AcrossComments` ，是否跳过注释对齐。
+
+> `bool AcrossComments` Whether to align across comments.
+
+```c
+true:
+int d    = 3;
+/* A comment. */
+double e = 4;
+
+false:
+int d = 3;
+/* A comment. */
+double e = 4;
+```
+
+
+
+- `bool AlignCompound` 由 `AlignConsecutiveAssignments` 直接配置。复合赋值运算符 `+=` 是否与 `=` 对齐。
+
+> `bool AlignCompound` Only for `AlignConsecutiveAssignments`. Whether compound assignments like `+=` are aligned along with `=`.
+
+```c
+true:
+a   &= 2;
+bbb  = 2;
+
+false:
+a &= 2;
+bbb = 2;
+```
+
+
+
+- `bool AlignFunctionDeclarations` 由 `AlignConsecutiveDeclarations` 直接配置。函数声明是否对齐。
+
+> `bool AlignFunctionDeclarations` Only for `AlignConsecutiveDeclarations`. Whether function declarations are aligned.
+
+```c
+true:
+unsigned int f1(void);
+void         f2(void);
+size_t       f3(void);
+
+false:
+unsigned int f1(void);
+void f2(void);
+size_t f3(void);
+```
+
+
+
+- `bool AlignFunctionPointers` 由 `AlignConsecutiveDeclarations` 直接配置。函数指针是否对齐。
+
+> `bool AlignFunctionPointers` Only for `AlignConsecutiveDeclarations`. Whether function pointers are aligned.
+
+```c
+true:
+unsigned i;
+int     &r;
+int     *p;
+int      (*f)();
+
+false:
+unsigned i;
+int     &r;
+int     *p;
+int (*f)();
+
+```
+
+
+
+- `bool PadOperators` 由 `AlignConsecutiveAssignments` 直接配置。是否在短赋值运算符左侧填充空格，达到与长赋值运算符相同的长度，以便将所有赋值运算符放在长赋值运算符的右侧。
+- . Whether short assignment operators are left-padded to the same length as long ones in order to put all assignment operators to the right of the left hand side.
+
+> `bool PadOperators` Only for `AlignConsecutiveAssignments`. Whether short assignment operators are left-padded to the same length as long ones in order to put all assignment operators to the right of the left hand side.
+
+```c
+true:
+a   >>= 2;
+bbb   = 2;
+
+a     = 2;
+bbb >>= 2;
+
+false:
+a >>= 2;
+bbb = 2;
+
+a     = 2;
+bbb >>= 2;
+
+```
+
 
 
 
