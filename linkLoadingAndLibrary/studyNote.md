@@ -942,6 +942,32 @@ namespace N
 
 
 
+#### 3.5.4 extern "C"
+
+使用 C++ 编译时的默认宏定义，避免 C 语言没有 extern 语法时的错误。
+
+```c++
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+void *memset (void *, int, size_t);
+
+#ifdef __cplusplus
+}
+#endif
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
 
