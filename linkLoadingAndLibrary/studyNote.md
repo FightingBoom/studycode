@@ -984,6 +984,18 @@ void *memset (void *, int, size_t);
 
 
 
+### 3.6 调试信息
+
+调试信息通常比原版本大很多，在发布软件的时候，可以裁剪
+
+```shell
+strip foo
+```
+
+
+
+
+
 
 
 
