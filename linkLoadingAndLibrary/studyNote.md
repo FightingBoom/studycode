@@ -1002,6 +1002,37 @@ ELF 文件；代码段、数据段、BSS段等。
 
 
 
+## 4 静态链接
+
+以如下两个源代码文件为例，展开说明静态链接过程
+
+```c
+// a.c
+extern int shared;
+
+int main()
+{
+    int a = 100;
+    swap(&a, &shared);
+}
+```
+
+
+
+```c
+// b.c
+int shared = 1;
+
+void swap(int *a, int *b)
+{
+    *a ^= *b ^= *a ^= *b;
+}
+```
+
+
+
+
+
 
 
 
