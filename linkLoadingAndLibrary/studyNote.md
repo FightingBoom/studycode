@@ -1100,6 +1100,21 @@ LMA（Load Memory Address），加载地址；
 
 
 
+#### 4.2.2 重定位表
+
+以 x86 处理器为例，重定位表是一个 Elf32_Rel 结构的数组
+
+```c
+typedef struct {
+    Elf32_Addr r_offset;
+    Elf32_Word r_info;
+} Elf32_Rel;
+```
+
+![image-20241111223720299](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202411112237459.png)
+
+
+
 
 
 
