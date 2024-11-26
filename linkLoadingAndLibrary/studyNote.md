@@ -1115,6 +1115,21 @@ typedef struct {
 
 
 
+#### 4.2.3 符号解析
+
+如果只单独链接其中一个 .o 文件，就会报未定义错误。
+
+```shell
+$ ld a.o
+a.o: In function `main':
+a.c:(.text+0x1c): undefined reference to `shared'
+a.c:(.text+0x27): undefined reference to `swap'
+```
+
+链接时符号未定义。导致这个问题的原因很多，最常见的一般都是链接时缺少了某个库，或者输入目标文件路径不正确或符号的声明与定义不一样。
+
+
+
 
 
 
