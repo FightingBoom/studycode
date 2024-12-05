@@ -1265,6 +1265,58 @@ A：我们知道，链接器在链接静态库的时候是以目标文件为单�
 
 
 
+#### 4.6.2 最“小”的程序
+
+不实用 C 语言库，不实用默认 main 程序入口
+
+```c
+char *str = "Hello world!\n";
+
+void print()
+{
+    asm( "movl $13,%%edx \n\t"
+       	 "movl %0,%%ecx  \n\t"
+         "movl $0,%%ebx  \n\t"
+         "movl $4,%%eax  \n\t"
+         "int $0x80      \n\t"
+       ::"r"(str):"edx","ecx","ebx");
+}
+
+void exit()
+{
+    asm( "movl $42,%ebx  \n\t"
+         "movl $1,%eax   \n\t"
+         "int $0x80      \n\t");
+}
+
+void nomain()
+{
+    print();
+    exit();
+}
+```
+
+
+
+编译链接命令如下：
+
+```shell
+gcc -c -fno-builtin TinyHelloWorld.c
+ld -static -e nomain -o TinyHelloWorld TinyHelloWorld.o
+```
+
+
+
+`-fno-builtin` GCC编译器提供了很多内置函数（Built-in Function），它会把一些常用的C库函数替换成编译器的内置函数，以达到优化的功能。比如GCC会将只有字符串参数的printf函数替换成puts，以节省格式解析的时间。exit()函数也是GCC的内置参数之一，所以我们要使用-fno-builtin参数来关闭GCC内置函数功能。
+
+`static` 这个参数表示ld将使用静态链接的方式来链接程序，而不是使用默认的动态链接的方式。
+
+`-e nomain` 表示该程序的入口函数为nomain，还记得ELF文件头Elf32_Ehdr的e_entry成员吗？这个参数就是将ELF文件头的e_entry成员赋值成nomain函数的地址。
+
+`-o TinyHelloWorld` 表示指定输出可执行文件名为TinyHelloWorld。
+
+
+
 
 
 
