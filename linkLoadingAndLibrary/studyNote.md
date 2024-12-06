@@ -1331,6 +1331,21 @@ ld -static -e nomain -o TinyHelloWorld TinyHelloWorld.o
 
 
 
+#### 4.6.4 ld链接脚本语法简介
+
+链接脚本由一系列语句组成，语句分两种
+
+- 命令语句
+- 赋值语句
+
+ENTRY（nomain）即为命令语句。
+
+
+
+![image-20241120081807632](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202411200818761.png)
+
+
+
 
 
 
