@@ -1346,6 +1346,20 @@ ENTRY（nomain）即为命令语句。
 
 
 
+### 4.7 BFD库
+
+BFD库（Binary File Descriptor library）
+
+
+
+
+
+
+
+
+
+
+
 
 
 
