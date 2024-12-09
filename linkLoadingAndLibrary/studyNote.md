@@ -1368,17 +1368,17 @@ BFD库（Binary File Descriptor library）
 
 
 
+### 5.2 PE的前身——COFF
+
+Linux 下的 objdump ，类比到 Windows 下，替换为 dumpbin 。
 
 
 
+**COFF文件结构**
 
+COFF 目标文件格式如下
 
-
-
-
-
-
-
+![image-20241127082226988](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202411270822704.png)
 
 
 
