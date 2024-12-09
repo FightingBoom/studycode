@@ -1360,6 +1360,18 @@ BFD库（Binary File Descriptor library）
 
 
 
+## 5 Windows PE/COFF
+
+### 5.1 Windows的二进制文件格式PE/COFF
+
+要实现程序员将变量或函数放到自定义的段，在 GCC 中可以使用 `__attribute__((section("name")))` 扩展属性；在 VISUAL C++ 中可以使用 `#pragma` 编译器指示。
+
+
+
+
+
+
+
 
 
 
