@@ -1382,6 +1382,20 @@ COFF 目标文件格式如下
 
 
 
+### 5.3 链接指示信息
+
+LIBCMT（Library C Multithreaded），表示 VC 的静态链接的多线程 C 库。
+
+
+
+
+
+
+
+
+
+
+
 
 
 
