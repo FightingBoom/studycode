@@ -1388,6 +1388,10 @@ LIBCMT（Library C Multithreaded），表示 VC 的静态链接的多线程 C �
 
 
 
+### 5.4 调试信息
+
+COFF 中所有 `.debug` 开始的段都包含着调试信息。
+
 
 
 
