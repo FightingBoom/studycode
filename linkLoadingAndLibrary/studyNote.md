@@ -1400,6 +1400,30 @@ COFF 文件的符号表包含的内容几乎跟 ELF 文件的符号表一样，�
 
 
 
+### 5.6 Windows下的ELF——PE
+
+PE 是基于 COFF 的扩展。在设计之初，就为了兼容 DOS 环境独立运行。PE 文件格式如下图所示：
+
+![image-20241203081613804](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202412030816961.png)
+
+
+
+DOS Stub 是一段可以在 DOS 下运行的一小段代码。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
