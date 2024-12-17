@@ -1432,6 +1432,42 @@ COFF文件有一个很有意思的段叫“.drectve段”，这个段中保存�
 
 
 
+### 6.1 进程虚拟地址空间
+
+**程序和进程有什么区别**
+
+程序（或者狭义上讲可执行文件）是一个静态的概念，它就是一些预先编译好的指令和数据集合的一个文件；进程则是一个动态的概念，它是程序运行时的一个过程，很多时候把动态库叫做运行时（Runtime）也有一定的含义。
+
+
+
+每个程序运行起来后，都将拥有自己独立的虚拟地址空间（Virtual Address Space），大小由硬件平台决定。
+
+硬件决定了地址空间的最大理论上限，即硬件的寻址空间大小，比如32位的硬件平台决定了虚拟地址空间的地址为 0 到 2^32-1，即0x00000000～0xFFFFFFFF，也就是我们常说的4 GB虚拟空间大小；而64位的硬件平台具有64位寻址能力，它的虚拟地址空间达到了264字节，即0x0000000000000000～0xFFFFFFFFFFFFFFFF，总共17 179 869 184 GB
+
+
+
+Linux 下的 Segmentation fault 很多时候是因为进程访问了未经允许的地址。
+
+
+
+Windows 可以通过修改系统盘根目录的 Boot.ini ，加上 `/3G` 参数，实现操作系统从原来的 2GB 改为只占用 1GB 。
+
+```shell
+[boot loader]
+timeout=30
+default=multi(0)disk(0)rdisk(0)partition(1)\WINDOWS
+[operating systems]
+multi(0)disk(0)rdisk(0)partition(1)\WINDOWS="Microsoft Windows XP Professional" /3G /fastdetect /NoExecute=OptIn
+```
+
+
+
+**PAE**
+
+Pyhsical Address Extension ，地址扩展方式。
+
+
+
 
 
 
