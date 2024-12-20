@@ -1492,7 +1492,11 @@ Pyhsical Address Extension ，地址扩展方式。
 
 
 
+#### 6.2.2 页映射
 
+FIFO，先进先出算法
+
+LUR，最少使用算法
 
 
 
