@@ -1589,6 +1589,12 @@ int main(int argc, char *argv[])
 
 
 
+#### 6.4.4 段地址对齐
+
+在ELF文件中，对于任何一个可装载的“Segment”，它的p_vaddr除以对齐属性的余数等于p_offset除以对齐属性的余数。比如前面例子中，第二个“Segment”的p_vaddr为0x080b99e8，对齐属性为0x1000字节，所以0x080b99e8 % 0x1000 = 0x9e8；而p_offset为0x0709e8，所以0x0709e8 % 0x1000 = 0x9e8。
+
+
+
 
 
 
