@@ -1595,6 +1595,16 @@ int main(int argc, char *argv[])
 
 
 
+#### 6.4.5 进程栈初始化
+
+linux 进程初始堆栈
+
+![image-20241209225007066](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202412092250217.png)
+
+
+
+
+
 
 
 
