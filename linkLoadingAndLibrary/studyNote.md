@@ -1603,6 +1603,28 @@ linux 进程初始堆栈
 
 
 
+### 6.5 Linux内核装载ELF过程简介
+
+每种可执行文件的格式的开头几个字节都是很特殊的，特别是开头 4 个字节，常常被称作魔术（Magic Number）
+
+ELF 的可执行文件格式的头 4 个字节：0x7F 、'e' 、'l' 、'f'；
+
+Java 的可执行文件格式的头 4 个自己为：'c' / 'a' / 'f' / 'e'
+
+如果是可执行脚本，开头前两个字节通常为 `#!` 。
+
+
+
+load_elf_binary() 被定义在 fs/binfmt_elf.c 
+
+参考：https://github.com/torvalds/linux/blob/master/fs/binfmt_elf.c
+
+
+
+
+
+
+
 
 
 
