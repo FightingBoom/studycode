@@ -1621,6 +1621,16 @@ load_elf_binary() 被定义在 fs/binfmt_elf.c
 
 
 
+### 6.6 Windows PE的装载
+
+RVA（Relative Virtual Address ），表示一个相对虚拟地址。相当于文件中的偏移量。
+
+
+
+
+
+
+
 
 
 
