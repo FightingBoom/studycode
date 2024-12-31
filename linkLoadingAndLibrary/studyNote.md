@@ -1691,6 +1691,78 @@ DDL Hell
 
 
 
+### 7.2 简单的动态链接例子
+
+程序清单 7-1 
+
+```c
+/* Program1.c */
+#include "Lib.h"
+
+int main()
+{   
+    foobar(1);
+    return 0;
+}
+
+/* Program2.c */
+#include "Lib.h"
+
+int main()
+{   
+  foobar(2);
+    return 0;
+}
+
+/* Lib.c */
+#include <stdio.h>
+
+void foobar(int i) 
+{
+    printf("Printing from Lib.so %d\n", i);
+}
+
+/* Lib.h */
+#ifndef LIB_H
+#define LIB_H
+
+void foobar(int i);
+
+#endif
+```
+
+使用如下 GCC 命令编译
+
+```shell
+gcc -fPIC -shared -o Lib.so Lib.c
+```
+
+`-shared`：表示产生共享对象
+
+
+
+**关于模块（Module）**
+
+对于函数，可以从输入文件的 *.so 中找到对应符号，这样链接器在解析符号的时候，就可以知道是一个动态符号。
+
+
+
+**动态链接程序运行时地址空间分布**
+
+```shell
+cat /proc/12985/maps
+```
+
+通过如上命令，即可看到进程的虚拟地址空间分布。
+
+
+
+共享对象的最终装载地址在编译时是不确定的，而是在装载时，装载器根据当前地址空间的空闲情况，动态分配一块足够大小的虚拟地址空间给相应的共享对象。
+
+
+
+
+
 
 
 
