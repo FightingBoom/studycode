@@ -1769,6 +1769,14 @@ cat /proc/12985/maps
 
 
 
+#### 7.3.2 装载时重定位
+
+静态链接时提到过重定位，那时的重定位叫做链接时重定位（Link Time Relocation），而现在这种情况经常被称为装载时重定位（Load Time Relocation），在Windows中，这种装载时重定位又被叫做基址重置（Rebasing）
+
+
+
+
+
 
 
 
