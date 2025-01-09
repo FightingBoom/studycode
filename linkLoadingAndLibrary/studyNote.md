@@ -1926,6 +1926,24 @@ interp 是 interpreter 解释器的缩写。
 
 
 
+#### 7.5.2 ".dynamic"段
+
+"elf.h"
+
+```c
+typedef struct {
+    Elf32_Sword d_tag;
+    union {
+        Elf32_Word d_val;
+        Elf32_Addr d_ptr;
+    } d_un;
+} Elf32_Dyn;
+```
+
+
+
+ldd 命令可以用来查看一个程序主模块、或一个共享库依赖于哪些共享库。
+
 
 
 
