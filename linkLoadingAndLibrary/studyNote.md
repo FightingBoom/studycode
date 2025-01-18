@@ -2095,6 +2095,18 @@ ld.so的装载地址跟一般的共享对象没区别，即为0x00000000。这�
 
 
 
+### 7.7 显式运行时链接
+
+显式运行时链接（Explicit Run-time Linking），有时也叫运行时加载。
+
+
+
+动态装载库（Dynamic Loading Library）
+
+
+
+动态库的装载则是通过一系列由动态链接器提供的API，具体地讲共有4个函数：打开动态库（dlopen）、查找符号（dlsym）、错误处理（dlerror）以及关闭动态库（dlclose）
+
 
 
 
