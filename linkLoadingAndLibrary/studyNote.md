@@ -2171,6 +2171,48 @@ dlerror()的返回值类型是char*，如果返回NULL，则表示上一次调�
 
 
 
+#### 7.7.4 `dlclose()`
+
+`dlopen()`使计数器加一，`dlclose()`使计数器减一。只有当计数器减到 0 时，模块才被真正的卸载。
+
+
+
+```c++
+#include <stdio.h>
+#include <dlfcn.h>
+
+int main(int argc, char* argv[])
+{
+    void* handle;
+    double (*func)(double);
+    char* error;
+    handle = dlopen(argv[1],RTLD_NOW);
+    if(handle == NULL) {
+        printf("Open library %s error: %s\n", argv[1], dlerror());
+        return -1;
+    }
+
+    func = dlsym(handle,"sin");
+    if( (error = dlerror()) != NULL ) {
+        printf("Symbol sin not found: %s\n", error);
+        goto exit_runso;
+    }
+
+    printf( "%f\n", func(3.1415926 / 2) );
+
+    exit_runso:
+    dlclose(handle);
+}
+```
+
+执行结果如下
+
+```shell
+$gcc –o RunSoSimple RunSoSimple.c –ldl
+$./RunSoSimple /lib/libm-2.6.1.so
+1.000000
+```
+
 
 
 
