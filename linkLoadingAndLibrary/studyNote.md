@@ -2307,6 +2307,18 @@ libname.so.x.y.z
 
 
 
+### 8.2 符号版本
+
+次版本号交会问题（Minor-revision Rendezvous Problem）
+
+
+
+符号版本机制
+
+共享库的 SO-NAME 不变，指示内部符号，添加相应的版本标记；
+
+> 联想当前在做的项目，会用 attribute 增加版本号声明用作区分；
+
 
 
 
