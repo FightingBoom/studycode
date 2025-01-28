@@ -2321,6 +2321,17 @@ libname.so.x.y.z
 
 
 
+#### 8.2.2 Solaris中的符号版本机制
+
+```c++
+SUNW_1.2 { 
+    global: 
+    swap; 
+} SUNW_1.1;
+```
+
+
+
 
 
 
