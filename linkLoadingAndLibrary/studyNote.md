@@ -2457,6 +2457,16 @@ void __attribute__((constructor(10))) init_function2(void);
 
 
 
+#### 8.6.5 共享库脚本
+
+```shell
+GROUP( /lib/libc.so.6 /lib/libm.so.2)
+```
+
+
+
+
+
 
 
 
