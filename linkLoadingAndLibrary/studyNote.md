@@ -2471,6 +2471,14 @@ GROUP( /lib/libc.so.6 /lib/libm.so.2)
 
 
 
+## 第9章 Windows下的动态链接
+
+### 9.1 DLL 简介
+
+Windows下的DLL文件和EXE文件实际上是一个概念，它们都是有PE格式的二进制文件，稍微有些不同的是PE文件头部中有个符号位表示该文件是EXE或是DLL，而DLL文件的扩展名不一定是.dll，也有可能是别的比如.ocx（OCX控件）或是.CPL（控制面板程序）。
+
+
+
 
 
 
