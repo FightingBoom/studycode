@@ -2487,6 +2487,15 @@ Windows下的DLL文件和EXE文件实际上是一个概念，它们都是有PE�
 
 
 
+#### 9.1.2 基地址和RVA
+
+PE 中有两个常用的概念
+
+- 基地址（Base Address）
+- 相对地址（RVA，Relative Virtual Address）
+
+
+
 
 
 
