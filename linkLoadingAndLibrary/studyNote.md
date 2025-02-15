@@ -2519,6 +2519,14 @@ ELF 中，共享库中所有的全局函数和变量在默认情况下都可以�
 
 
 
+#### 9.1.6 使用DLL
+
+Math.lib”中并不真正包含“Math.c”的代码和数据，它用来描述“Math.dll”的导出符号，它包含了TestMath.o链接Math.dll时所需要的导入符号以及一部分“桩”代码，又被称作“胶水”代码，以便于将程序与DLL粘在一起。像“Math.lib”这样的文件又被称为导入库（Import Library）
+
+![image-20250105105934809](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202501051059858.png)
+
+
+
 
 
 
