@@ -2536,6 +2536,22 @@ Math.lib”中并不真正包含“Math.c”的代码和数据，它用来描述
 
 
 
+#### 9.1.8 DLL显式运行时链接
+
+DLL 也支持运行时链接，Windows 提供了 3 个 API 为：
+
+- LoadLibrary （或者 LoadLibraryEx），用来装载一个 DLL 到进程的地址空间，作用跟 dlopen 类似；
+- GetProcAddress ，用来查找某个符号的地址，与 dlsym 类似；
+- FreeLibrary ，用来卸载某个已加载的模块，与 dlclose 类似；
+
+
+
+
+
+
+
+
+
 
 
 
