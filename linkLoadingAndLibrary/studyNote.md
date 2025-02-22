@@ -2580,6 +2580,19 @@ Export Table ，导出表。
 
 
 
+#### 9.2.3 导出重定向
+
+```shell
+EXPORTS
+
+# 重定向后的 DLL 文件名和符号名
+HeapAlloc = NTDLL.RtlAllocHeap
+```
+
+
+
+
+
 
 
 
