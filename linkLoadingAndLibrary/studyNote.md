@@ -2657,9 +2657,9 @@ Windows 系统本身自带的，比如 Kernel32.dll 、ntdll.dll、shell32.dll �
 
 
 
+#### 9.3.3 导入函数绑定
 
-
-
+DLL绑定，DLL Binding。
 
 
 
