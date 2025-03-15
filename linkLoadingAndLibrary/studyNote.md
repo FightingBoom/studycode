@@ -2913,5 +2913,15 @@ mainCRTStartup的总体流程就是：
 
 
 
+#### 11.1.3 运行库与I/O
+
+IO （或 I/O ）的全称是 Input / Output ，即输入和输出。
+
+
+
+首先I/O初始化函数需要在用户空间中建立stdin、stdout、stderr及其对应的FILE结构，使得程序进入main之后可以直接使用printf、scanf等函数。
+
+
+
 
 
