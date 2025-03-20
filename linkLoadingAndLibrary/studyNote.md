@@ -2963,5 +2963,23 @@ I/O 初始化
 
 
 
+### 11.3 运行库与多线程
+
+#### 11.3.1 CRT的多线程困扰
+
+线程局部存储（Thread Local Storage, TLS）
+
+C 角度看，数据在线程之间是否私有如下表：
+
+![image-20250217225728339](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202502172257245.png)
+
+
+
+在 Linux 下的 glibc 也提供了 pthread(POSIX Thread) 线程库。这些函数都不属于标准的运行库，都是跟平台相关的。
+
+
+
+
+
 
 
