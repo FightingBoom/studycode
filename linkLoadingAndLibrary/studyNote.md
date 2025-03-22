@@ -3003,5 +3003,33 @@ MSVC CRT 与 Glibc，都提供了线程安全版本的函数
 
 
 
+#### 11.3.3 线程局部存储实现
+
+要定义一个变量为线程局部存储的，GCC 里边，可以在变量前加关键字：__thread 。
+
+```c++
+// GCC
+__thread int number;
+
+// MSVC
+__declspec(thread) int number;
+```
+
+
+
+线程环境块（TEB, Thread Environment Block）。
+
+
+
+隐式 TLS ，显式 TLS 。
+
+
+
+Windows API 与 MSVC 的 CRT 函数混用，可能会导致内存泄漏。
+
+
+
+
+
 
 
