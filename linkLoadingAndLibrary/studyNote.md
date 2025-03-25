@@ -3049,5 +3049,15 @@ Windows API 与 MSVC 的 CRT 函数混用，可能会导致内存泄漏。
 
 
 
+### 11.5 fread实现
+
+#### 11.5.1 缓冲
+
+fflush，将写缓冲的内容，同步到文件中。
+
+![image-20250219234447517](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202502192344644.png)
+
+
+
 
 
