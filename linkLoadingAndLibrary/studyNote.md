@@ -3065,6 +3065,12 @@ fread_s 最后的 s 是 safe 安全的意思。
 
 
 
+#### 11.5.3 fread_nolock_s
+
+fread_s 内部调用的该函数。
+
+
+
 
 
 
