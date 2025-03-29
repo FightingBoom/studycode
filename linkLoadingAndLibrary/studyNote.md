@@ -3075,5 +3075,23 @@ fread_s 内部调用的该函数。
 
 
 
+#### 11.5.5 文本换行
+
+在Windows的文本文件中，回车（换行）的存储方式是0x0D（用CR表示），0x0A（用LF表示）这两个字节，以C语言字符串表示则是“\r\n”。
+
+Linux/Unix：回车用\n表示。
+
+Mac OS：回车用\r表示。
+
+Windows：回车用\r\n表示。
+
+
+
+![image-20250220000111464](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202502200001578.png)
+
+
+
+
+
 
 
