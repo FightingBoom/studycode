@@ -3091,6 +3091,12 @@ Windows：回车用\r\n表示。
 
 
 
+### 11.6 本章小结
+
+Linux 与 Windows 下的 CRT 。
+
+
+
 
 
 
