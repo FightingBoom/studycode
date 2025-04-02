@@ -3111,6 +3111,14 @@ Linux 与 Windows 下的 CRT 。
 
 
 
+#### 12.1.2 Linux 系统调用
+
+EAX 寄存器，用来表示系统调用的接口号。
+
+Linux 系统调用的 read ，与 C 运行库中的 fread 。
+
+
+
 
 
 
