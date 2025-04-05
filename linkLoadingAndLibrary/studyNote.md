@@ -3141,6 +3141,28 @@ Windows 下使用 int 0x2e 触发，Linux 下则使用 int 0x80 来触发所有�
 
 
 
+#### 12.2.2 基于int的Linux的经典系统调用
+
+以 fork 为例
+
+![image-20250224234853562](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202502242348711.png)
+
+1. 触发中断
+
+C 语言中使用的系统函数，是对系统函数的封装
+
+```c
+_syscall0(pid_t, fork);
+```
+
+
+
+__NR_fork 是一个宏，x86 的可以在 unistd_32.h 中找到。
+
+
+
+当用户调用某个系统调用的时候，实际是执行了以上一段汇编代码。CPU执行到int $0x80时，会保存现场以便恢复，接着会将特权状态切换到内核态。然后CPU便会查找中断向量表中的第0x80号元素。
+
 
 
 
