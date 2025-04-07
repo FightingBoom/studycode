@@ -3179,5 +3179,20 @@ nr_syscalls 是比最大的有效系统调用号大 1 的值。
 
 
 
+#### 12.2.3 Linux的新型系统调用机制
+
+linux-gate.so.1 是 Linux 用于支持新型系统调用的 “虚拟” 共享库。
+
+`cat /proc/self/maps`，可以查看 cat 命令自己的内存布局。
+
+```shell
+# 用dd命令，从进程对应地址偏移导出虚拟共享库。
+$dd if=/proc/self/mem of=linux-gate.dso bs=4096 skip=1048574 count=1
+```
+
+
+
+
+
 
 
