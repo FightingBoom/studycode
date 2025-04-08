@@ -3192,6 +3192,14 @@ $dd if=/proc/self/mem of=linux-gate.dso bs=4096 skip=1048574 count=1
 
 
 
+### 12.3 Windows API
+
+API的全称为Application Programming Interface，即应用程序编程接口。
+
+![image-20250227090955705](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202502270909879.png)
+
+
+
 
 
 
