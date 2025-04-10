@@ -3200,6 +3200,18 @@ API的全称为Application Programming Interface，即应用程序编程接口�
 
 
 
+#### 12.3.1 Windows API 概览
+
+Software Development Kit（SDK）
+
+
+
+**Windows API 版本**
+
+NTDLL.DLL
+
+
+
 
 
 
