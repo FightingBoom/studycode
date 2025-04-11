@@ -3212,6 +3212,20 @@ NTDLL.DLL
 
 
 
+#### 12.3.2 为什么要使用 Windows API
+
+PS：突然想到之前用 Windows 系统，安装某个软件，总是提示缺少某 DLL 库，看来就是缺少了运行以来的环境，或者是说用的 Windows API 没找到。
+
+
+
+DLL基本上是Windows系统上很多高级接口和程序设计方法的基石，包括内核与驱动程序、COM、OLE、ActiveX等都是基于DLL技术的。
+
+
+
+银弹
+
+
+
 
 
 
