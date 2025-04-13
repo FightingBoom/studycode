@@ -3226,6 +3226,12 @@ DLL基本上是Windows系统上很多高级接口和程序设计方法的基石�
 
 
 
+#### 12.3.3 API与子系统
+
+16位的Windows程序运行在32位Windows下被称为WoW（Windows On Windows）
+
+
+
 
 
 
