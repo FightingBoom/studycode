@@ -3238,6 +3238,31 @@ DLL基本上是Windows系统上很多高级接口和程序设计方法的基石�
 
 
 
+## 第13章 运行库实现
+
+### 13.1 C语言运行库
+
+具体目标
+
+首先Mini CRT应该以ANIS C的标准库为目标，尽量做到与其接口相一致。
+
+  具有自己的入口函数（mini_crt_entry）。
+
+  基本的进程相关操作（exit）。
+
+  支持堆操作（malloc、free）。
+
+  支持基本的文件操作（fopen、fread、fwrite、fclose、fseek）。
+
+  支持基本的字符串操作（strcpy、strlen、strcmp）。
+
+  支持格式化字符串和输出操作（printf、sprintf）。
+
+  支持atexit()函数。
+
+  最后，Mini CRT应该是跨平台的。
+
+
 
 
 
