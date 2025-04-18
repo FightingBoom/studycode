@@ -3264,6 +3264,42 @@ DLL基本上是Windows系统上很多高级接口和程序设计方法的基石�
 
 
 
+#### 13.1.1 开始
+
+程序运行的最初入口点不是main函数，而是由运行库为其提供的入口函数。它主要负责三部分工作：准备好程序运行环境及初始化运行库，调用main函数执行程序主体，清理程序运行后的各种资源。
+
+
+
+**入口函数**
+
+`mini_crt_entry`
+
+
+
+**main参数**
+
+对于这个堆栈帧有点疑问。为什么是 EBP - 4 / EBP - 8 ？
+
+2025.03.03，从后续实现代码来看，就是 EBP 加地址偏移。
+
+![image-20250304083033865](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202503040830432.png)
+
+
+
+**CRT初始化**
+
+`mini_crt_heap_init()`
+
+`mini_crt_io_init()`
+
+
+
+**结束部分**
+
+`mini_crt_exit_routine()`
+
+
+
 
 
 
