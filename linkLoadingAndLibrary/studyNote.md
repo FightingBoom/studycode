@@ -3300,6 +3300,12 @@ DLL基本上是Windows系统上很多高级接口和程序设计方法的基石�
 
 
 
+#### 13.1.2 堆的实现
+
+Windows 可以用 HeapAlloc 或 VirtualAlloc ；
+
+Linux 下可以使用 brk / sbrk ；
+
 
 
 
