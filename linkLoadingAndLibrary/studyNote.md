@@ -3326,5 +3326,24 @@ PS：要参考代码，加深理解。目前先看完整体，后续再补。
 
 
 
+### 13.2 如何使用Mini CRT
+
+Linux 下编译静态库 .a 命令如下
+
+```shell
+$gcc -c -fno-builtin -nostdlib -fno-stack-protector entry.c malloc.c stdio.c string.c printf.c
+$ar -rs minicrt.a malloc.o printf.o stdio.o string.o
+```
+
+
+
+-fno-builtin参数是指关闭GCC的内置函数功能，默认情况下GCC会把strlen、strcmp等这些常用函数展开成它内部的实现。
+
+  -nostdlib表示不使用任何来自Glibc、GCC的库文件和启动文件，它包含了-nostartfiles这个参数。
+
+  -fno-stack-protector是指关闭堆栈保护功能，最近版本的GCC会在vfprintf这样的变长参数函数中插入堆栈保护函数，如果不关闭，我们在使用Mini CRT时会发生“__stack_chk_fail”函数未定义的错误。
+
+
+
 
 
