@@ -3345,5 +3345,11 @@ $ar -rs minicrt.a malloc.o printf.o stdio.o string.o
 
 
 
+### 13.3 C++运行库实现
+
+模板是不需要运行库支持的，它的实现依赖于编译器和链接器，对运行库基本上没有要求。
+
+
+
 
 
