@@ -3351,5 +3351,13 @@ $ar -rs minicrt.a malloc.o printf.o stdio.o string.o
 
 
 
+#### 13.3.1 new与delete
+
+真实的 C++ 运行库时，可以实现自己的 new / delete ，这样就会覆盖 C++ 运行库的函数。可以用来记录内存泄漏等！
+
+这种做法通常被称为全局 new/delete 操作符重载（Global new/delete operator overloading）。
+
+
+
 
 
