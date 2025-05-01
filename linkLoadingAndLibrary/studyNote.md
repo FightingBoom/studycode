@@ -3359,5 +3359,9 @@ $ar -rs minicrt.a malloc.o printf.o stdio.o string.o
 
 
 
+#### 13.3.2 C++全局构造与析构
+
+.ctor 段，包含所有的构造函数。
+
 
 
