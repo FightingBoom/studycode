@@ -3365,3 +3365,19 @@ $ar -rs minicrt.a malloc.o printf.o stdio.o string.o
 
 
 
+#### 13.3.3 atexit实现
+
+atexit()的用法十分简单，即由它注册的函数会在进程退出前，在exit()函数中被调用。
+
+
+
+在这里不得不实现atexit的原因是：所有全局对象的析构函数——不管是Linux还是Windows——都是通过atexit或其类似函数来注册的，以达到在程序退出时执行的目的。
+
+
+
+先构造的全局对象应该后析构。
+
+
+
+
+
