@@ -3405,5 +3405,13 @@ CRT / CRT++
 
 
 
+## 附录A
+
+### A.1 字节序（Byte Order）
+
+大端传输，小端传输。
+
+![image-20250310235403880](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202503102354062.png)
+
 
 
