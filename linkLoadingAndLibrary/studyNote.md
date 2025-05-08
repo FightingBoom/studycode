@@ -3415,3 +3415,13 @@ CRT / CRT++
 
 
 
+### A.2 ELF常见段
+
+![image-20250310235726824](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202503102357955.png)
+
+![image-20250310235806444](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202503102358524.png)
+
+![image-20250310235847754](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202503102358842.png)
+
+
+
