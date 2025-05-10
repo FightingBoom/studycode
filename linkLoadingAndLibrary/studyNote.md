@@ -3425,3 +3425,58 @@ CRT / CRT++
 
 
 
+### A.3 常用开发工具命令行参考
+
+#### A.3.1 gcc，GCC编译器
+
+-E：只进行预处理并把预处理结果输出。
+
+  -c：只编译不链接。
+
+  -o <filename>：指定输出文件名。
+
+  -S：输出编译后的汇编代码文件。
+
+  -I：指定头文件路径。
+
+  -e name：指定name为程序入口地址。
+
+  -ffreestanding：编译独立的程序，不会自动链接C运行库、启动文件等。
+
+  -finline-functions,-fno-inline-functions：启用/关闭内联函数。
+
+  -g：在编译结果中加入调试信息，-ggdb就是加入GDB调试器能够识别的格式。
+
+  -L <directory>：指定链接时查找路径，多个路径之间用冒号隔开。
+
+  -nostartfiles：不要链接启动文件，比如crtbegin.o、crtend.o。
+
+  -nostdlib：不要链接标准库文件，主要是C运行库。
+
+  -O0：关闭所有优化选项。
+
+  -shared：产生共享对象文件。
+
+  -static：使用静态链接。
+
+  -Wall：对源代码中的多数编译警告进行启用。
+
+  -fPIC：使用地址无关代码模式进行编译。
+
+  -fPIE：使用地址无关代码模式编译可执行文件。
+
+-XLinker <option>：把option传递给链接器。
+
+  -Wl <option>：把option传递给链接器，与上面的选项类似。
+
+  -fomit-frame-pointer：禁止使用EBP作为函数帧指针。
+
+  -fno-builtin：禁止GCC编译器内置函数。
+
+  -fno-stack-protector：是指关闭堆栈保护功能。
+
+  -ffunction-sections：将每个函数编译到独立的代码段。
+
+  -fdata-sections：将全局/静态变量编译到独立的数据段。
+
+
