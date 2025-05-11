@@ -3480,3 +3480,38 @@ CRT / CRT++
   -fdata-sections：将全局/静态变量编译到独立的数据段。
 
 
+
+#### A.3.2 ld，GNU链接器
+
+-static：静态链接。
+
+  -l<libname>：指定链接某个库。
+
+  -e name：指定name为程序入口。
+
+  -r：合并目标文件，不进行最终链接。
+
+  -L <directory>：指定链接时查找路径，多个路径之间用冒号隔开。
+
+  -M：将链接时的符号和地址输出成一个映射文件。
+
+  -o：指定输出文件名。
+
+  -s：清除输出文件中的符号信息。
+
+  -S：清除输出文件中的调试信息。
+
+  -T <scriptfile>：指定链接脚本文件。
+
+  -version-script <file>：指定符号版本脚本文件。
+
+  -soname <name>：指定输出共享库的SONAME。
+
+-export-dynamic：将全局符号全部导出。
+
+  -verbose：链接时输出详细信息。
+
+  –rpath <path>：指定链接时库查找路径。
+
+
+
