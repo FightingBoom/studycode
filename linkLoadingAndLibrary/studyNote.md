@@ -3597,3 +3597,39 @@ CRT / CRT++
 
 
 
+  #### A.3.5 link，MSVC链接器
+
+  /BASE:address：指定输出文件的基地址。
+
+  /DEBUG：输出调试模式版本。
+
+  /DEF:filename：指定模块定义文件.DEF。
+
+  /DEFAULTLIB:library：指定默认运行库。
+
+  /DLL：产生DLL。
+
+  /ENTRY:symbol：指定程序入口。
+
+  /EXPORT:symbol：指定某个符号为导出符号。
+
+  /HEAP：指定默认堆大小。
+
+  /LIBPATH:dir：指定链接时库搜索路径。
+
+  /MAP[:filename]：产生链接MAP文件。
+
+  /NODEFAULTLIB[:library]：禁止默认运行库。
+
+  /OUT:filename：指定输出文件名。
+
+  /RELEASE：以发布版本产生输出文件。
+
+  /STACK：指定默认栈大小。
+
+  /SUBSYSTEM：指定子系统。
+
+
+
+
+
