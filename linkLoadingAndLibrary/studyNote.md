@@ -3631,5 +3631,37 @@ CRT / CRT++
 
 
 
+  #### A.3.6 dumpbin，MSVC的COFF/PE文件查看器
+
+  /ALL：显示所有信息。
+
+/ARCHIVEMEMBERS：显示.LIB文件中所有目标文件列表。
+
+  /DEPENDENTS：显示文件的动态链接依赖关系。
+
+  /DIRECTIVES：显示链接器指示。
+
+  /DISASM：显示反汇编。
+
+  /EXPORTS：显示导出函数表。
+
+  /HEADERS：显示文件头。
+
+  /IMPORTS：显示导入函数表。
+
+  /LINENUMBERS：显示行号信息。
+
+  /RELOCATIONS：显示重定位信息。
+
+  /SECTION:name ：显示某个段。
+
+  /SECTION：显示文件概要信息。
+
+  /SYMBOLS：显示文件符号表。
+
+  /TLS：显示线程局部存储TLS信息。
+
+
+
 
 
