@@ -12,9 +12,16 @@ hello world 程序
 
 
 
+## 1.2 程序被其他程序翻译成不同的格式
+
+![image-20250420174021935](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202504211008449.png)
 
 
 
+- 预处理阶段。预处理器 cpp ，替换 `#` 开头的预处理命令到当前源码文件，生成 *.i 文件。
+- 编译阶段。编译器 ccl ，将 *.i 翻译成文本文件 *.s 。
+- 汇编阶段。汇编器 as 。
+- 链接阶段。链接器 ld 。
 
 
 
