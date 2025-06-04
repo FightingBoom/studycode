@@ -121,6 +121,14 @@ L1 和 L2 高速缓存是用一种叫做静态随机访问存储器（SRAM）的
 
 
 
+## 1.6 存储设备形成层次结构
+
+![image-20250424081538744](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202504240815879.png)
+
+
+
+存储器层次结构的主要思想是上一层的存储器作为低一层存储器的高速缓存。
+
 
 
 
