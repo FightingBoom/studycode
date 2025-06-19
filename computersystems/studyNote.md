@@ -346,6 +346,32 @@ long unsigned int
 
 
 
+### 2.1.3 寻址和字节顺序
+
+小端法，小端传输，little endian
+
+大端法，大端传输，big endian
+
+
+
+![image-20250518222914869](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202505182229078.png)
+
+
+
+直接用 man 命令就可以查看 ASCII 表
+
+```shell
+man ascii
+```
+
+![image-20250518223207205](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202505182232330.png)
+
+
+
+
+
+
+
 
 
 
