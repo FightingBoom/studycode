@@ -368,6 +368,12 @@ man ascii
 
 
 
+### 2.1.4 表示字符串
+
+Unicode 联合会（Unicode Consortium）
+
+
+
 
 
 
