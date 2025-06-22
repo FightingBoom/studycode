@@ -380,6 +380,16 @@ Unicode 联合会（Unicode Consortium）
 
 
 
+### 2.1.6 布尔代数简介
+
+布尔代数（Boolean algebra）
+
+布尔环（Boolean ring）
+
+
+
+
+
 
 
 
