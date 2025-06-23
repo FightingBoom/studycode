@@ -388,6 +388,10 @@ Unicode 联合会（Unicode Consortium）
 
 
 
+### 2.1.7 C语言中的位级运算
+
+| 就是 OR( 或），＆就是 AND( 与），～就是 NOT( 反），而＾就是 EXCLUSIVE-OR( 异或）。
+
 
 
 
