@@ -420,11 +420,9 @@ Java 对于如何进行右移有明确的定义。表达是 x>>k 会将 x 算术
 
 
 
+## 2.2 整数表示
 
-
-
-
-
+![image-20250623222235445](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202506232222966.png)
 
 
 
