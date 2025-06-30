@@ -610,6 +610,14 @@ bbb >>= 2;
 
 
 
+### **AlignConsecutiveBitFields** (`AlignConsecutiveStyle`)
+
+> **AlignConsecutiveBitFields** (`AlignConsecutiveStyle`) clang-format 11
+
+
+
+
+
 
 
 
