@@ -450,6 +450,36 @@ B2U~w~（Binary to Unsigned 缩写，长度为 w）
 
 
 
+### 2.2.3 补码编码
+
+B2T~w~（Binary to Two's-complement）
+
+
+
+书中这个补码示例图很有意思，之前从没这样想过。
+
+![image-20250629104659979](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202506291047145.png)
+
+由上述图片，就可以发现为啥 负数范围比正数的范围大 1 了。
+
+1000 0000，-128
+
+0111 1111，127
+
+
+
+PRId32 / PRIu64
+
+使用宏可以保证：不论代码是如何被编译的，都能生成正确的格式字符串。
+
+
+
+正数数据类型的取值范围和表示，Java 标准非常明确，要求采用补码表示。单字节数据类型称为 byte ，而不是 char 。
+
+
+
+
+
 
 
 
