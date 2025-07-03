@@ -478,6 +478,18 @@ PRId32 / PRIu64
 
 
 
+### 2.2.4 有符号数和无符号数之间的转换
+
+```c++
+short int v = -12345;
+unsigned short uv = (unsigned short)v;
+printf("v = %d, uv = %u\n", v, uv);
+```
+
+![image-20250702082314033](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202507020823103.png)
+
+
+
 
 
 
