@@ -645,11 +645,29 @@ IEEE 标准 754 ，表示浮点数及其运算的标准。
 
 
 
+### 2.4.2 IEEE 浮点表示
+
+IEEE 浮点标准
+
+- 符号（sign）
+- 尾数（significand）
+- 阶码（exponent）
 
 
 
+规格化的值：E = e - Bias
 
 
+
+非规格化的值：E = 1 - Bias
+
+逐渐溢出
+
+
+
+特殊值
+
+NaN（Not a Number）
 
 
 
