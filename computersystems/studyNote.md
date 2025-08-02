@@ -785,7 +785,9 @@ PF，parity flag（奇偶标志）
 
 
 
+## 3.3 数据格式
 
+![image-20250727164228280](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202507271642414.png)
 
 
 
