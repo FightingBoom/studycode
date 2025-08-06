@@ -815,6 +815,25 @@ x86-64 的 CPU ，包含一组 16 个存储 64 位值的通用目的寄存器。
 
 
 
+### 3.4.3 数据传送示例
+
+```c
+long exchange(long *xp, long y)
+{
+    long x = *xp;
+    *xp = y;
+    return x;
+}
+```
+
+
+
+
+
+
+
+
+
 
 
 
