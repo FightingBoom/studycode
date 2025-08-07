@@ -828,6 +828,16 @@ long exchange(long *xp, long y)
 
 
 
+### 3.4.4 压入和弹出栈数据
+
+栈，是一种数据结构，遵循先进后出/后进先出的原则。
+
+
+
+x86-64 中， 栈向低地址方向增长，所以压栈是减小栈指针（寄存器 %rsp) 的值，并将数据存放到 内存中，而出栈是从内存中读数据，并增加栈指针的值
+
+![image-20250727165939236](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202507271704496.png)
+
 
 
 
