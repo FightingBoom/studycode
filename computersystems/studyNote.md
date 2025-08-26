@@ -989,6 +989,12 @@ call Q，该指令会把地址 A 压入栈中，并将 PC 设置为 Q 的起始�
 
 
 
+### 3.7.3 数据传送
+
+![image-20250813103930522](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202508131039932.png)
+
+
+
 
 
 
