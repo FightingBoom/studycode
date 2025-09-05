@@ -1073,6 +1073,32 @@ ISO C99 引入了一种功能，允许数组的维度是表达式，在数组被
 
 
 
+### 3.9.1 结构
+
+结构的所有组成部分都存放在内存中一段连续的区域内，而指向结构的指针就是结构第一个字节的地址。
+
+
+
+```c
+struct rec
+{
+    int i;
+    int j;
+    int a[2];
+    int *p;
+};
+```
+
+如上结构内存分布如下图：
+
+![image-20250817182546910](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202508171825483.png)
+
+
+
+
+
+
+
 
 
 
