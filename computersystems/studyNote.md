@@ -1095,6 +1095,42 @@ struct rec
 
 
 
+### 3.9.2 联合
+
+```c
+// 
+struct S3
+{
+    char c;
+    int i[2];
+    double v;
+};
+
+// 
+union U3
+{
+    char c;
+    int i[2];
+    double v;
+};
+```
+
+如上结构体、联合体定义，x86-64 Linux 机器，内存偏移位置如下：
+
+![image-20250817183123833](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202508171831939.png)
+
+
+
+在结构体其他字段，与联合的元素之间，需要有 4 个字节的填充，所以 v 的起始地址是 16 ，而不是 12 。
+
+
+
+对于有较多字段的数据结构，使用结构体 + 联合，可以节省很多内存空间。
+
+
+
+
+
 
 
 
