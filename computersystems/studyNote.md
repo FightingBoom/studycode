@@ -1170,6 +1170,22 @@ int *f(int*);
 
 
 
+### 3.10.2 应用：使用 GDB 调试器
+
+用 objdump 获取程序的反汇编版本。
+
+
+
+GDB 部分命令示例如下
+
+![image-20250827100609576](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202508271006737.png)
+
+
+
+DDD：是 GDB 的一个扩展，提供了图形用户界面。
+
+
+
 
 
 
