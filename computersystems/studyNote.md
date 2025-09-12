@@ -1210,6 +1210,38 @@ DDD：是 GDB 的一个扩展，提供了图形用户界面。
 
 
 
+### 3.10.4 对抗缓冲区溢出攻击
+
+1. 栈随机化
+
+安全单一化（security monoculture）
+
+栈随机化的思想使得栈的位置在程序每次运行时都有变化。
+
+地址空间布局随机化（Address-Space Layout Randomization），简称 ASLR 。
+
+
+
+nop ，读作 no op ，no operatioin 的缩写。
+
+
+
+空操作雪橇（nop sled）
+
+
+
+2. 栈破坏检测
+
+栈保护者机制，stack protector
+
+
+
+3. 限制可执行代码区域
+
+
+
+
+
 
 
 
