@@ -1240,6 +1240,12 @@ nop ，读作 no op ，no operatioin 的缩写。
 
 
 
+### 3.10.5 支持变长栈帧
+
+%rbp / base pointer 基指针。
+
+
+
 
 
 
