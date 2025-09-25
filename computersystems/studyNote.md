@@ -1352,6 +1352,10 @@ HCL（Hardware Control Language，硬件控制语言）
 
 
 
+### 4.1.2 Y86-64 指令
+
+movq 、整数操作指令、跳转指令、条件传送指令等 
+
 
 
 
