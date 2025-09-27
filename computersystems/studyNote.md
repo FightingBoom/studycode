@@ -1384,11 +1384,9 @@ ARM，Acorn RISC Machine 缩写
 
 
 
+### 4.1.4 Y86-64 异常
 
-
-
-
-
+AOK / HLT / ADR / INS 
 
 
 
