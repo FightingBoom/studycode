@@ -1390,6 +1390,28 @@ AOK / HLT / ADR / INS
 
 
 
+### 4.1.5 Y86-64 程序
+
+汇编器伪指令（assembler directives）
+
+```c
+long sum(long *start, long count)
+{
+    long sum = 0;
+    while (count)
+    {
+        sum += *start;
+        start++;
+        count--;
+    }
+    return sum;
+}
+```
+
+
+
+
+
 
 
 
