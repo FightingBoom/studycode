@@ -1416,13 +1416,15 @@ pushq 指令会把栈指针减 8, 并且将一个寄存器值写入内存中。�
 
 
 
+## 4.2 逻辑设计和硬件控制语言 HCL
+
+HCL（Hardware Control Language，硬件控制语言）
+
+HDL（Hardware Description Language，硬件描述语言）
 
 
 
-
-
-
-
+逻辑合成（logic synthesis）
 
 
 
