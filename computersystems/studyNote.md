@@ -1451,9 +1451,15 @@ HDL（Hardware Description Language，硬件描述语言）
 
 
 
+### 4.2.3 字级的组合电路和 HCL 整数表达式
+
+非门（inverters）
+
+情况表达式（case expression）
 
 
 
+算数/逻辑单元（ALU）是一种很重要的组合电路。
 
 
 
