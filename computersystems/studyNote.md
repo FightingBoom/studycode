@@ -1491,6 +1491,17 @@ SEQ（sequential，顺序的）
 
 
 
+### 4.3.1 将处理组织成阶段
+
+- 取指（fetch）
+- 译码（decode）
+- 执行（execute）
+- 访存（memory）
+- 写回（write back）
+- 更新 PC （PC update）
+
+
+
 
 
 
