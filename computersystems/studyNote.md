@@ -1485,6 +1485,14 @@ HDL（Hardware Description Language，硬件描述语言）
 
 
 
+## 4.3 Y86-64 的顺序实现
+
+SEQ（sequential，顺序的）
+
+
+
+
+
 
 
 
