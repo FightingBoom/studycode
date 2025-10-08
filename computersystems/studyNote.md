@@ -1502,9 +1502,9 @@ SEQ（sequential，顺序的）
 
 
 
+### 4.3.2 SEQ 硬件结构
 
-
-
+硬件单元（hardware units）
 
 
 
