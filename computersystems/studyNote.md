@@ -1539,6 +1539,22 @@ SEQ 的实现包括组合逻辑和两种存储器设备：时钟寄存器（程�
 
 
 
+### 4.4.1 计算流水线
+
+微微秒/皮秒（picosecond，简写成 ps ）
+
+流水线图（pipeline diagram）
+
+流水线寄存器（pipeline register）
+
+
+
+
+
+
+
+
+
 
 
 
