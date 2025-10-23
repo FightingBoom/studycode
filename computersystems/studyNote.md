@@ -1699,15 +1699,23 @@ SEQ 的实现包括组合逻辑和两种存储器设备：时钟寄存器（程�
 
 
 
+### 4.5.8 流水线控制逻辑
+
+加载/使用冒险
+
+处理 ret
+
+预测错误的分支
+
+异常
 
 
 
+复位配置（reset configuration）
 
+形式化验证（formal verification）
 
-
-
-
-
+逻辑合成（logic synthesis）
 
 
 
