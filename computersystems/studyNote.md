@@ -1727,6 +1727,17 @@ CPI，Cycles Per Instruction，每指令周期数。
 
 
 
+### 4.5.10 未完成的工作
+
+1. 多周期指令
+2. 与存储系统的接口
+
+高速缓存，cache
+
+翻译后备缓冲器，translation Look-aside Buffer，TLB
+
+缺页，page fault
+
 
 
 
