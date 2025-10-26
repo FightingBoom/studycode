@@ -1740,7 +1740,9 @@ CPI，Cycles Per Instruction，每指令周期数。
 
 
 
+## 4.6 小结
 
+指令集体系结构
 
 
 
