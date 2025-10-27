@@ -1746,6 +1746,28 @@ CPI，Cycles Per Instruction，每指令周期数。
 
 
 
+# 第5章 优化程序性能
+
+妨碍优化的因素，optimization blocker
+
+指令级并行，instruction-level parallelism
+
+代码剖析程序，profiler
+
+关键路径，critical path
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
