@@ -1758,13 +1758,15 @@ CPI，Cycles Per Instruction，每指令周期数。
 
 
 
+## 5.1 优化编译器的能力和局限性
+
+虽然对于大多数使用 GCC 的软件项目来说，优化级别 -O2 已经成为 了被接受的标准，但是还是主要考虑以优化级别 -O1 编译出的代码。
 
 
 
+内存别名使用，memory aliasing
 
-
-
-
+内联函数替换，inline substitution，简称内联，inlining
 
 
 
