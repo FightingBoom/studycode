@@ -1770,9 +1770,17 @@ CPI，Cycles Per Instruction，每指令周期数。
 
 
 
+## 5.2 表示程序性能
+
+每元素的周期数，Cycles Per Element，CPE
+
+循环展开，loop unrolling
+
+最小二乘拟合，least squares fit
 
 
 
+最终关心的是：对于给定的向量长度，程序运行的速度如何。
 
 
 
