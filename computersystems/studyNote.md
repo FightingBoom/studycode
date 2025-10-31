@@ -1794,6 +1794,16 @@ CPI，Cycles Per Instruction，每指令周期数。
 
 
 
+## 5.4 消除循环的低效率
+
+代码移动，code motion
+
+识别要执行多次（例如在循环里）但是计算结果不会改变的计算。
+
+
+
+渐进低效率，asymptotic inefficiency
+
 
 
 
