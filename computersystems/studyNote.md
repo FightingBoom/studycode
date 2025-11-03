@@ -1822,6 +1822,18 @@ CPI，Cycles Per Instruction，每指令周期数。
 
 
 
+## 5.7 理解现代处理器
+
+随着试图进一步提高性能，必须考虑利用处理器微体系结构的优化，也就是处理器用来执行指令的底层系统设计。
+
+
+
+延迟界限，latency bound
+
+吞吐量界限，throughput bound
+
+
+
 
 
 
