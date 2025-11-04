@@ -1834,6 +1834,44 @@ CPI，Cycles Per Instruction，每指令周期数。
 
 
 
+### 5.7.1 整体操作
+
+超标量，superscalar，可以在每个时钟周期执行多个操作，而且是乱序的。
+
+乱序，out-of-order，指令执行的顺序不一定要与它们在机器级程序中的顺序一致。
+
+按序，in-order
+
+
+
+控制单元，Instruction Control Unit，ICU
+
+执行单元，Execution Unit，EU
+
+前者负责 从内存中读出指令序列，并根据这些指令序列生成一组针对程序数据的基本操作；而后者 执行这些操作。
+
+
+
+指令高速缓存，instruction cache
+
+分支预测，branch prediction
+
+投机执行，speculative execution
+
+数据高速缓存，data cache
+
+退役单元，retirement unit
+
+寄存器重命名，register renaming
+
+
+
+
+
+
+
+
+
 
 
 
