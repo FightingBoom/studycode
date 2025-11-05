@@ -1866,15 +1866,19 @@ CPI，Cycles Per Instruction，每指令周期数。
 
 
 
+### 5.7.2 功能单元的性能
+
+延迟，latency，表示完成运算所需要的总时间；
+
+发射时间，issue time，表示两个连续的同类型的运算之间需要的最小时钟周期数；
+
+容量，capacity，表示能够执行该运算的功能单元的数量；
 
 
 
+阶段，stage
 
-
-
-
-
-
+完全流水线化的，fully pipelined
 
 
 
