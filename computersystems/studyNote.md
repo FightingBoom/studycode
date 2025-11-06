@@ -1882,3 +1882,14 @@ CPI，Cycles Per Instruction，每指令周期数。
 
 
 
+### 5.7.3 处理器操作的抽象模型
+
+数据流，data-flow
+
+关键路径，critical path
+
+
+
+1. 从机器级代码到数据流图
+2. 其他性能因素
+
