@@ -1917,6 +1917,16 @@ CPI，Cycles Per Instruction，每指令周期数。
 
 
 
+### 5.9.2 重新结合变换
+
+重新结合变换，reassociation transformation 
+
+SSE 指令，Streaming SIMD Extensions，流 SIMD 扩展的缩写
+
+高级向量扩展，advanced vector extension，或 AVX
+
+
+
 
 
 
