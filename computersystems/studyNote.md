@@ -1927,6 +1927,14 @@ SSE 指令，Streaming SIMD Extensions，流 SIMD 扩展的缩写
 
 
 
+## 5.10 优化合并代码的结果小结
+
+CPE 从最开始的 10.xx 提高到了 1 左右。
+
+![image-20251029090806993](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202510290908424.png)
+
+
+
 
 
 
