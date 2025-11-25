@@ -2054,9 +2054,75 @@ Unix 提供了一个剖析程序 GPROF ，有如下属性值得注意：
 
 
 
+### 6.1.1 随机访问存储器
+
+随机访问存储器，Random-Access Memory，RAM
+
+分为两类：静态的和动态的，静态 RAM (SRAM) 比动态 RAM (DRAM) 更快，但也贵得多。
 
 
 
+1. 静态 RAM
+
+SRAM 将每个位存储在一个双稳态的 (bistable) 存储器单元里。每个单元是用一个六 晶体管电路来实现的。
+
+![image-20251104085911803](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202511040859080.png)
+
+由千 SRAM 存储器单元的双稳态特性，只要有电，它就会永远地保持它的值。即使 有干扰（例如电 子噪 音）来扰乱电压，当干扰消除时，电路就会恢复到稳定值。
+
+
+
+2. 动态 RAM
+
+DRAM 将每个位存储为对 个电容的充电。
+
+![image-20251104090234260](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202511040902425.png)
+
+
+
+3. 传统的 DRAM
+
+内存控制器，memory controller
+
+行地址 i 称为 RAS ，Row Access Strobe，行访问选通脉冲
+
+列地址 j 称为 CAS ，Column Access Strobe，列访问选通脉冲
+
+
+
+4. 内存模块
+
+内存模块，memory module
+
+双列直插内存模块，Dual Inline Memory Module，DIMM
+
+
+
+5. 增强的 DRAM
+
+- 快页模式 DRAM ，Fast Page Mode DRAM, FPM DRAM
+- 扩展数据输出 DRAM，Extended Data Out DRAM，EDO DRAM
+- 同步 DRAM ，Synchronous DRAM，SDRAM
+- 双倍数据速率同步 DRAM ，Double Data-Rate Synchronous DRAM，DDR SDRAM
+- 视频 RAM ，Video RAM，VRAM
+
+
+
+6. 非易失性存储器
+
+PROM(Programmable ROM, 可编程 ROM) 只能被编程一次。 PROM 的每个存储器 单元有 种熔丝 (fuse), 只能用高电流熔断一次
+
+可擦写可编程 ROM(Erasable Programmable ROM, EPROM) 有一个透明的石英窗 口，允许光到达存储单元。
+
+电子可擦除 PROM (Electrically Erasable  PROM, EEPROM) 类似于 EPROM, 但是它不需要一个物理上独立的编程设备，因此可 以直接在印制电路卡上编程。 EEPROM 能够被编程的次数的数量级可以达到 10 次。
+
+
+
+固态硬盘，Solid State Disk，SSD
+
+
+
+7. 访问主存
 
 
 
