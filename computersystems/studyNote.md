@@ -2170,5 +2170,26 @@ PCie 是一组高速串行、通过开关连接的点到点链路，最大吞吐
 
 
 
+## 6.2 局部性
+
+局部性原理，principle of locality
+
+- 时间局部性，temporal locality
+- 空间局部性，spatial locality
+
+
+
+有良好局部性的程序比局部性差的程序运行得更快。
+
+
+
+
+
+
+
+
+
+
+
 
 
