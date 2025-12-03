@@ -2205,15 +2205,9 @@ PCie 是一组高速串行、通过开关连接的点到点链路，最大吞吐
 
 
 
+## 6.3 存储器层次结构
 
-
-
-
-
-
-
-
-
+![image-20251122092338364](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202511220923542.png)
 
 
 
