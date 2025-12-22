@@ -2369,6 +2369,18 @@ L3 ，大概 50 个时钟周期
 
 
 
+## 7.3 目标文件
+
+目标文件有三种形式：
+
+- 可重定位目标文件
+- 可执行目标文件
+- 共享目标文件
+
+
+
+Windows 使用可移植可执行 (Portable Executable, PE) 格式。 Mac os-x 使用 Mach-0 格式。现代 x86-64 Linux Unix 系统使用可执行可链接格式 (Executable and Linkable Format, ELF) 。
+
 
 
 
