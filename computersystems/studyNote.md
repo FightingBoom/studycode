@@ -2383,13 +2383,13 @@ Windows 使用可移植可执行 (Portable Executable, PE) 格式。 Mac os-x �
 
 
 
+## 7.4 可重定位目标文件
 
 
 
+为什么未初始化的数据称为 .bss
 
-
-
-
+用术语 .bss 来表示未初始化的数据是很普遍的。它起始于 IBM 704 汇编语言（大约 1957 年）中“块存储开始 (Block Storage Start)" 指令的首字母缩写，并沿用至今。 一种记住 data bss 节之间区别的简单方法是把 "bss" 看成是”更好地节省空间 (Better Save Space)" 的缩写
 
 
 
