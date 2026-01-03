@@ -2487,6 +2487,18 @@ R_X86_64_32：重定位一个使用 32 位绝对地址的引用。
 
 
 
+## 7.10 动态链接共享库
+
+共享库，shared library
+
+动态链接，dynamic linking
+
+动态链接器，dynamic linker
+
+共享目标，shared object
+
+
+
 
 
 
