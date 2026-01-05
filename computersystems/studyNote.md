@@ -2513,7 +2513,13 @@ Java 本地接口，Java Native Interface ，JNI ，可以动态的加载本地 
 
 
 
+## 7.12 位置无关代码
 
+可以加载而无需重定位的代码称为位置无关代码，Position-Independent Code ，PIC ，GCC 用户使用 -fpic 选项，共享库编译必须使用该选项。
+
+
+
+延迟调用。
 
 
 
