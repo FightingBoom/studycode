@@ -2523,5 +2523,13 @@ Java 本地接口，Java Native Interface ，JNI ，可以动态的加载本地 
 
 
 
+## 7.13 库打桩机制
+
+库打桩，library interpositioning
+
+
+
+
+
 
 
