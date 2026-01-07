@@ -2529,6 +2529,19 @@ Java 本地接口，Java Native Interface ，JNI ，可以动态的加载本地 
 
 
 
+### 7.13.1 编译时打桩
+
+```shell
+gcc -DCOMPILETIME -c mymalloc.c
+
+# -I. 会告诉 C 预处理器在搜索通常的系统目录之前，先在当前目录查找 malloc.h
+gcc -I. -o intc int.c mymalloc.o
+```
+
+
+
+
+
 
 
 
