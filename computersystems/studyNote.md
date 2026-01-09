@@ -2546,6 +2546,12 @@ gcc -I. -o intc int.c mymalloc.o
 
 
 
+### 7.13.3 运行时打桩
+
+需要访问可执行目标文件，基于动态链接器的 LD_PRELOAD 环境变量。
+
+
+
 
 
 
