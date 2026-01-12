@@ -2571,6 +2571,30 @@ gcc -I. -o intc int.c mymalloc.o
 
 
 
+# 8 异常控制流
+
+控制转移，control transfer
+
+控制流，flow of control / control flow
+
+
+
+**异常控制流，Exceptional Control Flow , ECF**
+
+
+
+在系统层，内核通过上下文切换将控制从一个用户进程转移到另一个用户进程。
+
+
+
+ECF 是计算机系统中实现并发的基本机制。
+
+
+
+
+
+
+
 
 
 
