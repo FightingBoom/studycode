@@ -2591,7 +2591,13 @@ ECF 是计算机系统中实现并发的基本机制。
 
 
 
+## 8.1 异常
 
+异常，exception
+
+异常表，exception table
+
+操作系统子程序，异常处理程序，exception handler
 
 
 
