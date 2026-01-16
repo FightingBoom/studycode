@@ -2637,6 +2637,21 @@ ECF 是计算机系统中实现并发的基本机制。
 
 
 
+### 8.1.3 Linux/x86-64 系统中的异常
+
+![image-20260111183240318](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202601111832518.png)
+
+1. Linux/x86-64 故障和终止
+2. Linux/86-64 系统调用
+
+
+
+
+
+
+
+
+
 
 
 
