@@ -2823,5 +2823,15 @@ Linux 提供了几个函数来操作环境数组
 
 
 
+## 8.5 信号
+
+Linux 信号，它允许进程和内核中断其他进程。
+
+![image-20260125185107407](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202601251851686.png)
+
+
+
+
+
 
 
