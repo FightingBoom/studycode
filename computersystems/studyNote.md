@@ -2848,9 +2848,30 @@ pending，悬而未决的，待定
 
 
 
+### 8.5.2 发送信号
+
+进程组，process group
+
+getpgrp 函数返回当前进程的进程组 ID 。
+
+setpgid 改变自己或其他进程的进程组
 
 
 
+2. /bin/kill 程序发送信号
+
+```shell
+/bin/kill -9 15213
+
+# 负的PID会导致信号被发送到进程组PID中的每个进程
+/bin/kill -9 -15213
+```
 
 
+
+3. 从键盘发送信号
+
+4. 用 kill 函数发送信号
+
+5. 用 alarm 函数发送信号
 
