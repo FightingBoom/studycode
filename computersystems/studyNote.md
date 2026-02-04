@@ -2889,5 +2889,23 @@ setpgid 改变自己或其他进程的进程组
 
 
 
+### 8.5.5 编写信号处理程序
+
+- G0：处理程序要尽可能简单。
+- G1：在处理程序中只调用异步信号安全的函数。
+
+![image-20260125190717792](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202601251907961.png)
+
+
+
+- G2：保存和恢复 errno 。
+- G3：阻塞所有的信号，保护对共享全局数据结构的访问。
+- G4：用 volatile 声明全局变量。
+- G5：用 sig_atomic_t 声明标志
+
+
+
+
+
 
 
