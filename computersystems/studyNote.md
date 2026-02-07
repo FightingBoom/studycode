@@ -2917,5 +2917,17 @@ setpgid 改变自己或其他进程的进程组
 
 
 
+## 8.6 非本地跳转
+
+非本地跳转，nonlocal jump
+
+
+
+C++ 和 Java 的异常机制是较高层次的。try 的 catch 类似 setjmp 函数。throw 语句类似于 longjmp 。
+
+
+
+
+
 
 
