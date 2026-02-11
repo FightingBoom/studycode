@@ -2961,3 +2961,21 @@ PMAP：显示进程的内存映射
 - 虚拟内存是强大的；
 - 虚拟内存是危险的；
 
+
+
+## 9.1 物理和虚拟寻址
+
+物理地址，Physical Address，PA
+
+物理寻址，physical addressing
+
+
+
+虚拟寻址，virtual addressing
+
+
+
+地址翻译，address translation
+
+内存管理单元，Memory Management Unit
+
