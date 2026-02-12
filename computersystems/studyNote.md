@@ -2979,3 +2979,15 @@ PMAP：显示进程的内存映射
 
 内存管理单元，Memory Management Unit
 
+
+
+## 9.2 地址空间
+
+地址空间，address space
+
+如果地址空间中的整数是连续的，那么我们说它是 个线性地址空间 (linear address  space) 。
+
+虚拟地址空间，virtual address space
+
+物理地址空间，physical address space
+
