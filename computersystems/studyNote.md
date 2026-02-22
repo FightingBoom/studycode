@@ -3076,7 +3076,13 @@ VP5 的分配过程是在磁 盘上创建空间并更新 PTE 5, 使它指 向磁
 
 
 
+## 9.6 地址翻译
 
+![image-20260217091851686](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202602170918169.png)
+
+
+
+页表基址寄存器，Page Table Base Register，PTBR
 
 
 
