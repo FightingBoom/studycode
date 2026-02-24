@@ -3092,6 +3092,20 @@ VP5 的分配过程是在磁 盘上创建空间并更新 PTE 5, 使它指 向磁
 
 
 
+### 9.6.2 利用 TLB 加速地址翻译
+
+翻译后备缓冲器，Translation Lookaside Buffer，TLB
+
+
+
+
+
+
+
+
+
+
+
 
 
 
