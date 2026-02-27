@@ -3116,6 +3116,16 @@ VP5 的分配过程是在磁 盘上创建空间并更新 PTE 5, 使它指 向磁
 
 
 
+## 9.7 案例研究：Intel Core i7 / Linux 内存系统
+
+处理器封装，processor package
+
+
+
+
+
+
+
 
 
 
