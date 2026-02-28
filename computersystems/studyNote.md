@@ -3122,6 +3122,22 @@ VP5 的分配过程是在磁 盘上创建空间并更新 PTE 5, 使它指 向磁
 
 
 
+### 9.7.1 Core i7 地址翻译
+
+![image-20260223165451185](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202602231654482.png)
+
+
+
+引用位，reference bit
+
+修改位/脏位，dirty bit
+
+
+
+
+
+
+
 
 
 
