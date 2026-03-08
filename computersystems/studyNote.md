@@ -3197,6 +3197,19 @@ munmap 函数删除虚拟内存的区域
 
 
 
+## 9.9 动态内存分配
+
+动态内存分配器，dynamic memory allocator
+
+
+
+- 显式分配器，explicit allocator
+- 隐式分配器，implicit allocator
+
+
+
+
+
 
 
 
