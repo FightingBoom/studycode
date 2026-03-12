@@ -3238,6 +3238,22 @@ munmap 函数删除虚拟内存的区域
 
 
 
+### 9.9.4 碎片
+
+碎片，fragmentation
+
+内部碎片，internal fragmenetation
+
+外部碎片，external fragmentation
+
+
+
+
+
+
+
+
+
 
 
 
