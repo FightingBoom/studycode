@@ -3321,6 +3321,22 @@ sbrk 函数，向内核请求额外的堆内存。
 
 
 
+### 9.9.14 分离的空闲链表
+
+分离存储，segregated storage
+
+大小类，size class
+
+
+
+简单分离存储，simple segregated storage
+
+分离适配，segregated fit
+
+伙伴系统，buddy system
+
+
+
 
 
 
