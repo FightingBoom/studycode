@@ -3455,6 +3455,22 @@ malloc 申请后的内存，free 释放后，仍在调用。
 
 
 
+## 10.2 文件
+
+普通文件，regular file，包含任意数据。
+
+目录，directory ，是包含一组链接（link）的文件，每个链接都将一个文件名（filename）映射到一个文件，这个文件可能是另外一个目录。
+
+套接字，socket，是用来与另一个进程进行跨网络通信的文件。
+
+
+
+其他文件类型包含命名通道 (named pipe) 、符号链接 (symbolic link), 以及字符和块 设备 (character and block device) 。
+
+
+
+
+
 
 
 
