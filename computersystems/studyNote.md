@@ -3508,6 +3508,16 @@ I/O 包，称为 RIO ，Robust I/O ，健壮的 I/O 包。
 
 
 
+### 10.5.1 RIO 的无缓冲的输入输出函数
+
+ri o_readn / rio_writen
+
+
+
+
+
+
+
 
 
 
