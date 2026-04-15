@@ -3514,7 +3514,11 @@ ri o_readn / rio_writen
 
 
 
+### 10.5.2 RIO 的带缓冲的输入函数
 
+如果要计算文本文件中的文本行的数量
+
+- 调用一个包装函数，rio_readlineb
 
 
 
