@@ -3534,7 +3534,13 @@ ri o_readn / rio_writen
 
 
 
+## 10.8 共享文件
 
+内核用三个相关的数据结构来表示打开的文件：
+
+- 描述符表（descriptor table）
+- 文件表（file table）
+- v-node 表（v-node table）
 
 
 
