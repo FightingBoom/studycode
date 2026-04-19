@@ -3544,6 +3544,16 @@ ri o_readn / rio_writen
 
 
 
+## 10.9 I/O 重定向
+
+dup2 函数，复制描述符表表项 oldfd 到描述符表表项 newfd, 覆盖描述符表表项 newfd 以前的内容。如果 newfd 已经打开了， dup2 会在复制 oldfd 之前关闭 newf
+
+
+
+
+
+
+
 
 
 
