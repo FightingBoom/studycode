@@ -3622,3 +3622,13 @@ UDP，Unreliable Datagram Protocol，不可靠数据报协议
 网络字节顺序，network byte order ，大端字节顺序
 
 
+
+### 11.3.2 因特网域名
+
+域名，domain name
+
+DNS，Domain Name System，域名系统
+
+nslookup
+
+
