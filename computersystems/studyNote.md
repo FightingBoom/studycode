@@ -3632,3 +3632,9 @@ DNS，Domain Name System，域名系统
 nslookup
 
 
+
+### 11.3.3 因特网连接
+
+一个套接字是连接的一个端点。
+
+
