@@ -3644,3 +3644,11 @@ nslookup
 套接字接口，socket interface，是一组函数。
 
 
+
+### 11.4.1 套接字地址结构
+
+sockaddr_in
+
+_in 后缀是互联网络 internet 的缩写，不是输入 input 的缩写。
+
+
