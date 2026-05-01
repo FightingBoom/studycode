@@ -3652,3 +3652,11 @@ sockaddr_in
 _in 后缀是互联网络 internet 的缩写，不是输入 input 的缩写。
 
 
+
+### 11.4.2 socket 函数
+
+使用 socket 函数来创建一个套接字描述符，socket descriptor 。
+
+注意该描述符仅是部分打开的，还不能用于读写。
+
+
