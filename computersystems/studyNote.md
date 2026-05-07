@@ -3699,3 +3699,10 @@ connect 函数会阻塞，一直到连接成功建立或是发生错误。如果
 2. getnameinfo 函数
 
 
+
+### 11.4.8 套接字接口的辅助函数
+
+1. open_clientfd 函数
+2. open_listenfd 函数
+
+
