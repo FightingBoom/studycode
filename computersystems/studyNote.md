@@ -3718,3 +3718,15 @@ connect 函数会阻塞，一直到连接成功建立或是发生错误。如果
 并发服务器，concurrent server
 
 
+
+## 11.5 Web 服务器
+
+### 11.5.1 Web 基础
+
+Web 客户端和服务器之间的交互，用的是一个基于文本的应用级协议，叫做 HTTP ，Hypertext Transfer Protocol ，超文本传输协议。
+
+
+
+万维网，Tim Berners-Lee 发明
+
+
