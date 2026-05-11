@@ -3738,3 +3738,13 @@ MIME，Multipurpose Internet Mail Extensions，多用途的网际邮件扩充协
 URL，Universal Resource Locator，通用资源定位符
 
 
+
+### 11.5.3 HTTP 事务
+
+TELNET
+
+URI，Uniform Resource Identifier，统一资源标识符
+
+持久连接，persistent connection
+
+
