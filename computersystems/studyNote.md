@@ -3748,3 +3748,9 @@ URI，Uniform Resource Identifier，统一资源标识符
 持久连接，persistent connection
 
 
+
+### 11.5.4 服务动态内容
+
+CGI，Common Gateway Interface，通用网关接口
+
+
