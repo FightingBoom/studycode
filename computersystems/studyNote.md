@@ -3754,3 +3754,10 @@ URI，Uniform Resource Identifier，统一资源标识符
 CGI，Common Gateway Interface，通用网关接口
 
 
+
+## 11.6 综合：TINY Web 服务器
+
+1. TINY 的 main 程序
+2. doit 函数
+
+
