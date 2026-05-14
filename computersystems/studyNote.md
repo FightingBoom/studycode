@@ -3761,3 +3761,9 @@ CGI，Common Gateway Interface，通用网关接口
 2. doit 函数
 
 
+
+## 11.7 小结
+
+每个网络应用都是基于客户端-服务器模型的。
+
+
