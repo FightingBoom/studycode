@@ -3787,3 +3787,9 @@ CGI，Common Gateway Interface，通用网关接口
 - 线程
 
 
+
+## 12.1 基于进程的并发编程
+
+fork、exec、waitpid
+
+
