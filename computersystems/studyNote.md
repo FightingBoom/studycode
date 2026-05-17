@@ -3793,3 +3793,13 @@ CGI，Common Gateway Interface，通用网关接口
 fork、exec、waitpid
 
 
+
+### 12.1.1 基于进程的并发服务器
+
+僵死，zombie
+
+- 需要有 SIGCHLD 处理程序，回收僵死紫禁城
+- 父子进程必须关闭它们各自的 connfd 副本；
+- 使用引用计数，都关闭了，到客户端的连接才会终止；
+
+
