@@ -3811,3 +3811,9 @@ fork、exec、waitpid
 Unix IPC 通常指的是所有允许进程和同一台主机上其他进程进行通信的技术。其中 包括管道、先进先出 (FIFO 、系统 共享内存，以及系统 信号量 (semaphore）
 
 
+
+## 12.2 基于 I/O 多路复用的并发编程
+
+I/O多路复用，I/O multiplexing
+
+
