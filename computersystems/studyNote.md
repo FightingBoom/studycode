@@ -3837,3 +3837,15 @@ I/O多路复用，I/O multiplexing
 线程上下文，thread context
 
 
+
+### 12.3.1 线程执行模型
+
+主线程，main thread
+
+对等线程，peer thread
+
+
+
+主线程和其他线程的区别仅在于它总是进程中第一个运行的线程。
+
+
