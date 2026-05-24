@@ -3849,3 +3849,9 @@ I/O多路复用，I/O multiplexing
 主线程和其他线程的区别仅在于它总是进程中第一个运行的线程。
 
 
+
+### 12.3.2 Posix 线程
+
+线程例程，thread routine
+
+
