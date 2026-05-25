@@ -3855,3 +3855,9 @@ I/O多路复用，I/O multiplexing
 线程例程，thread routine
 
 
+
+### 12.3.3 创建线程
+
+pthread_create
+
+
