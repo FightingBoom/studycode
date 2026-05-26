@@ -3861,3 +3861,11 @@ I/O多路复用，I/O multiplexing
 pthread_create
 
 
+
+### 12.3.4 终止线程
+
+pthread_exit
+
+pthread_cancel
+
+
