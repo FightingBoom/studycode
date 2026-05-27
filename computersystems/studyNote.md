@@ -3869,3 +3869,9 @@ pthread_exit
 pthread_cancel
 
 
+
+### 12.3.5 回收已终止线程的资源
+
+pthread_join
+
+
