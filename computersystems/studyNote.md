@@ -3875,3 +3875,5 @@ pthread_cancel
 pthread_join
 
 
+
+后续笔记，之前忘记恢复，电脑重启后，也无法再撤销回来。
