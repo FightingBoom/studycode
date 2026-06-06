@@ -3919,3 +3919,11 @@ pthread_join
 一个变量 是共享的，当且仅当它的一个实例被一个以上的线程引用。
 
 
+
+## 12.5 用信号量同步线程
+
+同步错误，synchronization error
+
+进度图，progress graph
+
+
