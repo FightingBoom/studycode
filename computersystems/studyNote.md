@@ -3933,3 +3933,11 @@ pthread_join
 进度图，progress graph
 
 
+
+### 12.5.2 信号量
+
+信号量，semaphore
+
+信号量不变性，semaphore invariant
+
+
