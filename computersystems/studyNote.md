@@ -3941,3 +3941,9 @@ pthread_join
 信号量不变性，semaphore invariant
 
 
+
+### 12.5.3 使用信号量来实现互斥
+
+二元信号量，binary semaphore
+
+
