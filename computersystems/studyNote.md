@@ -3975,3 +3975,15 @@ pthread_join
 加速比，speedup
 
 
+
+## 12.7 其他并发问题
+
+### 12.7.1 线程安全
+
+线程安全性，thread safety
+
+线程安全的，thread-safe
+
+线程不安全的，thread-unsafe
+
+
