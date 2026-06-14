@@ -3987,3 +3987,11 @@ pthread_join
 线程不安全的，thread-unsafe
 
 
+
+### 12.7.2 可重入性
+
+可重入函数，reentrant function
+
+![image-20260419223418888](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202604192234198.png)
+
+
