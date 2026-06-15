@@ -3995,3 +3995,11 @@ pthread_join
 ![image-20260419223418888](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202604192234198.png)
 
 
+
+### 12.7.3 在线程化的程序中使用已存在的苦函数
+
+![image-20260419223710021](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202604192237113.png)
+
+可重入版本的名字，总是以 _r 后缀结尾。
+
+
