@@ -4025,3 +4025,9 @@ pthread_join
 三种不 同的构建并 发程序的机制：进程、 多路复用和线程
 
 
+
+# 附录A 错误处理
+
+错误处理包装函数，error-handling wrapper
+
+
