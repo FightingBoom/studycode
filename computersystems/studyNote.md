@@ -4031,3 +4031,9 @@ pthread_join
 错误处理包装函数，error-handling wrapper
 
 
+
+## A.1 Unix 系统中的错误处理
+
+三种不同风格的返回错误：Unix 风格、Posix 风格和 GAI 风格
+
+
