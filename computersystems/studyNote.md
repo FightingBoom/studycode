@@ -4037,3 +4037,16 @@ pthread_join
 三种不同风格的返回错误：Unix 风格、Posix 风格和 GAI 风格
 
 
+
+## A.2 错误处理包装函数
+
+Unix 风格，wait
+
+Posix 风格，pthread_detach
+
+GAI 风格，getaddrinfo
+
+
+
+2026/04/19 22:49，阅读完毕。
+
