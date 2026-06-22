@@ -7,3 +7,7 @@ http://github.fishros.org/，该网站已经进不去了。
 ![image-20260421084611703](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202604210846844.png)
 
 
+
+https://fishros.org.cn/forum/，这个论坛还可以进去。
+
+
