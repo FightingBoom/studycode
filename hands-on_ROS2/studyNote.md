@@ -17,3 +17,13 @@ https://fishros.org.cn/forum/，这个论坛还可以进去。
 ROS，robot Operating System，机器人操作系统
 
 
+
+## 1.1 ROS 部落的自我介绍
+
+生态。
+
+### 1.1.1 机器人与 ROS
+
+ROS 在机器人中的作用就是将传感器的数据发送给决策系统，然后将决策系统的输出发送给执行器执行。
+
+
