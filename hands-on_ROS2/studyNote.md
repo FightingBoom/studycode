@@ -31,3 +31,6 @@ ROS 在机器人中的作用就是将传感器的数据发送给决策系统，�
 ### 1.1.2 ROS 2 系统架构
 
 分为 5 层：操作系统层、DDS 实现层、DDS 接口层、ROS2客户端层和应用层。
+
+数据分发服务，Data Distribution Service，DDS；基于实时发布订阅协议，Real-time Publish-Subscribe，RTPS
+
