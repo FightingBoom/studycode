@@ -34,3 +34,5 @@ ROS 在机器人中的作用就是将传感器的数据发送给决策系统，�
 
 数据分发服务，Data Distribution Service，DDS；基于实时发布订阅协议，Real-time Publish-Subscribe，RTPS
 
+RMW，ROS Middleware Interface，ROS 中间件接口
+
