@@ -36,3 +36,6 @@ ROS 在机器人中的作用就是将传感器的数据发送给决策系统，�
 
 RMW，ROS Middleware Interface，ROS 中间件接口
 
+ROS2 客户端库，ROS 2 Client Library，RCL
+
+
