@@ -45,3 +45,12 @@ ROS2 客户端库，ROS 2 Client Library，RCL
 ![image-20260424091531342](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202604240915460.png)
 
 
+
+### 1.1.4 ROS2 机器人开发特色
+
+1. 四大核心通信机制
+    1. 话题通信，topic
+    2. 服务通信，service
+    3. 参数通信，parameter
+    4. 动作通信，action
+2. 
