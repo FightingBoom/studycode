@@ -53,4 +53,5 @@ ROS2 客户端库，ROS 2 Client Library，RCL
     2. 服务通信，service
     3. 参数通信，parameter
     4. 动作通信，action
-2. 
+2. 丰富的调试工具
+3. 
