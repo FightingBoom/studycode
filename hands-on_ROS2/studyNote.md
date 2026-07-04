@@ -58,3 +58,9 @@ ROS2 客户端库，ROS 2 Client Library，RCL
 4. 强大的开源社区及应用框架
 
 
+
+## 1.2 开发环境搭建
+
+需要安装 Linux ，macOS 应该也能用
+
+
