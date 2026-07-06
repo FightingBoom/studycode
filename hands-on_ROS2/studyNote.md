@@ -64,3 +64,8 @@ ROS2 客户端库，ROS 2 Client Library，RCL
 需要安装 Linux ，macOS 应该也能用
 
 
+
+## 1.3 运行你的第一个机器人
+
+海龟模拟器，我的 macOS 装不了好像，，难搞。
+
