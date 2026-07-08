@@ -72,3 +72,9 @@ ROS2 客户端库，ROS 2 Client Library，RCL
 戴尔不知道还能不能跑起来，里边数据好久没用了，还没整备备份下，之前想着备份完，直接装 ubuntu 呢。
 
 
+
+## 1.4 ROS 2 基础之 Linux
+
+Linux 的基础知识。
+
+
