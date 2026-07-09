@@ -78,3 +78,9 @@ ROS2 客户端库，ROS 2 Client Library，RCL
 Linux 的基础知识。
 
 
+
+## 1.5 小结与点评
+
+本章基本都是环境的安装啥的。
+
+
