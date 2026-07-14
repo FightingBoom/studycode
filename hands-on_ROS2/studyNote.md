@@ -99,3 +99,6 @@ ros2 pkg create 创建功能包的命令
 
 编译命令：colcon build
 
+在 xx/package.xml 中，编辑依赖关系；
+
+
