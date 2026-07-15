@@ -102,3 +102,7 @@ ros2 pkg create 创建功能包的命令
 在 xx/package.xml 中，编辑依赖关系；
 
 
+
+C++ 的自动类型推导和智能指针
+
+
