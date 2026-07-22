@@ -136,3 +136,8 @@ rqt 就是 ROS2 常用的可视化工具之一。
 数据可视化工具 RViz 
 
 
+
+# 第6章 建模与仿真——创建自己的机器人
+
+![image-20260526092426916](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202605260924822.png)
+
