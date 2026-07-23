@@ -141,3 +141,6 @@ rqt 就是 ROS2 常用的可视化工具之一。
 
 ![image-20260526092426916](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202605260924822.png)
 
+仿真平台：Gazebo、WeBots，CoppeliaSim
+
+
