@@ -144,3 +144,9 @@ rqt 就是 ROS2 常用的可视化工具之一。
 仿真平台：Gazebo、WeBots，CoppeliaSim
 
 
+
+URDF，Unified Robot Description Format，通用的机器人描述文件格式。
+
+使用 XML ，Extensible Markup Language，可扩展标记语言
+
+
