@@ -150,3 +150,9 @@ URDF，Unified Robot Description Format，通用的机器人描述文件格式�
 使用 XML ，Extensible Markup Language，可扩展标记语言
 
 
+
+这里的 Rviz ，联想到 Dviz ，drone 飞机；
+
+需要通过调整不同的坐标系，以便看到正确的可视化信息；
+
+
