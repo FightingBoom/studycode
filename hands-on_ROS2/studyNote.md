@@ -160,3 +160,7 @@ URDF，Unified Robot Description Format，通用的机器人描述文件格式�
 这里有 3 x 3 的矩阵，计算机器人的旋转惯性；
 
 
+
+Gazebo ，一打开就是一个空的世界模型，可以由自己任意添加模型，类似于我的世界这种？
+
+
