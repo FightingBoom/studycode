@@ -178,3 +178,7 @@ Gazebo ，一打开就是一个空的世界模型，可以由自己任意添加�
 ![image-20260604085800620](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202606040858380.png)
 
 
+
+ROS2 可以安装 gazebo-ros2-control 插件，方便实现 Gazebo 和 ros2_control 的对接。
+
+
