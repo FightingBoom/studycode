@@ -182,3 +182,7 @@ Gazebo ，一打开就是一个空的世界模型，可以由自己任意添加�
 ROS2 可以安装 gazebo-ros2-control 插件，方便实现 Gazebo 和 ros2_control 的对接。
 
 
+
+同一个控制接口，同一时间只能给一个控制器使用。
+
+
