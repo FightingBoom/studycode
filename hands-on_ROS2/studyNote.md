@@ -192,3 +192,9 @@ ROS2 可以安装 gazebo-ros2-control 插件，方便实现 Gazebo 和 ros2_cont
 在哪里，怎么走？
 
 
+
+SLAM，Simultaneous Localization and Mapping，同步定位与地图构建
+
+全局路径规划，局部路径规划
+
+
