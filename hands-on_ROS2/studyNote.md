@@ -198,3 +198,11 @@ SLAM，Simultaneous Localization and Mapping，同步定位与地图构建
 全局路径规划，局部路径规划
 
 
+
+遇到故障问题时的脱困动作，称之为恢复行为。
+
+
+
+传感器有噪声。
+
+
