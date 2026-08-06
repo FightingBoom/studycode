@@ -210,3 +210,7 @@ SLAM，Simultaneous Localization and Mapping，同步定位与地图构建
 行为树，Behavior Tree，BT
 
 
+
+导航后的第一个操作就是初始化机器人位姿。
+
+
