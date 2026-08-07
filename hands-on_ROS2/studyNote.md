@@ -214,3 +214,9 @@ SLAM，Simultaneous Localization and Mapping，同步定位与地图构建
 导航后的第一个操作就是初始化机器人位姿。
 
 
+
+# 第8章 使用自己的规划器和控制器导航
+
+pluginlib 
+
+
