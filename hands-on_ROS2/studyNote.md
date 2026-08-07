@@ -220,3 +220,11 @@ SLAM，Simultaneous Localization and Mapping，同步定位与地图构建
 pluginlib 
 
 
+
+比例 - 积分 - 微分（PID）控制
+
+- Proportional，比例
+- Integral，积分
+- Derivative，微分
+
+
