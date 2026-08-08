@@ -228,3 +228,9 @@ pluginlib
 - Derivative，微分
 
 
+
+纯追踪法（Pure Pursuit）控制
+
+模型预测控制（Model Predictive Control）
+
+
