@@ -234,3 +234,9 @@ pluginlib
 模型预测控制（Model Predictive Control）
 
 
+
+# 第9章 搭建一个实体移动机器人
+
+FishBot 搭载了雷达、超声波、编码器和 IMU 四种传感器。
+
+
