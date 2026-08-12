@@ -244,3 +244,7 @@ FishBot 搭载了雷达、超声波、编码器和 IMU 四种传感器。
 ESP32，MCU，Arduino，都是很熟悉的名字。
 
 
+
+PlatformIO IDE，在 VSCode 中的一个插件，用来开发 MCU 程序；
+
+
