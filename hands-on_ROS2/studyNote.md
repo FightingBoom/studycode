@@ -248,3 +248,9 @@ ESP32，MCU，Arduino，都是很熟悉的名字。
 PlatformIO IDE，在 VSCode 中的一个插件，用来开发 MCU 程序；
 
 
+
+micro-ROS
+
+![image-20260607183924224](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202606071839392.png)
+
+
