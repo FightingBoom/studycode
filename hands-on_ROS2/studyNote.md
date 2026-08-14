@@ -254,3 +254,7 @@ micro-ROS
 ![image-20260607183924224](https://cdn.jsdelivr.net/gh/FightingBoom/AllPicture@master/img/202606071839392.png)
 
 
+
+URDF 用于描述机器人模型，通过 URDF 文件和 robot_state_publisher 节点就可以发布基坐标系和各个组件之间的变换。
+
+
