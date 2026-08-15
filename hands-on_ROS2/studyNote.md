@@ -258,3 +258,9 @@ micro-ROS
 URDF 用于描述机器人模型，通过 URDF 文件和 robot_state_publisher 节点就可以发布基坐标系和各个组件之间的变换。
 
 
+
+# 第10章 ROS2使用进阶
+
+QoS，Quality of Service，服务质量
+
+
