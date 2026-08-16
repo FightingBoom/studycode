@@ -264,3 +264,14 @@ URDF 用于描述机器人模型，通过 URDF 文件和 robot_state_publisher �
 QoS，Quality of Service，服务质量
 
 
+
+- 历史记录
+- 历史队列深度
+- 可靠性
+- 持久性
+- 截止时间
+- 寿命
+- 活跃度
+- 租约持续时间
+
+
