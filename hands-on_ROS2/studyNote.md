@@ -279,3 +279,11 @@ QoS，Quality of Service，服务质量
 使用组件（component）可以动态地将不同节点加载到一个进程，也可以动态卸载。
 
 
+
+Sync Policies，同步策略
+
+- 严格时间对齐，ExactTime
+- 大约时间对齐，ApproximateTime
+- 最新时间对齐，LatestTime
+
+
