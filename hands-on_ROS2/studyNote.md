@@ -287,3 +287,12 @@ Sync Policies，同步策略
 - 最新时间对齐，LatestTime
 
 
+
+DDS，Data Distribution Service ，数据分发服务，ROS2 的核心通信。
+
+
+
+
+
+2026.06.07，完结打卡。
+
